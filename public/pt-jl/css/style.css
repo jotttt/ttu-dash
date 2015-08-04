@@ -1,0 +1,42 @@
+/* Custom Stylesheet */
+
+header, main, footer {
+    padding-left: 240px;
+  }
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }
+.ttu-color {
+	color: #870042 !important;
+}
+.ttu-bg-color{
+		background-color: #870042 !important;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.ttu-logo {
+	padding: 10px 0 0 !important;
+}
+.modal.bottom-sheet {
+	max-height: 75% !important;
+}
+.messenger-header {
+	padding: 10px 0px;
+}
+#messages-display-placeholder {
+}
+#messages-display-placeholder ul {
+	overflow:hidden;
+	overflow-y:scroll;
+	height:200px;
+	border: 1px solid black;
+}
+#users-online-placeholder {
+	border: 1px solid black;
+	padding: 0 10px;
+
+}

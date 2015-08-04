@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!--_____ META _______-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--_____META END_______-->
+	<title>TTÜ | Dashboard</title>
+	<!--_____ PLUGINS CSS _______-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+	<link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+	<link href="css/plugins/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+	<link href="css/animate.css" rel="stylesheet">
+	<!--_____ PAGE CSS _______-->
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="top-navigation">
+
+	<div id="wrapper">
+		<div id="page-wrapper" class="gray-bg">
+			<!--_________ NAVBAR BEGIN ___________-->
+			<div class="row">
+				<nav class="navbar navbar-static-top white-bg" role="navigation">
+					<div class="navbar-header">
+						<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<i class="fa fa-reorder"></i>
+						</button>
+						<a href="#" class="navbar-brand">TTÜ</a>
+					</div>
+					<div class="navbar-collapse collapse" id="navbar">
+						<ul class="nav navbar-nav">
+							<form role="search" class="navbar-form-custom m-l-md" action="search_results.html">
+								<div class="form-group">
+									<input type="text" placeholder="Otsi siseveebist..." class="form-control" name="top-search" id="top-search">
+								</div>
+							</form>
+							<li class="dropdown">
+								<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Dokumendid <span class="caret"></span></a>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Töökorraldus <span class="caret"></span></a>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Koolitused <span class="caret"></span></a>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Teenused <span class="caret"></span></a>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Foorum <span class="caret"></span></a>
+								<ul role="menu" class="dropdown-menu">
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+									<li><a href="">Menu item</a></li>
+								</ul>
+							</li>
+
+						</ul>
+						<ul class="nav navbar-top-links navbar-right">
+							<li>
+								<a href="login.html">
+									<i class="fa fa-sign-out"></i> Log out
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<!--________ NAVBAR END ____________-->
+			<!--________ CONTENT BEGIN _____________-->
+			<div class="wrapper wrapper-content animated fadeInRight">
+				<div class="row">
+					<div class="col-lg-12">
+						<!--________ LEFT COLUMN BEGIN _________-->
+						<div class="col-lg-3">
+							<!--________ CALENDAR WIDGET BEGIN _______-->
+							<div class="ibox float-e-margins">
+								<div class="ibox-title">
+									<h5><i class="fa fa-calendar"></i> Minu kalender</h5>
+									<div class="ibox-tools">
+										<a class="collapse-link">
+											<i class="fa fa-chevron-up"></i>
+										</a>
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+											<i class="fa fa-wrench"></i>
+										</a>
+										<ul class="dropdown-menu dropdown-user">
+											<li><a href="#">Config option 1</a>
+											</li>
+											<li><a href="#">Config option 2</a>
+											</li>
+										</ul>
+										<a class="close-link">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<div id="calendar"></div>
+								</div>
+							</div>
+							<!--________ CALENDAR WIDGET END _______-->
+							<!--________ IN HOUSE TRAINING WIDGET BEGIN _____-->
+							<div class="ibox float-e-margins">
+								<div class="ibox-title">
+									<h5><i class="fa fa-mortar-board"></i> Sisekoolitused</h5>
+									<div class="ibox-tools">
+										<a class="collapse-link">
+											<i class="fa fa-chevron-up"></i>
+										</a>
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+											<i class="fa fa-wrench"></i>
+										</a>
+										<ul class="dropdown-menu dropdown-user">
+											<li><a href="#">Config option 1</a>
+											</li>
+											<li><a href="#">Config option 2</a>
+											</li>
+										</ul>
+										<a class="close-link">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<table class="table table-hover no-margins">
+										<thead>
+											<tr>
+												<th>Aeg</th>
+												<th>Nimi</th>
+												<th>Staatus</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>11.08.2015</td>
+												<td>Meeskonnatöö koolitus I tase</td>
+												<td><span class="label label-warning">täis</span></td>
+											</tr>
+											<tr>
+												<td>01.10.2015</td>
+												<td>Meeskonnatöö koolitus II tase</td>
+												<td><span class="label label-success">vaba</span></td>
+											</tr>
+											<tr>
+												<td>11.11.2015</td>
+												<td>Ristmeedia koolitus </td>
+												<td><span class="label label-danger">tühistatud</span></td>
+											</tr>
+											<tr>
+												<td>04.12.2015</td>
+												<td>Excel edasijõudnutele</td>
+												<td><span class="label label-danger">tühistatud</span></td>
+											</tr>
+											<tr>
+												<td>11.12.2015</td>
+												<td>Avalik suhtlus I</td>
+												<td><span class="label label-warning">täis</span></td>
+											</tr>
+											<tr>
+												<td>15.12.2015</td>
+												<td>Word edasijõudnutele</td>
+												<td><span class="label label-success">vaba</span></td>
+											</tr>
+											<tr>
+												<td>17.12.2015</td>
+												<td>Ristmeedia koolitus</td>
+												<td><span class="label label-success">vaba</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!--________ IN HOUSE TRAINING WIDGET END _______-->
+							<!--________ PHONEBOOK WIDGET BEGIN _____-->
+							<div class="ibox float-e-margins">
+								<div class="ibox-title">
+									<h5><i class="fa fa-phone"></i> Telefoniraamat</h5>
+									<div class="ibox-tools">
+										<a class="collapse-link">
+											<i class="fa fa-chevron-up"></i>
+										</a>
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+											<i class="fa fa-wrench"></i>
+										</a>
+										<ul class="dropdown-menu dropdown-user">
+											<li><a href="#">Config option 1</a>
+											</li>
+											<li><a href="#">Config option 2</a>
+											</li>
+										</ul>
+										<a class="close-link">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<div class="favorites">
+										<form class="clearfix" role="form" action="#">
+											<div class="form-group"><input type="text" placeholder="Nimi" class="form-control"></div>
+											<div class="form-group"><input type="text" placeholder="Amet" class="form-control"></div>
+											<div class="form-group"><input type="text" placeholder="Üksus" class="form-control"></div>
+											<div class="form-group"><input type="text" placeholder="Telefon" class="form-control"></div>
+											<button class="btn btn-md btn-primary pull-right" type="submit"><strong>Otsi</strong></button>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--________ PHONEBOOK WIDGET END ______-->
+						</div>
+						<!--________ LEFT COLUMN END __________-->
+						<!--________ MIDDLE COLUMN BEGIN _______-->
+						<div class="col-lg-6">
+							<!--_________ SPECIAL ALERT BEGIN ______-->
+							<div class="alert alert-danger alert-dismissable">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                <h4>Teade</h4>VI korpuses on elektrikatkestus 05.12.2014 10:00-12:00. <a class="alert-link" href="#">Vaata lähemalt</a>
+                            </div>
+							<!--_________ SPECIAL ALERT END _______-->
+							<!--_________ NEWS BEGIN ________-->
+							<div class="ibox float-e-margins">
+								<div class="ibox-title">
+									<h5>Uudised</h5>
+									<div class="ibox-tools">
+										<a class="collapse-link">
+											<i class="fa fa-chevron-up"></i>
+										</a>
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+											<i class="fa fa-wrench"></i>
+										</a>
+										<ul class="dropdown-menu dropdown-user">
+											<li><a href="#">Config option 1</a>
+											</li>
+											<li><a href="#">Config option 2</a>
+											</li>
+										</ul>
+										<a class="close-link">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<div class="">
+										<div class="faq-item">
+											<div class="row">
+												<div class="col-md-7">
+													<a data-toggle="collapse" href="#uudis1" class="faq-question">TTÜ teadlased said jälile igavese elu saladusele</a>
+													<small>Lisanud <strong>Evelin Jakovleva</strong> <i class="fa fa-clock-o"></i> Kolmapäev 14:40 - 24.06.2014</small>
+												</div>
+												<div class="col-md-3">
+													<span class="small font-bold">Kategooria</span>
+													<div class="tag-list">
+														<span class="tag-item">Teadus</span>
+														<span class="tag-item">Innovatsioon</span>
+													</div>
+												</div>
+												<div class="col-md-2 text-right">
+													<span class="small font-bold">Lisa järjehoidja </span><br/>
+													<i class="fa fa-bookmark"></i>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div id="uudis1" class="panel-collapse collapse ">
+														<div class="faq-answer">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, eius neque hic necessitatibus expedita, fugit at cum? Perspiciatis eos, et doloremque blanditiis! Blanditiis, adipisci sequi modi perspiciatis, consequuntur reiciendis tenetur dicta esse laudantium id! Deserunt modi, architecto. Cumque accusantium libero quisquam veniam, necessitatibus, assumenda quod nisi iusto eaque blanditiis quia nulla placeat ipsum dolores deleniti voluptate aliquid delectus suscipit explicabo fuga ad. Dolorem modi ipsam tempora perspiciatis nostrum quo consectetur veritatis quisquam dicta ipsa est, error, itaque placeat dolore praesentium nisi, natus nulla nihil maiores fuga soluta nam fugiat, sed repellat. Praesentium debitis iure placeat ducimus quia explicabo saepe cupiditate.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="faq-item">
+											<div class="row">
+												<div class="col-md-7">
+													<a data-toggle="collapse" href="#uudis2" class="faq-question">Mida toob kaasa haridusreform</a>
+													<small>Lisanud <strong>Sander Marandi</strong> <i class="fa fa-clock-o"></i> Esmaspäev 9:20 - 20.06.2014</small>
+												</div>
+												<div class="col-md-3">
+													<span class="small font-bold">Kategooria</span>
+													<div class="tag-list">
+														<span class="tag-item">õppimine</span>
+														<span class="tag-item">tudeng</span>
+													</div>
+												</div>
+												<div class="col-md-2 text-right">
+													<span class="small font-bold">Lisa järjehoidja </span><br/>
+													<i class="fa fa-bookmark"></i>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div id="uudis2" class="panel-collapse collapse ">
+														<div class="faq-answer">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, eius neque hic necessitatibus expedita, fugit at cum? Perspiciatis eos, et doloremque blanditiis! Blanditiis, adipisci sequi modi perspiciatis, consequuntur reiciendis tenetur dicta esse laudantium id! Deserunt modi, architecto. Cumque accusantium libero quisquam veniam, necessitatibus, assumenda quod nisi iusto eaque blanditiis quia nulla placeat ipsum dolores deleniti voluptate aliquid delectus suscipit explicabo fuga ad. Dolorem modi ipsam tempora perspiciatis nostrum quo consectetur veritatis quisquam dicta ipsa est, error, itaque placeat dolore praesentium nisi, natus nulla nihil maiores fuga soluta nam fugiat, sed repellat. Praesentium debitis iure placeat ducimus quia explicabo saepe cupiditate.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="faq-item">
+											<div class="row">
+												<div class="col-md-7">
+													<a data-toggle="collapse" href="#uudis3" class="faq-question">Mis on populaarseimad erialad TTÜ-s?</a>
+													<small>Lisanud <strong>Priit Tamm</strong> <i class="fa fa-clock-o"></i> Reede 17:40 - 19.06.2014</small>
+												</div>
+												<div class="col-md-3">
+													<span class="small font-bold">Kategooria</span>
+													<div class="tag-list">
+														<span class="tag-item">õppimine</span>
+														<span class="tag-item">tudeng</span>
+													</div>
+												</div>
+												<div class="col-md-2 text-right">
+													<span class="small font-bold">Lisa järjehoidja </span><br/>
+													<i class="fa fa-bookmark"></i>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div id="uudis3" class="panel-collapse collapse ">
+														<div class="faq-answer">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, eius neque hic necessitatibus expedita, fugit at cum? Perspiciatis eos, et doloremque blanditiis! Blanditiis, adipisci sequi modi perspiciatis, consequuntur reiciendis tenetur dicta esse laudantium id! Deserunt modi, architecto. Cumque accusantium libero quisquam veniam, necessitatibus, assumenda quod nisi iusto eaque blanditiis quia nulla placeat ipsum dolores deleniti voluptate aliquid delectus suscipit explicabo fuga ad. Dolorem modi ipsam tempora perspiciatis nostrum quo consectetur veritatis quisquam dicta ipsa est, error, itaque placeat dolore praesentium nisi, natus nulla nihil maiores fuga soluta nam fugiat, sed repellat. Praesentium debitis iure placeat ducimus quia explicabo saepe cupiditate.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--_________ NEWS END ________-->
+							<!--_________ EVENTS BEGIN ________-->
+							<div class="ibox float-e-margins">
+								<div class="ibox-title">
+									<h5>Sündmused</h5>
+									<div class="ibox-tools">
+										<a class="collapse-link">
+											<i class="fa fa-chevron-up"></i>
+										</a>
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+											<i class="fa fa-wrench"></i>
+										</a>
+										<ul class="dropdown-menu dropdown-user">
+											<li><a href="#">Config option 1</a>
+											</li>
+											<li><a href="#">Config option 2</a>
+											</li>
+										</ul>
+										<a class="close-link">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<div class="">
+										<div class="faq-item">
+											<div class="row">
+												<div class="col-md-7">
+													<a data-toggle="collapse" href="#sundmus1" class="faq-question">Jõulukaartide tellimine</a>
+													<small>Lisanud <strong>Evelin Jakovleva</strong> <i class="fa fa-clock-o"></i> Kolmapäev 14:40 - 24.06.2014</small>
+												</div>
+												<div class="col-md-3">
+													<span class="small font-bold">Kategooria</span>
+													<div class="tag-list">
+														<span class="tag-item">jõulud</span>
+													</div>
+												</div>
+												<div class="col-md-2 text-right">
+													<span class="small font-bold">Lisa järjehoidja </span><br/>
+													<i class="fa fa-bookmark"></i>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div id="sundmus1" class="panel-collapse collapse ">
+														<div class="faq-answer">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, eius neque hic necessitatibus expedita, fugit at cum? Perspiciatis eos, et doloremque blanditiis! Blanditiis, adipisci sequi modi perspiciatis, consequuntur reiciendis tenetur dicta esse laudantium id! Deserunt modi, architecto. Cumque accusantium libero quisquam veniam, necessitatibus, assumenda quod nisi iusto eaque blanditiis quia nulla placeat ipsum dolores deleniti voluptate aliquid delectus suscipit explicabo fuga ad. Dolorem modi ipsam tempora perspiciatis nostrum quo consectetur veritatis quisquam dicta ipsa est, error, itaque placeat dolore praesentium nisi, natus nulla nihil maiores fuga soluta nam fugiat, sed repellat. Praesentium debitis iure placeat ducimus quia explicabo saepe cupiditate.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="faq-item">
+											<div class="row">
+												<div class="col-md-7">
+													<a data-toggle="collapse" href="#sundmus2" class="faq-question">TTÜ meenete soodusmüük</a>
+													<small>Lisanud <strong>Sander Marandi</strong> <i class="fa fa-clock-o"></i> Esmaspäev 9:20 - 20.06.2014</small>
+												</div>
+												<div class="col-md-3">
+													<span class="small font-bold">Kategooria</span>
+													<div class="tag-list">
+														<span class="tag-item">turundus</span>
+														<span class="tag-item">tudeng</span>
+													</div>
+												</div>
+												<div class="col-md-2 text-right">
+													<span class="small font-bold">Lisa järjehoidja </span><br/>
+													<i class="fa fa-bookmark"></i>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div id="sundmus2" class="panel-collapse collapse ">
+														<div class="faq-answer">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, eius neque hic necessitatibus expedita, fugit at cum? Perspiciatis eos, et doloremque blanditiis! Blanditiis, adipisci sequi modi perspiciatis, consequuntur reiciendis tenetur dicta esse laudantium id! Deserunt modi, architecto. Cumque accusantium libero quisquam veniam, necessitatibus, assumenda quod nisi iusto eaque blanditiis quia nulla placeat ipsum dolores deleniti voluptate aliquid delectus suscipit explicabo fuga ad. Dolorem modi ipsam tempora perspiciatis nostrum quo consectetur veritatis quisquam dicta ipsa est, error, itaque placeat dolore praesentium nisi, natus nulla nihil maiores fuga soluta nam fugiat, sed repellat. Praesentium debitis iure placeat ducimus quia explicabo saepe cupiditate.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="faq-item">
+											<div class="row">
+												<div class="col-md-7">
+													<a data-toggle="collapse" href="#sundmus3" class="faq-question">Ideekonkurss "Tallinna Tehnikaülikool 100" </a>
+													<small>Lisanud <strong>Priit Tamm</strong> <i class="fa fa-clock-o"></i> Reede 17:40 - 19.06.2014</small>
+												</div>
+												<div class="col-md-3">
+													<span class="small font-bold">Kategooria</span>
+													<div class="tag-list">
+														<span class="tag-item">õppimine</span>
+														<span class="tag-item">tudeng</span>
+													</div>
+												</div>
+												<div class="col-md-2 text-right">
+													<span class="small font-bold">Lisa järjehoidja </span><br/>
+													<i class="fa fa-bookmark"></i>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-12">
+													<div id="sundmus3" class="panel-collapse collapse ">
+														<div class="faq-answer">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, eius neque hic necessitatibus expedita, fugit at cum? Perspiciatis eos, et doloremque blanditiis! Blanditiis, adipisci sequi modi perspiciatis, consequuntur reiciendis tenetur dicta esse laudantium id! Deserunt modi, architecto. Cumque accusantium libero quisquam veniam, necessitatibus, assumenda quod nisi iusto eaque blanditiis quia nulla placeat ipsum dolores deleniti voluptate aliquid delectus suscipit explicabo fuga ad. Dolorem modi ipsam tempora perspiciatis nostrum quo consectetur veritatis quisquam dicta ipsa est, error, itaque placeat dolore praesentium nisi, natus nulla nihil maiores fuga soluta nam fugiat, sed repellat. Praesentium debitis iure placeat ducimus quia explicabo saepe cupiditate.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--_________ EVENTS END ________-->
+						</div>
+						<!--________ MIDDLE COLUMN END ________-->
+						<!--________ RIGHT COLUMN BEGIN _________-->
+						<div class="col-lg-3">
+							<!--_________ FAVORITES BEGIN __________-->
+							<div class="ibox float-e-margins">
+								<div class="ibox-title">
+									<h5><i class="fa fa-bookmark"></i> Minu leheküljed</h5>
+									<div class="ibox-tools">
+										<a class="collapse-link">
+											<i class="fa fa-chevron-up"></i>
+										</a>
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+											<i class="fa fa-wrench"></i>
+										</a>
+										<ul class="dropdown-menu dropdown-user">
+											<li><a href="#">Config option 1</a>
+											</li>
+											<li><a href="#">Config option 2</a>
+											</li>
+										</ul>
+										<a class="close-link">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<div class="panel blank-panel">
+
+										<div class="panel-heading">
+
+											<div class="panel-options">
+
+												<ul class="nav nav-tabs">
+													<li class="active"><a data-toggle="tab" href="#tab-1">Lemmikud</a></li>
+													<li class=""><a data-toggle="tab" href="#tab-2">Viimased</a></li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="panel-body">
+
+											<div class="tab-content">
+												<div id="tab-1" class="tab-pane active">
+													<div class="m-b-xs"><a href="#">Tallinna linnavolikogu kiitis heaks maksukärped</a></div>
+													<div class="m-b-xs"><a href="#">TTÜ võõrustab põhjaveeuurijaid kõikidelt kontinentidelt</a></div>
+													<div class="m-b-xs"><a href="#">TTÜ-le esitati üle 11 000 sisseastumisavalduse, kasv oli aastaga 11%</a></div>
+													<div class="m-b-xs"><a href="#">Vilistlaste tenniseturniir 20. augustil, registreerimine 15. augustini</a></div>
+												</div>
+												<div id="tab-2" class="tab-pane">
+
+													<div class="m-b-xs"><a href="#">TTÜ-le esitati üle 11 000 sisseastumisavalduse, kasv oli aastaga 11%</a></div>
+													<div class="m-b-xs"><a href="#">Vilistlaste tenniseturniir 20. augustil, registreerimine 15. augustini</a></div>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!--_________ FAVORITES END ________-->
+							<!--_________ BIRTHDAYS BEGIN __________-->
+							<div class="ibox float-e-margins">
+								<div class="ibox-title">
+									<h5><i class="fa fa-birthday-cake"></i> Tänased sünnipäevad</h5>
+									<div class="ibox-tools">
+										<a class="collapse-link">
+											<i class="fa fa-chevron-up"></i>
+										</a>
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+											<i class="fa fa-wrench"></i>
+										</a>
+										<ul class="dropdown-menu dropdown-user">
+											<li><a href="#">Config option 1</a>
+											</li>
+											<li><a href="#">Config option 2</a>
+											</li>
+										</ul>
+										<a class="close-link">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<div class="m-b-xs"><i class="fa fa-user"></i> Priit Tamm</div>
+									<div><i class="fa fa-user"></i> Sander Marandi</div>
+								</div>
+							</div>
+							<!--_________ BIRTHDAYS END ________-->
+							<!--_________ MESSAGES BEGIN __________-->
+							<div class="ibox float-e-margins">
+								<div class="ibox-title">
+									<h5><i class="fa fa-comments"></i> Minu sõnumid</h5>
+									<div class="ibox-tools">
+										<a class="collapse-link">
+											<i class="fa fa-chevron-up"></i>
+										</a>
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+											<i class="fa fa-wrench"></i>
+										</a>
+										<ul class="dropdown-menu dropdown-user">
+											<li><a href="#">Config option 1</a>
+											</li>
+											<li><a href="#">Config option 2</a>
+											</li>
+										</ul>
+										<a class="close-link">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<div>
+										<h4>Messages <span class="badge badge-info pull-right">16</span></h4>
+										<div class="feed-element">
+											<a href="#" class="pull-left">
+												<img alt="image" class="img-circle" src="img/a1.jpg">
+											</a>
+											<div class="media-body">
+												<strong>Sander Marandi</strong><br>
+												Saadan sulle vajalikud dokumendid homme kulleriga ära. Jõuan ise natuke hiljem.
+												<br>
+												<small class="text-muted">Täna 16:42</small>
+											</div>
+										</div>
+										<div class="feed-element">
+											<a href="#" class="pull-left">
+												<img alt="image" class="img-circle" src="img/a3.jpg">
+
+											</a>
+											<div class="media-body">
+												<strong>Evelin Jakovleva</strong><br>
+												Panin kolmapäevase memo sulle maili.
+												<br>
+												<small class="text-muted">Eile 11:07</small>
+											</div>
+										</div>
+										<div class="feed-element">
+											<a href="#" class="pull-left">
+												<img alt="image" class="img-circle" src="img/a4.jpg">
+											</a>
+											<div class="media-body">
+												<strong>Priit Tamm</strong><br>
+												Ole tubli :)
+												<br>
+												<small class="text-muted">Kaks päeva tagasi 10:38</small>
+											</div>
+										</div>
+									</div>
+
+									<div class="m-t-md">
+										<h4>Vestlused</h4>
+										<div>
+											<ul class="list-group">
+												<li class="list-group-item">
+													<span class="badge badge-primary">35</span>
+													<strong>Kõik</strong>
+												</li>
+												<li class="list-group-item">
+													<span class="badge badge-success">16</span>
+													Üldine
+												</li>
+												<li class="list-group-item ">
+													<span class="badge badge-info">12</span>
+													Andmehaldus
+												</li>
+												<li class="list-group-item">
+													<span class="badge badge-warning">7</span>
+													IT
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--_________ MESSAGES END ________-->
+							<!--_________ PICTURES AND VIDEOS BEGIN ______-->
+							<div class="ibox float-e-margins">
+								<div class="ibox-title">
+									<h5><i class="fa fa-play-circle"></i> Pildid ja  videod</h5>
+									<div class="ibox-tools">
+										<a class="collapse-link">
+											<i class="fa fa-chevron-up"></i>
+										</a>
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+											<i class="fa fa-wrench"></i>
+										</a>
+										<ul class="dropdown-menu dropdown-user">
+											<li><a href="#">Config option 1</a>
+											</li>
+											<li><a href="#">Config option 2</a>
+											</li>
+										</ul>
+										<a class="close-link">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<figure>
+										<iframe width="100%" height="349" src="https://www.youtube.com/embed/rRAB047iefY" frameborder="0" allowfullscreen></iframe>
+									</figure>
+
+								</div>
+							</div>
+							<!--_________ PICTURES AND VIDEOS END ________-->
+						</div>
+						<!--_________ RIGHT COLUMN END ________-->
+					</div>
+				</div>
+			</div>
+			<!--________ CONTENT END______________-->
+			<!--________FOOTER BEGIN___________-->
+			<div class="footer">
+				<div class="pull-right">
+					Sul on vaba ruumi <strong>567MB</strong>
+				</div>
+				<div>
+					<strong>Copyright</strong> TTÜ &copy; 2014-2015
+				</div>
+			</div>
+			<!--________FOOTER END____________-->
+		</div>
+	</div>
+	<!--_________PLUGINS JS__________________ -->
+	<script src="js/plugins/fullcalendar/moment.min.js"></script>
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+	<!-- Custom and plugin javascript -->
+	<script src="js/inspinia.js"></script>
+	<script src="js/plugins/pace/pace.min.js"></script>
+
+	<!-- jQuery UI custom -->
+	<script src="js/jquery-ui.custom.min.js"></script>
+
+	<!-- iCheck -->
+	<script src="js/plugins/iCheck/icheck.min.js"></script>
+
+	<!-- Full Calendar -->
+	<script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+
+	<script>
+		//______________CALENDAR SCRIPT_________________
+		$(document).ready(function() {
+
+			$('.i-checks').iCheck({
+				checkboxClass: 'icheckbox_square-green',
+				radioClass: 'iradio_square-green',
+			});
+
+			/* initialize the external events
+	 -----------------------------------------------------------------*/
+
+
+			$('#external-events div.external-event').each(function() {
+
+				// store data so the calendar knows to render an event upon drop
+				$(this).data('event', {
+					title: $.trim($(this).text()), // use the element's text as the event title
+					stick: true // maintain when user navigates (see docs on the renderEvent method)
+				});
+
+				// make the event draggable using jQuery UI
+				$(this).draggable({
+					zIndex: 1111999,
+					revert: true,      // will cause the event to go back to its
+					revertDuration: 0  //  original position after the drag
+				});
+
+			});
+
+
+			/* initialize the calendar
+	 -----------------------------------------------------------------*/
+			var date = new Date();
+			var d = date.getDate();
+			var m = date.getMonth();
+			var y = date.getFullYear();
+
+			$('#calendar').fullCalendar({
+				header: {
+					left: 'prev,next today',
+					center: 'title',
+					right: 'month,agendaWeek,agendaDay'
+				},
+				editable: true,
+				// add event name to title attribute on mouseover
+				eventMouseover: function(event, jsEvent, view) {
+					if (view.name !== 'agendaDay') {
+						$(jsEvent.target).attr('title', event.title);
+					}
+				},
+				droppable: true, // this allows things to be dropped onto the calendar
+				drop: function() {
+					// is the "remove after drop" checkbox checked?
+					if ($('#drop-remove').is(':checked')) {
+						// if so, remove the element from the "Draggable Events" list
+						$(this).remove();
+					}
+				},
+				events: [
+					{
+						title: 'Sündmus kogu päev',
+						start: new Date(y, m, 1)
+					},
+					{
+						title: 'Mitmepäevane sündmus',
+						start: new Date(y, m, d-5),
+						end: new Date(y, m, d-2),
+					},
+					{
+						id: 999,
+						title: 'Korduv sündmus',
+						start: new Date(y, m, d-3, 16, 0),
+						allDay: false,
+					},
+					{
+						id: 999,
+						title: 'Korduv sündmus',
+						start: new Date(y, m, d+4, 16, 0),
+						allDay: false
+					},
+					{
+						title: 'Kohtumine',
+						start: new Date(y, m, d, 10, 30),
+						allDay: false
+					},
+					{
+						title: 'Lõuna',
+						start: new Date(y, m, d, 12, 0),
+						end: new Date(y, m, d, 14, 0),
+						allDay: false
+					},
+					{
+						title: 'Sünnipäev',
+						start: new Date(y, m, d+1, 19, 0),
+						end: new Date(y, m, d+1, 22, 30),
+						allDay: false
+					},
+					{
+						title: 'Link',
+						start: new Date(y, m, 28),
+						end: new Date(y, m, 29),
+						url: 'http://google.com/'
+					}
+				],
+			});
+
+
+		});
+
+	</script>
+
+</body>
+
+</html>
