@@ -95,7 +95,6 @@
 		<!-- Main scripts -->
 		<script src="js/jquery-2.1.1.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/handlebars.js"></script>
 		<script>
 			$(document).ready(function(){
 				//LOAD LOGIN CONTENT ACCORDING TO SELECTION BUTTON CLASS
@@ -151,51 +150,7 @@
 
 
 
-				//Handlebars templating
-				//THE DATA TO BE INSERTED
-				var data =
-					{ et:
-					 {
-						 title: "TTÜ Siseveeb",
-						 name: "nimi",
-						 pass: "salasõna",
-						 login: "Logi sisse"
-					 },
-					 en:
-					 {
-						 title: "TTU Intranet",
-						 name: "name",
-						 pass: "password",
-						 login: "login"
-					 },
-					}
-				;
-				//WHERE TO INSERT DATA
-				var test = $("#test").html();
-				//COMPILE THE DATA
-				var template = Handlebars.compile(test);
 
-				//INSERT DATA ACCORDING TO LANGUAGE PARAMETER
-				if ($("body").hasClass("et")) {
-					$(document.body).append(template (data.et));
-				}
-				else if ($("body").hasClass("en")) {
-					$(document.body).append(template (data.en));
-				}
-				//INSERT EST LANGUAGE DATA ACCORDING TO BUTTON PRESS
-				$(document).on("click","#login-est",function(){
-					$(document.body).empty();
-					$(document.body).removeClass("en");
-					$(document.body).addClass("et");
-					$(document.body).append(template (data.et));
-				});
-				//INSERT ENG LANGUAGE DATA ACCORDING TO BUTTON PRESS
-				$(document).on("click","#login-eng",function(){
-					$(document.body).empty();
-					$(document.body).removeClass("et");
-					$(document.body).addClass("en");
-					$(document.body).append(template (data.en));
-				});
 			});
 		</script>
 	</body>
