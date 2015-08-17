@@ -6261,6 +6261,11 @@ input:focus {
   font-family: "PF Centro Sans Pro Light", "Verdana", "Geneva", "sans-serif";
   color: #c9c9c9;
 }
+@media (max-width: 768px) {
+  #id-card-select {
+    display: none;
+  }
+}
 #calendar {
   width: 100%;
   margin: 0 auto;
