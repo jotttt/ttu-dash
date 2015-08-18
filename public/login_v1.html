@@ -22,26 +22,23 @@
 				<div class="m-b">
 					<img src="img/logo.png">
 				</div>
-				<span class="btn-group m-b pull-left">
-					<a id="uni-id-select" class="btn btn-xs btn-default" type="button">Uni-ID</a>
-					<a id="id-card-select" class="btn btn-xs btn-grey" type="button">ID-Kaart</a>
-					<a id="mobile-id-select" class="btn btn-xs btn-grey" type="button">Mobiil-ID</a>
-				</span>
-				<div class="btn-group pull-right m-b">
-					<a id="login-est" class="btn btn-xs btn-default">EST</a>
-					<a id="login-eng" class="btn btn-xs btn-grey">ENG</a>
-				</div>
 
 				<form class="m-t" role="form" action="index.html">
 					<!-- UNI-ID CONTENT IS LOADED HERE -->
 					<div id="login-content" class=""></div>
 					<!-- END UNI-ID CONTENT -->
-
-
-					<button type="submit" class="btn btn-primary block full-width m-b">Sisene</button>
-
-					<a href="#" style="margin-left: 25px;"><small>Unustasid salasõna?</small></a>
+					<span class="btn-group m-b pull-left">
+						<a id="uni-id-select" class="btn btn-xs btn-default" type="button">Uni-ID</a>
+						<a id="id-card-select" class="btn btn-xs btn-grey" type="button">ID-Kaart</a>
+						<a id="mobile-id-select" class="btn btn-xs btn-grey" type="button">Mobiil-ID</a>
+					</span>
 					<a data-toggle="modal" href="#modal-form" class="fa fa-question-circle pull-right text-muted" style="font-size: 21px;"></a>
+					<button type="submit" class="btn btn-primary block full-width m-b">Sisene</button>
+					<div class="btn-group pull-right m-b">
+						<a id="login-est" class="btn btn-xs btn-default">EST</a>
+						<a id="login-eng" class="btn btn-xs btn-grey">ENG</a>
+					</div>
+					<a href="#" style="margin-left: 70px;"><small>Unustasid salasõna?</small></a>
 				</form>
 				<p class="m-t row"> <small class="center-block col-xs-12">TTÜ siseveeb ver 0.1 &copy; 2015</small> </p>
 			</div>
@@ -150,6 +147,10 @@
 					$("#login-est").removeClass("btn-default").addClass("btn-grey");
 					$("#login-eng").addClass("btn-default").removeClass("btn-grey");
 				}); //end
+
+
+
+
 			});
 		</script>
 	</body>
