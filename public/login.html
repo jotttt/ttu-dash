@@ -10,7 +10,6 @@
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
 		<link href="css/animate.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 
@@ -98,60 +97,7 @@
 		<!-- Main scripts -->
 		<script src="js/jquery-2.1.1.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script>
-			$(document).ready(function(){
-				//LOAD LOGIN CONTENT ACCORDING TO SELECTION BUTTON CLASS
-				var loadLoginContent = function() {
-					$("#login-content").empty();
-					$("body").hide();
-					if ($("#uni-id-select").hasClass("btn-default")) {
-						$("#login-content").append("<div class='form-group'><input type='text' class='form-control' placeholder='Kasutajanimi'></div><div class='form-group'><input type='password' class='form-control' placeholder='Salasõna'></div>");
-					}
-					else if ($("#id-card-select").hasClass("btn-default")) {
-						$("#login-content").append("<div class='form-group'></div>");
-					}
-					else {
-						$("#login-content").append("<div class='form-group'><input type='tel' class='form-control' placeholder='Mobiiltelefoni number'></div>");
-					}
-					$("body").fadeIn();
-				}; //end load content
-
-				loadLoginContent();
-
-				//WHEN UNI-ID BUTTON IS PRESSED CHANGE TO ACTIVE AND LOAD CONTENT
-				$("#uni-id-select").click(function(){
-					$("#id-card-select").removeClass("btn-default").addClass("btn-grey");
-					$("#uni-id-select").addClass("btn-default").removeClass("btn-grey");
-					$("#mobile-id-select").removeClass("btn-default").addClass("btn-grey");
-					loadLoginContent();
-				}); //end
-				//WHEN ID-CARD BUTTON IS PRESSED CHANGE TO ACTIVE AND LOAD CONTENT
-				$("#id-card-select").click(function(){
-					$("#uni-id-select").removeClass("btn-default").addClass("btn-grey");
-					$("#id-card-select").addClass("btn-default").removeClass("btn-grey");
-					$("#mobile-id-select").removeClass("btn-default").addClass("btn-grey");
-					loadLoginContent();
-				}); //end
-				//WHEN MOBILE-ID BUTTON IS PRESSED CHANGE TO ACTIVE AND LOAD CONTENT
-				$("#mobile-id-select").click(function(){
-					$("#uni-id-select").removeClass("btn-default").addClass("btn-grey");
-					$("#id-card-select").removeClass("btn-default").addClass("btn-grey");
-					$("#mobile-id-select").removeClass("btn-grey").addClass("btn-default");
-					loadLoginContent();
-				}); //end
-
-				//WHEN EST IS PRESSED CHANGE TO ACTIVE AND LOAD LANGUAGE
-				$("#login-est").click(function(){
-					$("#login-eng").removeClass("btn-default").addClass("btn-grey");
-					$("#login-est").addClass("btn-default").removeClass("btn-grey");
-				}); //end
-				//WHEN ENG IS PRESSED CHANGE TO ACTIVE AND LOAD LANGUAGE
-				$("#login-eng").click(function(){
-					$("#login-est").removeClass("btn-default").addClass("btn-grey");
-					$("#login-eng").addClass("btn-default").removeClass("btn-grey");
-				}); //end
-			});
-		</script>
+		<script src="js/login_scripts.js"></script>
 	</body>
 
 </html>
