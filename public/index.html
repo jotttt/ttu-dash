@@ -31,13 +31,13 @@
 							<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
 								<i class="fa fa-reorder"></i>
 							</button>
-							<a href="#" class="navbar-brand">TTÜ</a>
+							<a href="#" class="navbar-brand"><div id="logo-minimal-w"></div></a>
 						</div>
 						<div class="navbar-collapse collapse" id="navbar">
 							<ul class="nav navbar-nav">
-								<form role="search" class="navbar-form-custom m-l-md" action="search_results.html">
+								<form role="search" class="navbar-form-custom" action="search_results.html">
 									<div class="form-group">
-										<input type="text" placeholder="Otsi siseveebist..." class="form-control" name="top-search" id="top-search">
+										<input type="text" placeholder="&#xF002; Otsi midagi..." class="form-control" name="top-search" id="top-search" style="font-family:Arial, FontAwesome; padding: 0px 30px">
 									</div>
 								</form>
 								<li class="dropdown">
@@ -88,6 +88,101 @@
 
 							</ul>
 							<ul class="nav navbar-top-links navbar-right">
+								<li class="dropdown">
+									<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" aria-expanded="false">
+										<i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+									</a>
+									<ul class="dropdown-menu dropdown-messages">
+										<li>
+											<div class="dropdown-messages-box">
+												<a href="profile.html" class="pull-left">
+													<i class="fa fa-envelope-o fa-3x"></i>
+												</a>
+												<div class="media-body">
+													<small class="pull-right">14.08.2015</small>
+													<strong>Eelarve lisad</strong><br>
+													<small class="text-muted">Margus Vooglaid</small>
+												</div>
+											</div>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<div class="dropdown-messages-box">
+												<a href="profile.html" class="pull-left">
+													<i class="fa fa-envelope-o fa-3x"></i>
+												</a>
+												<div class="media-body">
+													<small class="pull-right">12.08.2015</small>
+													<strong>Viiamne võimalus registreerida ennast tuleohutus- koolitusele </strong><br>
+													<small class="text-muted">Priit Tamm</small>
+												</div>
+											</div>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<div class="dropdown-messages-box">
+												<a href="profile.html" class="pull-left">
+													<i class="fa fa-envelope-o fa-3x"></i>
+												</a>
+												<div class="media-body">
+													<small class="pull-right">14.08.2015</small>
+													<strong>Huvitavat lugemist</strong><br>
+													<small class="text-muted">Sander Marandi</small>
+												</div>
+											</div>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<div class="text-center link-block">
+												<a href="mailbox.html">
+													<i class="fa fa-envelope"></i> <strong>Loe kõiki emaile</strong>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+										<i class="fa fa-bell"></i>  <span class="label label-primary">3</span>
+									</a>
+									<ul class="dropdown-menu dropdown-alerts">
+										<li>
+											<a href="mailbox.html">
+												<div>
+													<i class="fa fa-envelope fa-fw"></i> Sul on 3 uut sõnumit
+													<span class="pull-right text-muted small">19 minutit tagasi</span>
+												</div>
+											</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="profile.html">
+												<div>
+													<i class="fa fa-calendar-o fa-fw"></i> Täna plaanis 2 sündmust
+													<span class="pull-right text-muted small">56 minutit tagasi</span>
+												</div>
+											</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="grid_options.html">
+												<div>
+													<i class="fa fa-upload fa-fw"></i> Kõik uuendused tehtud
+													<span class="pull-right text-muted small">4h tagasi</span>
+												</div>
+											</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<div class="text-center link-block">
+												<a href="notifications.html">
+													<strong>Vaata kõiki teavitusi</strong>
+													<i class="fa fa-angle-right"></i>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</li>
 								<li>
 									<a href="login.html">
 										<i class="fa fa-sign-out"></i>
@@ -164,46 +259,41 @@
 												<tr>
 													<th>Aeg</th>
 													<th>Nimi</th>
-													<th>Staatus</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td>11.08.2015</td>
+													<td><span class="label label-warning">04.12.2015</span></td>
 													<td>Meeskonnatöö koolitus I tase</td>
-													<td><span class="label label-warning">täis</span></td>
 												</tr>
 												<tr>
-													<td>01.10.2015</td>
+													<td><span class="label label-info">18.12.2015</span></td>
 													<td>Meeskonnatöö koolitus II tase</td>
-													<td><span class="label label-info">vaba</span></td>
 												</tr>
 												<tr>
-													<td>11.11.2015</td>
+													<td><span class="label label-danger">23.12.2015</span></td>
 													<td>Ristmeedia koolitus </td>
-													<td><span class="label label-danger">tühistatud</span></td>
 												</tr>
 												<tr>
-													<td>04.12.2015</td>
+													<td><span class="label label-danger">24.12.2015</span></td>
 													<td>Excel edasijõudnutele</td>
-													<td><span class="label label-danger">tühistatud</span></td>
 												</tr>
 												<tr>
-													<td>11.12.2015</td>
+													<td><span class="label label-warning">27.12.2015</span></td>
 													<td>Avalik suhtlus I</td>
-													<td><span class="label label-warning">täis</span></td>
 												</tr>
 												<tr>
-													<td>15.12.2015</td>
+													<td><span class="label label-info">29.12.2015</span></td>
 													<td>Word edasijõudnutele</td>
-													<td><span class="label label-info">vaba</span></td>
 												</tr>
 												<tr>
-													<td>17.12.2015</td>
+													<td><span class="label label-info">30.12.2015</span></td>
 													<td>Ristmeedia koolitus</td>
-													<td><span class="label label-info">vaba</span></td>
 												</tr>
 											</tbody>
+											<tfoot>
+												<tr><td></td><td><button type="button" class="label label-white pull-right m-t" data-container="body" data-toggle="popover" data-placement="top" data-content="<span class='m-r'><span class='label label-info'>&nbsp;</span> - vaba </span><span class='m-r'><span class='label label-warning'>&nbsp;</span> - täis </span><span><span class='label label-danger'>&nbsp;</span> - tühist. </span>">Legend</button></td></tr>
+											</tfoot>
 										</table>
 									</div>
 								</div>
@@ -256,8 +346,8 @@
 							<!--________ MIDDLE COLUMN BEGIN _______-->
 							<div class="col-lg-6">
 								<!--_________ SPECIAL ALERT BEGIN ______-->
-								<div class="alert alert-danger alert-dismissable">
-									<button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+								<div id="ttu-alert" class="alert alert-danger alert-dismissable animated fadeInDown">
+									<button aria-hidden="true" data-dismiss="alert" class="close animation_select" type="button" data-animation="fadeOutUp">×</button>
 									<h4>Teade</h4>VI korpuses on elektrikatkestus 05.12.2014 10:00-12:00. <a class="alert-link" href="#">Vaata lähemalt</a>
 								</div>
 								<!--_________ SPECIAL ALERT END _______-->
@@ -378,34 +468,6 @@
 													</div>
 												</div>
 											</div>
-										</div>
-									</div>
-								</div>
-								<!--_________ NEWS END ________-->
-								<!--_________ EVENTS BEGIN ________-->
-								<div class="ibox float-e-margins">
-									<div class="ibox-title">
-										<h5>Sündmused</h5>
-										<div class="ibox-tools">
-											<a class="collapse-link">
-												<i class="fa fa-chevron-up"></i>
-											</a>
-											<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-												<i class="fa fa-wrench"></i>
-											</a>
-											<ul class="dropdown-menu dropdown-user">
-												<li><a href="#">Config option 1</a>
-												</li>
-												<li><a href="#">Config option 2</a>
-												</li>
-											</ul>
-											<a class="close-link">
-												<i class="fa fa-times"></i>
-											</a>
-										</div>
-									</div>
-									<div class="ibox-content">
-										<div class="">
 											<div class="faq-item">
 												<div class="row">
 													<div class="col-md-7">
@@ -501,7 +563,7 @@
 										</div>
 									</div>
 								</div>
-								<!--_________ EVENTS END ________-->
+								<!--_________ NEWS END ________-->
 							</div>
 							<!--________ MIDDLE COLUMN END ________-->
 							<!--________ RIGHT COLUMN BEGIN _________-->
@@ -536,7 +598,7 @@
 												<div class="panel-options">
 
 													<ul class="nav nav-tabs">
-														<li class="active"><a data-toggle="tab" href="#tab-1">Lemmikud</a></li>
+														<li class="active"><a data-toggle="tab" href="#tab-1">Kiirviited</a></li>
 														<li class=""><a data-toggle="tab" href="#tab-2">Viimased</a></li>
 													</ul>
 												</div>
@@ -546,15 +608,15 @@
 
 												<div class="tab-content">
 													<div id="tab-1" class="tab-pane active">
-														<div class="m-b-xs"><a href="#">Tallinna linnavolikogu kiitis heaks maksukärped</a></div>
-														<div class="m-b-xs"><a href="#">TTÜ võõrustab põhjaveeuurijaid kõikidelt kontinentidelt</a></div>
-														<div class="m-b-xs"><a href="#">TTÜ-le esitati üle 11 000 sisseastumisavalduse, kasv oli aastaga 11%</a></div>
-														<div class="m-b-xs"><a href="#">Vilistlaste tenniseturniir 20. augustil, registreerimine 15. augustini</a></div>
+														<div class="m-b-sm b-b"><a href="#">Tallinna linnavolikogu kiitis heaks maksukärped</a></div>
+														<div class="m-b-sm b-b"><a href="#">TTÜ võõrustab põhjaveeuurijaid kõikidelt kontinentidelt</a></div>
+														<div class="m-b-sm b-b"><a href="#">TTÜ-le esitati üle 11 000 sisseastumisavalduse, kasv oli aastaga 11%</a></div>
+														<div class="m-b-sm b-b"><a href="#">Vilistlaste tenniseturniir 20. augustil, registreerimine 15. augustini</a></div>
 													</div>
 													<div id="tab-2" class="tab-pane">
 
-														<div class="m-b-xs"><a href="#">TTÜ-le esitati üle 11 000 sisseastumisavalduse, kasv oli aastaga 11%</a></div>
-														<div class="m-b-xs"><a href="#">Vilistlaste tenniseturniir 20. augustil, registreerimine 15. augustini</a></div>
+														<div class="m-b-xs b-b"><a href="#">TTÜ-le esitati üle 11 000 sisseastumisavalduse, kasv oli aastaga 11%</a></div>
+														<div class="m-b-xs b-b"><a href="#">Vilistlaste tenniseturniir 20. augustil, registreerimine 15. augustini</a></div>
 													</div>
 												</div>
 
@@ -592,91 +654,7 @@
 									</div>
 								</div>
 								<!--_________ BIRTHDAYS END ________-->
-								<!--_________ MESSAGES BEGIN __________-->
-								<div class="ibox float-e-margins">
-									<div class="ibox-title">
-										<h5><i class="fa fa-comments"></i> Minu sõnumid</h5>
-										<div class="ibox-tools">
-											<a class="collapse-link">
-												<i class="fa fa-chevron-up"></i>
-											</a>
-											<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-												<i class="fa fa-wrench"></i>
-											</a>
-											<ul class="dropdown-menu dropdown-user">
-												<li><a href="#">Config option 1</a>
-												</li>
-												<li><a href="#">Config option 2</a>
-												</li>
-											</ul>
-											<a class="close-link">
-												<i class="fa fa-times"></i>
-											</a>
-										</div>
-									</div>
-									<div class="ibox-content">
-										<div>
-											<h4>Messages <span class="badge badge-info pull-right">16</span></h4>
-											<div class="feed-element">
-												<a href="#" class="pull-left">
-													<img alt="image" class="img-circle" src="img/a1.jpg">
-												</a>
-												<div class="media-body">
-													<strong>Sander Marandi</strong>
-													<br> Saadan sulle vajalikud dokumendid homme kulleriga ära. Jõuan ise natuke hiljem.
-													<br>
-													<small class="text-muted">Täna 16:42</small>
-												</div>
-											</div>
-											<div class="feed-element">
-												<a href="#" class="pull-left">
-													<img alt="image" class="img-circle" src="img/a3.jpg">
-
-												</a>
-												<div class="media-body">
-													<strong>Evelin Jakovleva</strong>
-													<br> Panin kolmapäevase memo sulle maili.
-													<br>
-													<small class="text-muted">Eile 11:07</small>
-												</div>
-											</div>
-											<div class="feed-element">
-												<a href="#" class="pull-left">
-													<img alt="image" class="img-circle" src="img/a4.jpg">
-												</a>
-												<div class="media-body">
-													<strong>Priit Tamm</strong>
-													<br> Ole tubli :)
-													<br>
-													<small class="text-muted">Kaks päeva tagasi 10:38</small>
-												</div>
-											</div>
-										</div>
-
-										<div class="m-t-md">
-											<h4>Vestlused</h4>
-											<div>
-												<ul class="list-group">
-													<li class="list-group-item">
-														<span class="badge badge-primary">35</span>
-														<strong>Kõik</strong>
-													</li>
-													<li class="list-group-item">
-														<span class="badge badge-success">16</span> Üldine
-													</li>
-													<li class="list-group-item ">
-														<span class="badge badge-info">12</span> Andmehaldus
-													</li>
-													<li class="list-group-item">
-														<span class="badge badge-warning">7</span> IT
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!--_________ MESSAGES END ________-->
-								<!--_________ PICTURES AND VIDEOS BEGIN ______-->
+								<!--_PICTURES AND VIDEOS BEGIN ______-->
 								<div class="ibox float-e-margins">
 									<div class="ibox-title">
 										<h5><i class="fa fa-play-circle"></i> Pildid ja  videod</h5>
@@ -732,7 +710,7 @@
 								<li class="active"><a data-toggle="tab" href="#tab-11" aria-expanded="true">
 									Valik 1
 									</a>
-									</li>
+								</li>
 								<li><a data-toggle="tab" href="#tab-22">
 									Valik 2
 									</a>
@@ -754,25 +732,25 @@
 									</div>
 									<div>
 										<ul  class="sidebar-list">
-										<li>
-											<a href="#">
-												<div class="pull-left text-center m-r">
-													<i class="fa fa-file-text-o fa-3x"></i>
-												</div>
-												<div class="m-l">Puhkuste graafiku koostamise juhend ja soovitused tuleviku mudeli laiendamiseks.pdf</div>
-												<div class="small text-muted pull-right">Lisatud 15.02.2015</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<div class="pull-left text-center m-r">
-													<i class="fa fa-file-text-o fa-3x"></i>
-												</div>
-												<div class="m-l">Majandusaruande kolmas lisa ja seletused.pdf</div>
-												<div class="small text-muted pull-right">Lisatud 12.06.2014</div>
-											</a>
-										</li>
-									</ul>
+											<li class="">
+												<a href="#" class="">
+													<div class="pull-left text-center m-r">
+														<i class="fa fa-file-text-o fa-3x"></i>
+													</div>
+													<div class="m-l m-b-xs">Puhkuste graafiku koostamise juhend ja soovitused tuleviku mudeli laiendamiseks.pdf</div>
+													<div class="small text-muted pull-right ">Lisatud 15.02.2015</div>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<div class="pull-left text-center m-r">
+														<i class="fa fa-file-text-o fa-3x"></i>
+													</div>
+													<div class="m-l m-b-xs">Majandusaruande kolmas lisa ja seletused.pdf</div>
+													<div class="small text-muted pull-right">Lisatud 12.06.2014</div>
+												</a>
+											</li>
+										</ul>
 									</div>
 
 								</div>
@@ -881,13 +859,13 @@
 								<div id="tab-3" class="tab-pane">
 
 									<div class="sidebar-title">
-										<h3><i class="fa fa-gears"></i> Settings</h3>
-										<small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+										<h3><i class="fa fa-gears"></i> Sätted</h3>
+										<small><i class="fa fa-tim"></i> Siin saad muuta oma põhisätteid</small>
 									</div>
 
 									<div class="setings-item">
 										<span>
-											Show notifications
+											Näita teateid
 										</span>
 										<div class="switch">
 											<div class="onoffswitch">
@@ -901,7 +879,7 @@
 									</div>
 									<div class="setings-item">
 										<span>
-											Disable Chat
+											Keela messenger
 										</span>
 										<div class="switch">
 											<div class="onoffswitch">
@@ -915,7 +893,7 @@
 									</div>
 									<div class="setings-item">
 										<span>
-											Enable history
+											Luba ajaloo salvestus
 										</span>
 										<div class="switch">
 											<div class="onoffswitch">
@@ -929,7 +907,7 @@
 									</div>
 									<div class="setings-item">
 										<span>
-											Show charts
+											Näita tabeleid
 										</span>
 										<div class="switch">
 											<div class="onoffswitch">
@@ -943,7 +921,7 @@
 									</div>
 									<div class="setings-item">
 										<span>
-											Offline users
+											Kasutaja teavitused
 										</span>
 										<div class="switch">
 											<div class="onoffswitch">
@@ -957,7 +935,7 @@
 									</div>
 									<div class="setings-item">
 										<span>
-											Global search
+											Globaalne otsing
 										</span>
 										<div class="switch">
 											<div class="onoffswitch">
@@ -971,7 +949,7 @@
 									</div>
 									<div class="setings-item">
 										<span>
-											Update everyday
+											Uuenda igapäev
 										</span>
 										<div class="switch">
 											<div class="onoffswitch">
@@ -984,9 +962,9 @@
 										</div>
 									</div>
 									<div class="sidebar-content">
-										<h4>Settings</h4>
+										<h4>Sätted</h4>
 										<div class="small">
-											I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry. And typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia doloremque ducimus, iste cum molestiae unde recusandae dolorem necessitatibus, quod? Pariatur officia omnis aperiam doloribus, impedit ipsa laborum provident accusamus quos obcaecati mollitia beatae. Placeat, totam, fugiat. Ad architecto repudiandae, non.
 										</div>
 									</div>
 								</div>
@@ -997,6 +975,88 @@
 					</div>
 				</div>
 			</div>
+			<!--_________ SMALL CHAT ________-->
+			<div class="small-chat-box fadeInRight animated">
+
+				<div class="heading" draggable="true">
+					<small class="chat-date pull-right">
+						02.19.2015
+					</small>
+					Messenger
+				</div>
+
+				<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 234px;"><div class="content" style="overflow: hidden; width: auto; height: 234px;">
+
+					<div class="left">
+						<div class="author-name">
+							Sander Marandi <small class="chat-date">
+							10:02
+							</small>
+						</div>
+						<div class="chat-message active">
+							Lorem ipsum dolor sit amet, consectetur.
+						</div>
+
+					</div>
+					<div class="right">
+						<div class="author-name">
+							Priit Tamm
+							<small class="chat-date">
+								11:24
+							</small>
+						</div>
+						<div class="chat-message">
+							Lorem ipsum dolor.
+						</div>
+					</div>
+					<div class="left">
+						<div class="author-name">
+							Sander Marandi
+							<small class="chat-date">
+								12:45
+							</small>
+						</div>
+						<div class="chat-message active">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur.
+						</div>
+					</div>
+					<div class="right">
+						<div class="author-name">
+							Priit Tamm
+							<small class="chat-date">
+								13:24
+							</small>
+						</div>
+						<div class="chat-message">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam asperiores repudiandae, cumque repellendus reprehenderit voluptates, neque, praesentium aliquam ducimus non iure!
+						</div>
+					</div>
+					<div class="left">
+						<div class="author-name">
+							Sander Marandi
+							<small class="chat-date">
+								14:45
+							</small>
+						</div>
+						<div class="chat-message active">
+							Lorem ipsum dolor sit amet, consectetur.
+						</div>
+					</div>
+					</div><div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.4; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+				<div class="form-chat">
+					<div class="input-group input-group-sm"><input type="text" class="form-control"> <span class="input-group-btn"> <button class="btn btn-primary" type="button">Send
+						</button> </span></div>
+				</div>
+
+			</div>
+			<div id="small-chat">
+				<span class="badge badge-warning pull-right">5</span>
+				<a class="open-small-chat">
+					<i class="fa fa-comments"></i>
+
+				</a>
+			</div>
+			<!--_________ END SMALL CHAT ________-->
 		</div>
 		<!--_________PLUGINS JS__________________ -->
 		<script src="js/plugins/fullcalendar/moment.min.js"></script>
@@ -1021,6 +1081,18 @@
 		<script>
 			//______________CALENDAR SCRIPT_________________
 			$(document).ready(function () {
+
+				/*$('.animation_select').click( function(){
+                $('#ttu-alert').removeAttr('class').attr('class', '');
+                var animation = $(this).attr("data-animation");
+                $('#ttu-alert').addClass('animated');
+                $('#ttu-alert').addClass(animation);
+                return false;
+            });*/
+
+
+
+
 
 				$('.i-checks').iCheck({
 					checkboxClass: 'icheckbox_square-green',
@@ -1124,7 +1196,7 @@
 						}
 					],
 				});
-			});
+			}); //end
 		</script>
 	</body>
 </html>
