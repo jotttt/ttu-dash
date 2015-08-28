@@ -1,4 +1,3 @@
-/*jshint -W117 */
 $(document).ready(function(){
 	//FUNCTION THAT CHECKS IF USER IS USING MOBILE DEVICE
 	window.mobilecheck = function() {
@@ -8,25 +7,20 @@ $(document).ready(function(){
 	}
 	//IF MOBILE DEVICE, DONT SHOW ID-CARD BUTTON
 	if (window.mobilecheck() === true) {
-		$("#id-card-select").hide();
+		$("#id-card-select").hide()
 	}
 	//LOAD LOGIN CONTENT ACCORDING TO SELECTION BUTTON CLASS
 	var loadLoginContent = function() {
+		$("#login-content").empty();
 		$("body").hide();
 		if ($("#uni-id-select").hasClass("btn-default")) {
-			$("#login-content-uni-id").removeClass("hidden").addClass("show");
-			$("#login-content-id-card").removeClass("show").addClass("hidden");
-			$("#login-content-mobile-id").removeClass("show").addClass("hidden");
+			$("#login-content").append("<div class='form-group'><input type='text' class='form-control' placeholder='Kasutajanimi'></div><div class='form-group'><input type='password' class='form-control' placeholder='Salasõna'></div>");
 		}
 		else if ($("#id-card-select").hasClass("btn-default")) {
-			$("#login-content-id-card").removeClass("hidden").addClass("show");
-			$("#login-content-uni-id").removeClass("show").addClass("hidden");
-			$("#login-content-mobile-id").removeClass("show").addClass("hidden");
+			$("#login-content").append("<div class='form-group'></div>");
 		}
 		else {
-			$("#login-content-mobile-id").removeClass("hidden").addClass("show");
-			$("#login-content-id-card").removeClass("show").addClass("hidden");
-			$("#login-content-uni-id").removeClass("show").addClass("hidden");
+			$("#login-content").append("<div class='form-group'><input type='tel' class='form-control' placeholder='Mobiiltelefoni number'></div>");
 		}
 		$("body").fadeIn();
 	}; //end load content
@@ -65,22 +59,4 @@ $(document).ready(function(){
 		$("#login-est").removeClass("btn-default").addClass("btn-grey");
 		$("#login-eng").addClass("btn-default").removeClass("btn-grey");
 	}); //end
-
-	//ERROR PANEEL
-	toastr.options = {
-		"closeButton": true,
-		"debug": true,
-		"progressBar": false,
-		"positionClass": "toast-top-center",
-		"onclick": null,
-		"showDuration": "400",
-		"hideDuration": "1000",
-		"timeOut": "7000",
-		"extendedTimeOut": "1000",
-		"showEasing": "swing",
-		"hideEasing": "linear",
-		"showMethod": "fadeIn",
-		"hideMethod": "fadeOut"
-	}
-	toastr.success('See on teade serveri poolt');
 });
