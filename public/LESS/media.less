@@ -1,5 +1,6 @@
 // main: style.less
 @media (min-width: 1200px) {
+
 	.navbaar-collapse.collapse {
 		display: block!important;
 		height: auto!important;
@@ -24,150 +25,158 @@
 }
 @media (max-width: 1199px) {
 	//NAVBAR
+	.nav li .profile-element {
+		margin: 0;
+		padding: 12px 0px;
+
+	}
+	.nav li a {
+		padding: 15px 10px 10px 10px;
+	}
 	.navbar-form-custom {
 		display: none;
 	}
 	.navbar-toggle {
 
 	}
-	.top-navigation .navbar-right {
+	.navbar-right {
 		margin-right: 0px;
 		li {
-			display: none;
-
+			.show-icon	{
+				display: inline-block;
+			}
+			a.count-info {
+				display: none;
+			}
 		}
-		li.show-icon	{
+	}
+		// TTÜ ALERTS
+		#ttu-alert-desktop {
+			display:none;
+		}
+	}
+	@media (min-width: 768px) {
+		#page-wrapper {
+			position: inherit;
+			margin: 0 0 0 @sidebar-width;
+			min-height: 1200px;
+		}
+		.navbar-form {
+			float: left;
+			height: 30px;
+			padding: 0 0 0 0px;
+			margin: 10px 20px 0;
+			width: 200px;
+			display: inline-table;
+		}
+		.navbar-static-side {
+			z-index: 2001;
+			position: absolute;
+			width: @sidebar-width;
+		}
+
+		.navbar-top-links .dropdown-messages,
+		.navbar-top-links .dropdown-tasks,
+		.navbar-top-links .dropdown-alerts {
+			margin-left: auto;
+		}
+	}
+
+	@media (max-width: 768px) {
+
+		#page-wrapper {
+			position: inherit;
+			margin: 0 0 0 0px;
+			min-height: 1000px;
+		}
+
+		.body-small .navbar-static-side {
+			display: none;
+			z-index: 2001;
+			position: absolute;
+			width: 70px;
+		}
+
+		.body-small.mini-navbar .navbar-static-side {
+			display: block;
+		}
+
+		.lock-word {
+			display: none;
+		}
+
+		.navbar-header {
+			display: inline;
+			float: left;
+		}
+
+		.sidebard-panel {
+			z-index: 2;
+			position: relative;
+			width: auto;
+			min-height: 100% !important;
+		}
+
+		.sidebar-content .wrapper {
+			padding-right: 0px;
+			z-index: 1;
+		}
+
+		.fixed-sidebar.body-small .navbar-static-side {
+			display: none;
+			z-index: 2001;
+			position: fixed;
+			width: @sidebar-width;
+		}
+
+		.fixed-sidebar.body-small.mini-navbar .navbar-static-side {
+			display: block;
+		}
+
+		.ibox-tools {
+			float: none;
+			text-align: right;
+			display: block;
+		}
+
+	}
+
+	@media (max-width: 350px) {
+
+		.timeline-item .date {
+			text-align: left;
+			width: 110px;
+			position: relative;
+			padding-top: 30px;
+		}
+
+		.timeline-item .date i {
+			position: absolute;
+			top: 0;
+			left: 15px;
+			padding: 5px;
+			width: 30px;
+			text-align: center;
+			border: 1px solid @border-color;
+			background: #f8f8f8;
+		}
+
+		.timeline-item .content {
+			border-left: none;
+			border-top: 1px solid @border-color;
+			padding-top: 10px;
+			min-height: 100px;
+		}
+
+		.nav.navbar-top-links li.dropdown {
+			display: none;
+		}
+
+		.ibox-tools {
+			float: none;
+			text-align: left;
 			display: inline-block;
 		}
-	}
 
-	// TTÜ ALERTS
-	#ttu-alert-desktop {
-		display:none;
 	}
-}
-@media (min-width: 768px) {
-	#page-wrapper {
-		position: inherit;
-		margin: 0 0 0 @sidebar-width;
-		min-height: 1200px;
-	}
-	.navbar-form {
-		float: left;
-		height: 30px;
-		padding: 0 0 0 0px;
-		margin: 10px 20px 0;
-		width: 200px;
-		display: inline-table;
-	}
-	.navbar-static-side {
-		z-index: 2001;
-		position: absolute;
-		width: @sidebar-width;
-	}
-
-	.navbar-top-links .dropdown-messages,
-	.navbar-top-links .dropdown-tasks,
-	.navbar-top-links .dropdown-alerts {
-		margin-left: auto;
-	}
-}
-
-@media (max-width: 768px) {
-
-	#page-wrapper {
-		position: inherit;
-		margin: 0 0 0 0px;
-		min-height: 1000px;
-	}
-
-	.body-small .navbar-static-side {
-		display: none;
-		z-index: 2001;
-		position: absolute;
-		width: 70px;
-	}
-
-	.body-small.mini-navbar .navbar-static-side {
-		display: block;
-	}
-
-	.lock-word {
-		display: none;
-	}
-
-	.navbar-header {
-		display: inline;
-		float: left;
-	}
-
-	.sidebard-panel {
-		z-index: 2;
-		position: relative;
-		width: auto;
-		min-height: 100% !important;
-	}
-
-	.sidebar-content .wrapper {
-		padding-right: 0px;
-		z-index: 1;
-	}
-
-	.fixed-sidebar.body-small .navbar-static-side {
-		display: none;
-		z-index: 2001;
-		position: fixed;
-		width: @sidebar-width;
-	}
-
-	.fixed-sidebar.body-small.mini-navbar .navbar-static-side {
-		display: block;
-	}
-
-	.ibox-tools {
-		float: none;
-		text-align: right;
-		display: block;
-	}
-
-}
-
-@media (max-width: 350px) {
-
-	.timeline-item .date {
-		text-align: left;
-		width: 110px;
-		position: relative;
-		padding-top: 30px;
-	}
-
-	.timeline-item .date i {
-		position: absolute;
-		top: 0;
-		left: 15px;
-		padding: 5px;
-		width: 30px;
-		text-align: center;
-		border: 1px solid @border-color;
-		background: #f8f8f8;
-	}
-
-	.timeline-item .content {
-		border-left: none;
-		border-top: 1px solid @border-color;
-		padding-top: 10px;
-		min-height: 100px;
-	}
-
-	.nav.navbar-top-links li.dropdown {
-		display: none;
-	}
-
-	.ibox-tools {
-		float: none;
-		text-align: left;
-		display: inline-block;
-	}
-
-}
 

@@ -181,6 +181,8 @@ video {
 
 .wrapper-content {
 	padding: 20px 10px 40px;
+	min-height: 1000px; //added
+
 }
 
 #page-wrapper {
@@ -211,7 +213,14 @@ ul.unstyled, ol.unstyled {
 	list-style: none outside none;
 	margin-left: 0;
 }
-
+.medium-icon {
+	font-size: 20px;
+	line-height: 17px;
+	margin: 0px 10px 2px 0px;
+	border: 3px solid @lighter-grey;
+	padding: 2px 0.4em 2px 0.6em;
+	color: @cherry;
+}
 .big-icon {
 	font-size: 160px;
 	color: #e5e6e7;
@@ -473,7 +482,7 @@ img.circle-border {
 
 .breadcrumb {
 	background-color: #ffffff;
-	padding: 0;
+	padding: 10px 0px;
 	margin-bottom: 0;
 }
 
@@ -791,12 +800,14 @@ table.table-mail tr td {
 .text-danger {
 	color: @red;
 }
-
+.text-black {
+	color: #000000;
+}
 .text-muted {
 	color: @grey;
 }
-.text-lightest-gray {
-	color: @lightest-gray;
+.text-lighter-grey {
+	color: @lighter-grey;
 }
 
 .simple_tag {
