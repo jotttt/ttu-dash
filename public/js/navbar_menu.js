@@ -63,6 +63,7 @@ $(function(){
 				var height = ($(this).position()).top - 16;
 				var width = $(this).width() + 32;
 				$(this).parent().nextUntil('.level-2').css("left",width).css("top",height).show();
+
 		});
 		//HIDE LEVEL 3 ELEMENT
 		// hide on lvl 3 element box mouse out

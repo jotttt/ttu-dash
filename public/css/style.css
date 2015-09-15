@@ -122,7 +122,7 @@ h5 {
   color: #676a6c;
   white-space: normal;
 }
-a.active:hover {
+li.level-2 a:hover {
   border-bottom: 1px solid #870042;
 }
 .dropdown-menu-large .l3 {
@@ -130,6 +130,9 @@ a.active:hover {
   background: white;
   border: 1px solid #e8e8e9;
   padding: 15px 20px 15px 10px;
+  width: auto;
+  white-space: nowrap;
+  z-index: 999;
 }
 .dropdown-menu-large .l3:after,
 .dropdown-menu-large .l3:before {
@@ -3718,7 +3721,7 @@ table.table-mail tr td {
 }
 /* BACKGROUNDS */
 .gray-bg {
-  background-color: #e8e8e9;
+  background-color: #fcfcfc;
 }
 .white-bg {
   background-color: #ffffff;
