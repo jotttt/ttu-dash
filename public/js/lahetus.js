@@ -1,11 +1,30 @@
 /*jshint -W117 */
 $(document).ready(function(){
+	// ADD NEW EXPENDITURE LINE
+	$("#expenditure-new").after("<p>Tere</p>");
+	// SHOW/HIDE EXPENDITURE SECTION
+	$("#expenditure").show();
+	$("#expenditure-yes").click(function(){
+		console.log("tere");
+		$("#expenditure-yes").addClass("btn-default").removeClass("btn-white");
+		$("#expenditure-no").addClass("btn-white").removeClass("btn-default");
+		$("#expenditure").fadeIn("slow").show();
+	});
+	$("#expenditure-no").click(function(){
+		$("#expenditure-no").addClass("btn-default").removeClass("btn-white");
+		$("#expenditure-yes").addClass("btn-white").removeClass("btn-default");
+		$("#expenditure").fadeOut("slow");
+	});
+
+
+
+
 	// CHECKBOX PLUGIN
-	$('input').iCheck({
+	/*$('input').iCheck({
 					checkboxClass: 'icheckbox_square-grey',
 					radioClass: 'iradio_square-grey',
 					increaseArea: '20%' // optional
-				});
+				});*/
 	// END CHECKBOX PLUGIN
 	//DATEPICKER PLUGIN
 	$.fn.datepicker.defaults.format = 'dd-mm-yyyy';
@@ -45,9 +64,9 @@ $(document).ready(function(){
 
 	// 2ND BLOCK
 	$('#destination').editable({
-        type: 'text',
+		type: 'text',
 		url: '/post',
-    });
+	});
 	$('#organization').editable({
 		type: 'text',
 		url: '/post',
@@ -57,29 +76,46 @@ $(document).ready(function(){
 		url: '/post',
 	});
 	$('#transportation').editable({
-       pk: 1,
-       limit: 3,
-       source: [
-        {value: 1, text: 'auto'},
-        {value: 2, text: 'buss'},
-        {value: 3, text: 'lennuk'},
-        {value: 4, text: 'laev'},
-        {value: 5, text: 'rong'}
-       ]
-    });
+		pk: 1,
+		limit: 3,
+		source: [
+			{value: 1, text: 'auto'},
+			{value: 2, text: 'buss'},
+			{value: 3, text: 'lennuk'},
+			{value: 4, text: 'laev'},
+			{value: 5, text: 'rong'}
+		]
+	});
 	// 3RD BLOCK
 	$('#expenditure').editable({
-    	showbuttons: false,
+		showbuttons: false,
 		prepend: "valimata",
-        source: [
-            {value: 1, text: 'jah'},
-            {value: 2, text: 'ei'}
-        ]
-    });
-	$('#daily_benefit').editable({
+		source: [
+			{value: 1, text: 'jah'},
+			{value: 2, text: 'ei'}
+		]
+	});
+	$('#daily_cost').editable({
+		type: 'text',
+		url: '/post',
+	});
+	$("#daily-cost-comment").editable({
+		type: 'text',
+		url: '/post',
+	});
+	$('#travel_cost').editable({
+		type: 'text',
+		url: '/post',
+	});
+	$('#accomodation_cost').editable({
+		type: 'text',
+		url: '/post',
+	});
+	$('#other_cost').editable({
 		type: 'text',
 		url: '/post',
 	});
 
 	// END INLINE EDITING PLUGIN
+
 });
