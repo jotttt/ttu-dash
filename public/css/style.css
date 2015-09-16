@@ -3031,6 +3031,11 @@ a.forum-item-title:hover {
   position: absolute;
   right: 0;
 }
+.sidebar-search {
+  padding: 0px 0px 10px 0px;
+  background: #870042;
+  display: none;
+}
 .sidebard-panel .feed-element img.img-circle {
   width: 32px;
   height: 32px;
@@ -6479,6 +6484,9 @@ body.skin-3 {
   }
 }
 @media (max-width: 1199px) {
+  .sidebar-search {
+    display: block;
+  }
   .nav li .profile-element {
     margin: 0;
     padding: 12px 0px;
@@ -6486,8 +6494,14 @@ body.skin-3 {
   .nav li a {
     padding: 15px 10px 10px 10px;
   }
+  .navbar-search {
+    display: none;
+  }
   .navbar-form-custom {
     display: none;
+  }
+  .navbar-top-links li:last-child {
+    margin-right: 1px;
   }
   .navbar-right {
     margin-right: 0px;
