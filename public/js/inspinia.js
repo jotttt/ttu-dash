@@ -21,7 +21,7 @@ $(document).ready(function () {
     $('.collapse-link').click( function() {
         var ibox = $(this).closest('div.ibox');
         var button = $(this).find('i');
-        var content = ibox.find('div.ibox-content');
+        var content = ibox.find('div.ibox-content, div.ibox-content-full');
         content.slideToggle(200);
         button.toggleClass('fa-chevron-up').toggleClass('fa-chevron-down');
         ibox.toggleClass('').toggleClass('border-bottom');
@@ -191,4 +191,22 @@ function SmoothlyMenu() {
         $('#side-menu').removeAttr('style');
     }
 }
+
+// Dragable panels
+function WinMove() {
+    var element = "[class*=col]";
+    var handle = ".ibox-title";
+    var connect = "[class*=col]";
+    $(element).sortable(
+        {
+            handle: handle,
+            connectWith: connect,
+            tolerance: 'pointer',
+            forcePlaceholderSize: true,
+            opacity: 0.8
+        })
+        .disableSelection();
+}
+
+
 
