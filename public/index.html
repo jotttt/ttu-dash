@@ -238,18 +238,24 @@
 						</div>
 					</nav>
 				</div>
-				<!--________ NAVBAR END ____________-->
-				<!--________ CONTENT BEGIN _____________-->
+				<!--NAVBAR END
+				------------------------------------------------------------->
+				<!--CONTENT BEGIN
+				------------------------------------------------------------->
 				<div class="wrapper wrapper-content animated fadeInRight">
 					<div class="row">
+				<div class="row">
 						<div class="col-lg-12">
-							<!--_ SPECIAL ALERT FOR MOBILE BEGIN _-->
+							<!--SPECIAL ALERT FOR MOBILE BEGIN
+							------------------------------------------------------->
 							<div id="ttu-alert-mobile" class="alert alert-danger alert-dismissable animated fadeInDown">
 								<button aria-hidden="true" data-dismiss="alert" class="close animation_select" type="button" data-animation="fadeOutUp">×</button>
 								<h4>Teade</h4>VI korpuses on elektrikatkestus 05.12.2014 10:00-12:00. <a class="alert-link" href="#">Vaata lähemalt</a>
 							</div>
-							<!--__________SPECIAL ALERT FOR MOBILE END _-->
-							<!--_________ SPECIAL MESSAGE FOR MOBILE BEGIN ______-->
+							<!--SPECIAL ALERT FOR MOBILE END
+							------------------------------------------------------->
+							<!--SPECIAL MESSAGE FOR MOBILE BEGIN
+							------------------------------------------------------->
 								<div id="ttu-message-mobile" class="ibox float-e-margins">
 									<div class="ibox-title-full">
 										<h5><i class="fa fa-bullhorn"></i> Sündmus</h5>
@@ -275,11 +281,13 @@
 										<div class="text-center"><img class="img-responsive" src="http://beta.battleit.eu/wp-content/uploads/Pano.jpg"></div>
 									</div>
 								</div>
-								<!--_________ SPECIAL MESSAGE FOR MOBILE END _______-->
+								<!--SPECIAL MESSAGE FOR MOBILE END
+								---------------------------------------------------->
 						</div>
-						<div class="col-lg-12">
+						</div>
+						<div class="row"  id="sortable-view">
 							<!--________ LEFT COLUMN BEGIN _________-->
-							<div class="col-lg-3">
+							<div class="col-lg-3 ui-sortable">
 								<!--________ CALENDAR WIDGET BEGIN _______-->
 								<!--<div class="ibox float-e-margins">
 									<div class="ibox-title">
@@ -420,7 +428,7 @@
 							</div>
 							<!--________ LEFT COLUMN END __________-->
 							<!--________ MIDDLE COLUMN BEGIN _______-->
-							<div class="col-lg-6">
+							<div class="col-lg-6 ui-sortable">
 								<!--_________ SPECIAL ALERT BEGIN ______-->
 								<div id="ttu-alert-desktop" class="alert alert-danger alert-dismissable animated fadeInDown">
 									<button aria-hidden="true" data-dismiss="alert" class="close animation_select" type="button" data-animation="fadeOutUp">×</button>
@@ -570,7 +578,7 @@
 							</div>
 							<!--________ MIDDLE COLUMN END ________-->
 							<!--________ RIGHT COLUMN BEGIN _________-->
-							<div class="col-lg-3">
+							<div class="col-lg-3 ui-sortable">
 								<!--_________ FAVORITES BEGIN __________-->
 								<div class="ibox float-e-margins">
 									<div class="ibox-title">
@@ -985,24 +993,26 @@ Lorem ipsum dolor sit amet, consectetur.
 _________ END SMALL CHAT ________-->
 		</div>
 		<!--_________PLUGINS JS__________________ -->
-		<script src="js/plugins/fullcalendar/moment.min.js"></script>
 		<script src="js/jquery-2.1.1.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
 		<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
+		<!-- Peity -->
+		<script src="js/plugins/peity/jquery.peity.min.js"></script>
+
 		<!-- Custom and plugin javascript -->
 		<script src="js/inspinia.js"></script>
 		<script src="js/plugins/pace/pace.min.js"></script>
 
-		<!-- jQuery UI custom -->
-		<script src="js/jquery-ui.custom.min.js"></script>
+		<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
 
 		<!-- iCheck -->
 		<script src="js/plugins/iCheck/icheck.min.js"></script>
 
-		<!-- Full Calendar -->
-		<script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+		<!-- Peity d data  -->
+		<script src="js/demo/peity-demo.js"></script>
+
 		<!-- My custom scripts -->
 		<script src="js/navbar_menu.js"></script>
 		<script src="js/dashboard.js"></script>
@@ -1011,121 +1021,10 @@ _________ END SMALL CHAT ________-->
 			//______________CALENDAR SCRIPT_________________
 			$(document).ready(function () {
 
-				/*$('.animation_select').click( function(){
-                $('#ttu-alert').removeAttr('class').attr('class', '');
-                var animation = $(this).attr("data-animation");
-                $('#ttu-alert').addClass('animated');
-                $('#ttu-alert').addClass(animation);
-                return false;
-            });*/
+				WinMove();
 
+			});
 
-
-
-
-				$('.i-checks').iCheck({
-					checkboxClass: 'icheckbox_square-green',
-					radioClass: 'iradio_square-green',
-				});
-
-				/* initialize the external events
-	 -----------------------------------------------------------------*/
-
-
-				$('#external-events div.external-event').each(function () {
-
-					// store data so the calendar knows to render an event upon drop
-					$(this).data('event', {
-						title: $.trim($(this).text()), // use the element's text as the event title
-						stick: true // maintain when user navigates (see docs on the renderEvent method)
-					});
-
-					// make the event draggable using jQuery UI
-					$(this).draggable({
-						zIndex: 1111999,
-						revert: true, // will cause the event to go back to its
-						revertDuration: 0 //  original position after the drag
-					});
-
-				});
-
-
-				/* initialize the calendar
-	 -----------------------------------------------------------------
-				var date = new Date();
-				var d = date.getDate();
-				var m = date.getMonth();
-				var y = date.getFullYear();
-
-				$('#calendar').fullCalendar({
-					header: {
-						left: 'prev,next today',
-						center: 'title',
-						right: 'month,agendaWeek,agendaDay'
-					},
-					editable: true,
-					// add event name to title attribute on mouseover
-					eventMouseover: function (event, jsEvent, view) {
-						if (view.name !== 'agendaDay') {
-							$(jsEvent.target).attr('title', event.title);
-						}
-					},
-					droppable: true, // this allows things to be dropped onto the calendar
-					drop: function () {
-						// is the "remove after drop" checkbox checked?
-						if ($('#drop-remove').is(':checked')) {
-							// if so, remove the element from the "Draggable Events" list
-							$(this).remove();
-						}
-					},
-					events: [
-						{
-							title: 'Sündmus kogu päev',
-							start: new Date(y, m, 1)
-						},
-						{
-							title: 'Mitmepäevane sündmus',
-							start: new Date(y, m, d - 5),
-							end: new Date(y, m, d - 2),
-						},
-						{
-							id: 999,
-							title: 'Korduv sündmus',
-							start: new Date(y, m, d - 3, 16, 0),
-							allDay: false,
-						},
-						{
-							id: 999,
-							title: 'Korduv sündmus',
-							start: new Date(y, m, d + 4, 16, 0),
-							allDay: false
-						},
-						{
-							title: 'Kohtumine',
-							start: new Date(y, m, d, 10, 30),
-							allDay: false
-						},
-						{
-							title: 'Lõuna',
-							start: new Date(y, m, d, 12, 0),
-							end: new Date(y, m, d, 14, 0),
-							allDay: false
-						},
-						{
-							title: 'Sünnipäev',
-							start: new Date(y, m, d + 1, 19, 0),
-							end: new Date(y, m, d + 1, 22, 30),
-							allDay: false
-						},
-						{
-							title: 'Link',
-							start: new Date(y, m, 28),
-							end: new Date(y, m, 29),
-							url: 'http://google.com/'
-						}
-					],
-				});
-			}); //end*/
 		</script>
 	</body>
 </html>
