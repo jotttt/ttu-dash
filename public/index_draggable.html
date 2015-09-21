@@ -26,7 +26,7 @@
 			<div id="page-wrapper" class="gray-darker-bg">
 				<!--_________ NAVBAR BEGIN ___________-->
 				<div class="row">
-					<nav class="navbar navbar-static-top white-bg" role="navigation">
+					<nav class="navbar navbar-static-top cherry-bg" role="navigation">
 						<div class="navbar-header">
 							<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed pull-right" type="button">
 								<i class="fa fa-reorder"></i>
@@ -233,39 +233,61 @@
 								</li>
 							</ul>
 							<ul class="nav navbar-top-links navbar-right visible-md visible-lg">
-								<form class="navbar-form " role="search">
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="Otsi midagi..." name="srch-term" id="srch-term">
-										<div class="input-group-btn">
-											<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-										</div>
-									</div>
-								</form>
+								<input type="text" class="form-control" placeholder="&#xF002; Otsi midagi..." name="srch-term" id="srch-term" style="font-family:Arial, FontAwesome">
 							</ul>
 						</div>
 					</nav>
 				</div>
-				<!--________ NAVBAR END ____________-->
-				<!--________ CONTENT BEGIN _____________-->
+				<!--NAVBAR END
+				------------------------------------------------------------->
+				<!--CONTENT BEGIN
+				------------------------------------------------------------->
 				<div class="wrapper wrapper-content animated fadeInRight">
 					<div class="row">
+				<div class="row">
 						<div class="col-lg-12">
-							<!--_ SPECIAL ALERT FOR MOBILE BEGIN _-->
+							<!--SPECIAL ALERT FOR MOBILE BEGIN
+							------------------------------------------------------->
 							<div id="ttu-alert-mobile" class="alert alert-danger alert-dismissable animated fadeInDown">
 								<button aria-hidden="true" data-dismiss="alert" class="close animation_select" type="button" data-animation="fadeOutUp">×</button>
 								<h4>Teade</h4>VI korpuses on elektrikatkestus 05.12.2014 10:00-12:00. <a class="alert-link" href="#">Vaata lähemalt</a>
 							</div>
-							<!--_SPECIAL ALERT FOR MOBILE END _-->
-							<!--_________ SPECIAL MESSAGE FOR MOBILE BEGIN ______-->
-								<div id="ttu-message-mobile" class="alert alert-info alert-dismissable animated fadeInDown">
-									<button aria-hidden="true" data-dismiss="alert" class="close animation_select" type="button" data-animation="fadeOutUp">×</button>
-									<h4>Kutse</h4>See kolmapäev, 21.09 toimub TTÜ rebaste sügisjooks. <a class="alert-link" href="#">Vaata lähemalt</a>
+							<!--SPECIAL ALERT FOR MOBILE END
+							------------------------------------------------------->
+							<!--SPECIAL MESSAGE FOR MOBILE BEGIN
+							------------------------------------------------------->
+								<div id="ttu-message-mobile" class="ibox float-e-margins">
+									<div class="ibox-title-full">
+										<h5><i class="fa fa-bullhorn"></i> Sündmus</h5>
+										<div class="ibox-tools">
+											<a class="collapse-link">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+												<i class="fa fa-wrench"></i>
+											</a>
+											<ul class="dropdown-menu dropdown-user">
+												<li><a href="#">Config option 1</a>
+												</li>
+												<li><a href="#">Config option 2</a>
+												</li>
+											</ul>
+											<a class="close-link">
+												<i class="fa fa-times"></i>
+											</a>
+										</div>
+									</div>
+									<div class="ibox-content-full">
+										<div class="text-center"><img class="img-responsive" src="http://beta.battleit.eu/wp-content/uploads/Pano.jpg"></div>
+									</div>
 								</div>
-								<!--_________ SPECIAL MESSAGE FOR MOBILE END _______-->
+								<!--SPECIAL MESSAGE FOR MOBILE END
+								---------------------------------------------------->
 						</div>
-						<div class="col-lg-12">
+						</div>
+						<div class="row"  id="sortable-view">
 							<!--________ LEFT COLUMN BEGIN _________-->
-							<div class="col-lg-3">
+							<div class="col-lg-3 ui-sortable">
 								<!--________ CALENDAR WIDGET BEGIN _______-->
 								<!--<div class="ibox float-e-margins">
 									<div class="ibox-title">
@@ -406,7 +428,7 @@
 							</div>
 							<!--________ LEFT COLUMN END __________-->
 							<!--________ MIDDLE COLUMN BEGIN _______-->
-							<div class="col-lg-6">
+							<div class="col-lg-6 ui-sortable">
 								<!--_________ SPECIAL ALERT BEGIN ______-->
 								<div id="ttu-alert-desktop" class="alert alert-danger alert-dismissable animated fadeInDown">
 									<button aria-hidden="true" data-dismiss="alert" class="close animation_select" type="button" data-animation="fadeOutUp">×</button>
@@ -414,9 +436,30 @@
 								</div>
 								<!--_________ SPECIAL ALERT END _______-->
 								<!--_________ SPECIAL MESSAGE BEGIN ______-->
-								<div id="ttu-message-desktop" class="alert alert-info alert-dismissable animated fadeInDown">
-									<button aria-hidden="true" data-dismiss="alert" class="close animation_select" type="button" data-animation="fadeOutUp">×</button>
-									<h4>Kutse</h4>See kolmapäev, 21.09 toimub TTÜ rebaste sügisjooks. <a class="alert-link" href="#">Vaata lähemalt</a>
+								<div id="ttu-message-desktop" class="ibox float-e-margins">
+									<div class="ibox-title-full">
+										<h5><i class="fa fa-bullhorn"></i> Sündmus</h5>
+										<div class="ibox-tools">
+											<a class="collapse-link">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+												<i class="fa fa-wrench"></i>
+											</a>
+											<ul class="dropdown-menu dropdown-user">
+												<li><a href="#">Config option 1</a>
+												</li>
+												<li><a href="#">Config option 2</a>
+												</li>
+											</ul>
+											<a class="close-link">
+												<i class="fa fa-times"></i>
+											</a>
+										</div>
+									</div>
+									<div class="ibox-content-full">
+										<div class="text-center"><img class="img-responsive" src="http://beta.battleit.eu/wp-content/uploads/Pano.jpg"></div>
+									</div>
 								</div>
 								<!--_________ SPECIAL MESSAGE END _______-->
 								<!--_________ NEWS BEGIN ________-->
@@ -442,6 +485,35 @@
 										</div>
 									</div>
 									<div class="ibox-content">
+									<div class="row">
+										<div class="col-xl-6">
+												<div class="news-module">
+													<div class="news-wrapper">
+														<div class="news-heading">
+															<img src="http://elering.ee/public/Infokeskus/Pressimaterjalid/TTUga_koostooleppe_allkirjastamine/.gallery_pictures/07.jpg" class="img-responsive">
+															<div class="news-text">
+																<a href="#"><h4 class="news-title">Eleringi ja TTÜ sõlmisid ühiste kavatsuste protokolli</h4></a>
+																<p class="news-lead">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-xl-6">
+												<div class="news-module">
+													<div class="news-wrapper">
+														<div class="news-heading">
+															<img src="http://thecoolgadgets.com/wp-content/uploads/2010/12/IBM-Exaflop-CMOS.jpg" class="img-responsive">
+															<div class="news-text">
+																<a href="#"><h4 class="news-title">TTÜ vilistlase firma muudab autotööstuse tulevikku, usuvad tehnoloogiahiiud</h4></a>
+																<p class="news-lead">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 										<div class="row">
 										<div class="col-xl-6">
 												<div class="news-module">
@@ -470,17 +542,30 @@
 													</div>
 												</div>
 											</div>
-
 										</div>
-										<div class="row">
-											<div class="col-sm-12">
+									<div class="row">
+										<div class="col-xl-6">
 												<div class="news-module">
 													<div class="news-wrapper">
 														<div class="news-heading">
-															<img src="http://g2.nh.ee/images/pix/900x585/oI5TOst51_U/6e9c755532e437256e-71463643.jpg" class="img-responsive">
+															<img src="http://elering.ee/public/Infokeskus/Pressimaterjalid/TTUga_koostooleppe_allkirjastamine/.gallery_pictures/07.jpg" class="img-responsive">
 															<div class="news-text">
-																<a href="#"><h4 class="news-title">Populaarseimad erialad aastal 2015</h4></a>
+																<a href="#"><h4 class="news-title">Eleringi ja TTÜ sõlmisid ühiste kavatsuste protokolli</h4></a>
 																<p class="news-lead">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-xl-6">
+												<div class="news-module">
+													<div class="news-wrapper">
+														<div class="news-heading">
+															<img src="http://thecoolgadgets.com/wp-content/uploads/2010/12/IBM-Exaflop-CMOS.jpg" class="img-responsive">
+															<div class="news-text">
+																<a href="#"><h4 class="news-title">TTÜ vilistlase firma muudab autotööstuse tulevikku, usuvad tehnoloogiahiiud</h4></a>
+																<p class="news-lead">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
 															</div>
 														</div>
 													</div>
@@ -493,7 +578,7 @@
 							</div>
 							<!--________ MIDDLE COLUMN END ________-->
 							<!--________ RIGHT COLUMN BEGIN _________-->
-							<div class="col-lg-3">
+							<div class="col-lg-3 ui-sortable">
 								<!--_________ FAVORITES BEGIN __________-->
 								<div class="ibox float-e-margins">
 									<div class="ibox-title">
@@ -908,24 +993,26 @@ Lorem ipsum dolor sit amet, consectetur.
 _________ END SMALL CHAT ________-->
 		</div>
 		<!--_________PLUGINS JS__________________ -->
-		<script src="js/plugins/fullcalendar/moment.min.js"></script>
 		<script src="js/jquery-2.1.1.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
 		<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
+		<!-- Peity -->
+		<script src="js/plugins/peity/jquery.peity.min.js"></script>
+
 		<!-- Custom and plugin javascript -->
 		<script src="js/inspinia.js"></script>
 		<script src="js/plugins/pace/pace.min.js"></script>
 
-		<!-- jQuery UI custom -->
-		<script src="js/jquery-ui.custom.min.js"></script>
+		<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
 
 		<!-- iCheck -->
 		<script src="js/plugins/iCheck/icheck.min.js"></script>
 
-		<!-- Full Calendar -->
-		<script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+		<!-- Peity d data  -->
+		<script src="js/demo/peity-demo.js"></script>
+
 		<!-- My custom scripts -->
 		<script src="js/navbar_menu.js"></script>
 		<script src="js/dashboard.js"></script>
@@ -934,121 +1021,10 @@ _________ END SMALL CHAT ________-->
 			//______________CALENDAR SCRIPT_________________
 			$(document).ready(function () {
 
-				/*$('.animation_select').click( function(){
-                $('#ttu-alert').removeAttr('class').attr('class', '');
-                var animation = $(this).attr("data-animation");
-                $('#ttu-alert').addClass('animated');
-                $('#ttu-alert').addClass(animation);
-                return false;
-            });*/
+				WinMove();
 
+			});
 
-
-
-
-				$('.i-checks').iCheck({
-					checkboxClass: 'icheckbox_square-green',
-					radioClass: 'iradio_square-green',
-				});
-
-				/* initialize the external events
-	 -----------------------------------------------------------------*/
-
-
-				$('#external-events div.external-event').each(function () {
-
-					// store data so the calendar knows to render an event upon drop
-					$(this).data('event', {
-						title: $.trim($(this).text()), // use the element's text as the event title
-						stick: true // maintain when user navigates (see docs on the renderEvent method)
-					});
-
-					// make the event draggable using jQuery UI
-					$(this).draggable({
-						zIndex: 1111999,
-						revert: true, // will cause the event to go back to its
-						revertDuration: 0 //  original position after the drag
-					});
-
-				});
-
-
-				/* initialize the calendar
-	 -----------------------------------------------------------------*/
-				var date = new Date();
-				var d = date.getDate();
-				var m = date.getMonth();
-				var y = date.getFullYear();
-
-				$('#calendar').fullCalendar({
-					header: {
-						left: 'prev,next today',
-						center: 'title',
-						right: 'month,agendaWeek,agendaDay'
-					},
-					editable: true,
-					// add event name to title attribute on mouseover
-					eventMouseover: function (event, jsEvent, view) {
-						if (view.name !== 'agendaDay') {
-							$(jsEvent.target).attr('title', event.title);
-						}
-					},
-					droppable: true, // this allows things to be dropped onto the calendar
-					drop: function () {
-						// is the "remove after drop" checkbox checked?
-						if ($('#drop-remove').is(':checked')) {
-							// if so, remove the element from the "Draggable Events" list
-							$(this).remove();
-						}
-					},
-					events: [
-						{
-							title: 'Sündmus kogu päev',
-							start: new Date(y, m, 1)
-						},
-						{
-							title: 'Mitmepäevane sündmus',
-							start: new Date(y, m, d - 5),
-							end: new Date(y, m, d - 2),
-						},
-						{
-							id: 999,
-							title: 'Korduv sündmus',
-							start: new Date(y, m, d - 3, 16, 0),
-							allDay: false,
-						},
-						{
-							id: 999,
-							title: 'Korduv sündmus',
-							start: new Date(y, m, d + 4, 16, 0),
-							allDay: false
-						},
-						{
-							title: 'Kohtumine',
-							start: new Date(y, m, d, 10, 30),
-							allDay: false
-						},
-						{
-							title: 'Lõuna',
-							start: new Date(y, m, d, 12, 0),
-							end: new Date(y, m, d, 14, 0),
-							allDay: false
-						},
-						{
-							title: 'Sünnipäev',
-							start: new Date(y, m, d + 1, 19, 0),
-							end: new Date(y, m, d + 1, 22, 30),
-							allDay: false
-						},
-						{
-							title: 'Link',
-							start: new Date(y, m, 28),
-							end: new Date(y, m, 29),
-							url: 'http://google.com/'
-						}
-					],
-				});
-			}); //end
 		</script>
 	</body>
 </html>
