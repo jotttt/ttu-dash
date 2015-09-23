@@ -1,6 +1,6 @@
 /*jshint -W117 */
 $(function() {
-
+	//NEWS LEAD ON HOVER
 	$(".news-module").mouseenter(function(){
 		if(!$(this).find('.news-lead').is(':visible')) {
 			clearTimeout($(this).data('timeoutId'));
@@ -14,5 +14,9 @@ $(function() {
 				}, 500);
 		item.data('timeoutId', timeoutId);
 	});
+	//DRAG'N'DROP
+	WinMove();
+	//FUNCTION TO DISPLAY PLACEHOLDERS IN IE8+
+	$('input, textarea').placeholder();
 
 });

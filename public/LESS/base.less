@@ -292,6 +292,14 @@ body.body-small .footer.fixed {
 	margin-bottom: 5px;
 }
 
+.panel .panel-heading .panel-options ul li a {
+	color: @text-color;
+	padding: 10px 15px;
+}
+.panel .panel-heading .panel-options ul li.active a {
+	color: @cherry;
+}
+
 /* TABLES */
 
 .table-bordered {
@@ -1426,5 +1434,10 @@ a.close-canvas-menu:hover {
 
 // Bootstrap issue in 3.3.0 with modal https://github.com/twbs/bootstrap/issues/9855
 // Fix
-body.modal-open { padding-right:inherit !important; }
-
+body.modal-open {
+	padding-right:inherit !important;
+}
+// IE9 fix
+#lblDisposalDate{
+    position: relative;
+}

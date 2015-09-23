@@ -21,10 +21,10 @@ $(document).ready(function(){
 
 	// CHECKBOX PLUGIN
 	$('input').iCheck({
-					checkboxClass: 'icheckbox_square-grey',
-					radioClass: 'iradio_square-grey',
-					increaseArea: '20%' // optional
-				});
+		checkboxClass: 'icheckbox_square-grey',
+		radioClass: 'iradio_square-grey',
+		increaseArea: '20%' // optional
+	});
 	// END CHECKBOX PLUGIN
 	//DATEPICKER PLUGIN
 	$.fn.datepicker.defaults.format = 'dd-mm-yyyy';
@@ -95,13 +95,21 @@ $(document).ready(function(){
 			{value: 2, text: 'ei'}
 		]
 	});
-	$('#daily_cost').editable({
+	$('#daily-cost').editable({
 		type: 'text',
 		url: '/post',
 	});
 	$("#daily-cost-comment").editable({
-		type: 'text',
+		type: 'textarea',
 		url: '/post',
+	});
+	$("#daily-cost-advance").editable({
+		type: 'select',
+		url: '/post',
+		source: [
+			{value: 1, text: 'Soovin avansi'},
+			{value: 2, text: 'Ei soovi avansi'}
+		]
 	});
 	$('#travel_cost').editable({
 		type: 'text',

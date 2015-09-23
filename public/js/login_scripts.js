@@ -1,5 +1,7 @@
 /*jshint -W117 */
 $(document).ready(function(){
+	//FUNCTION TO DISPLAY PLACEHOLDERS IN IE8+
+	$('input, textarea').placeholder();
 	//FUNCTION THAT CHECKS IF USER IS USING MOBILE DEVICE
 	window.mobilecheck = function() {
 		var check = false;
@@ -71,7 +73,7 @@ $(document).ready(function(){
 		"closeButton": true,
 		"debug": true,
 		"progressBar": false,
-		"positionClass": "toast-top-center",
+		"positionClass": "toast-top-right",
 		"onclick": null,
 		"showDuration": "400",
 		"hideDuration": "1000",
@@ -81,6 +83,5 @@ $(document).ready(function(){
 		"hideEasing": "linear",
 		"showMethod": "fadeIn",
 		"hideMethod": "fadeOut"
-	}
-	toastr.success('See on teade serveri poolt');
+	};
 });
