@@ -3,7 +3,7 @@
 .nav > li > a {
 	color: @nav-text-color;
 	font-weight: 600;
-	padding: 14px 15px 14px 14px;
+	padding: 14px 15px 14px 28px;
 }
 .nav > li > a:focus, .nav > li > a:hover  {
 	color: @cherry;
@@ -86,8 +86,12 @@
 	line-height: 1.428571429;
 	color: @text-color;
 	white-space: normal;
-
-
+}
+.menu-chevron::after {
+	font-family: FontAwesome;
+	font-size: 12px;
+	content: "\f107";
+	padding-left: 3px;
 }
 li.level-2 a:hover {
 	border-bottom: 1px solid @cherry;
@@ -101,6 +105,9 @@ li.level-2 a:hover {
 	width: auto;
 	white-space: nowrap;
 	z-index: 999;
+	-webkit-box-shadow: 9px 10px 5px -6px rgba(230,225,230,0.57);
+-moz-box-shadow: 9px 10px 5px -6px rgba(230,225,230,0.57);
+box-shadow: 9px 10px 5px -6px rgba(230,225,230,0.57);
 }
 .dropdown-menu-large .l3:after, .dropdown-menu-large .l3:before {
 	right: 100%;
@@ -141,7 +148,6 @@ li.level-2 a:hover {
 .dropdown-menu-large > li ul > li > a:focus {
 	text-decoration: none;
 	color: #262626;
-	background-color: #f5f5f5;
 }
 .dropdown-menu-large .disabled > a,
 .dropdown-menu-large .disabled > a:hover,
@@ -159,6 +165,7 @@ li.level-2 a:hover {
 .dropdown-menu-large .dropdown-header {
 	color: @cherry;
 	font-size: 18px;
+	padding: 5px 0px;
 }
 //LARGE DROPDOWN MENU MODIFIED END
 
@@ -191,7 +198,6 @@ white-space: normal;
 .dropdown-menu-large > li ul > li > a:focus {
 	text-decoration: none;
 	color: #262626;
-	background-color: #f5f5f5;
 }
 .dropdown-menu-large .disabled > a,
 .dropdown-menu-large .disabled > a:hover,
@@ -248,7 +254,7 @@ white-space: normal;
 	font-size: 14px;
 	left: 0;
 	list-style: none outside none;
-	padding: 0;
+	padding: 15px;
 	position: absolute;
 	text-shadow: none;
 	top: 100%;
@@ -326,7 +332,7 @@ white-space: normal;
 }
 
 .nav-header {
-	padding: 5px 0px;
+	padding: 0px 0px;
 	background: @cherry;
 
 }
@@ -361,10 +367,17 @@ white-space: normal;
 }
 
 .minimalize-styl-2 {
+	background-color: transparent;
+	color: #fff;
+	padding: 6px 12px;
+	border: 1px solid white;
 	padding: 4px 12px;
 	margin: 14px 5px 5px 20px;
 	font-size: 14px;
 	float: left;
+}
+.minimalize-styl-2:active, .minimalize-styl-2:focus, .minimalize-styl-2:hover {
+		color: white;
 }
 .navbar-form-custom {
 	float: left;
@@ -392,7 +405,7 @@ white-space: normal;
 	margin: 10px 0 0 0;
 	z-index: 2000;
 }
-/* SEARCH BOX
+/* SEARCH BOX FOR TOP-NAVBAR
 --------------------------------------------------------------------*/
 #srch-term {
 	background: @darker-cherry;
@@ -416,7 +429,7 @@ white-space: normal;
 #srch-term:focus {
     background: #fcfcfc;
     color: #6a6f75;
-    width: 200px;
+    width: 190px;
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
     -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
@@ -463,6 +476,81 @@ white-space: normal;
    color: @text-color;
 }
 #srch-term:focus:-ms-input-placeholder {
+   color: @text-color;
+}
+/* end
+--------------------------------------------------------------------*/
+/* SEARCH BOX FOR SIDEBAR
+--------------------------------------------------------------------*/
+#srch-term2 {
+	background: @darker-cherry;
+	border: 0 none;
+	color: @text-color;
+	width: 150px;
+	margin: 20px 0px 0 35px;
+	padding: 6px 15px 6px 15px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	-webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+}
+#srch-term2:focus {
+    background: #fcfcfc;
+    color: #6a6f75;
+    width: 150px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+#srch-term2::-webkit-input-placeholder {
+   color: white;
+	webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+}
+
+#srch-term2:-moz-placeholder { /* Firefox 18- */
+   color: white;
+	webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+}
+
+#srch-term2::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+	webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+}
+
+#srch-term2:-ms-input-placeholder {
+   color: white;
+	webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+}
+#srch-term2:focus::-webkit-input-placeholder {
+   color: @text-color;
+}
+#srch-term2:focus:-moz-placeholder {
+   color: @text-color;
+}
+#srch-term2:focus::-moz-placeholder {
+   color: @text-color;
+}
+#srch-term2:focus:-ms-input-placeholder {
    color: @text-color;
 }
 /* end
@@ -569,7 +657,7 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
 	color: lighten(@cherry, 3%);
 }
 .profile-element {
-	padding: 30px;
+	padding: 0px;
 	a:hover, a:focus, a:active, a:visited {
 		color: white;
 	}
@@ -580,7 +668,7 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
 	font-weight: 600;
 	color: white;
 	display: none;
-	padding: 18px 0;
+	padding: 20px 0;
 }
 
 .pace-done .navbar-static-side, .pace-done .nav-header, .pace-done li.active, .pace-done #page-wrapper, .pace-done .footer {
@@ -599,6 +687,26 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
 
 .navbar-fixed-top, .navbar-static-top {
 	background: @gray;
+}
+
+.navbar-static-top .nav > li > a {
+	font-size: 14px;
+	padding: 20px 20px;
+	color: white;
+}
+.navbar-static-top .nav > li.open > a {
+	color: @cherry;
+}
+.navbar-static-top .nav > li a:hover, .top-navigation .nav > li a:focus {
+	background: #fff;
+	color: @cherry;
+}
+.navbar-static-top .navbar-top-links li:last-child {
+	margin-right: 0;
+}
+.navbar-static-top .dropdown-menu > li > a {
+	margin: 0;
+	padding: 7px 20px;
 }
 
 .fixed-nav #wrapper {
