@@ -24,7 +24,8 @@
 	<body class="">
 
 		<div id="wrapper">
-			<!-- ________SIDEBAR__________________________-->
+			<!--SIDEBAR
+--------------------------------------------------------------->
 			<nav class="navbar-default navbar-static-side" role="navigation">
 				<div class="sidebar-collapse">
 					<ul class="nav" id="side-menu">
@@ -37,7 +38,8 @@
 								<div id="logo-text-w" class="center-block"></div>
 							</div>
 						</li>
-						<!--_____________ SIDEBAR SEARCH _______________-->
+						<!--SIDEBAR SEARCH
+----------------------------------------------------------------->
 						<li>
 							<form class="sidebar-search center-block" role="search">
 								<div class="input-group m-b">
@@ -45,7 +47,8 @@
 								</div>
 							</form>
 						</li>
-						<!--_____________ SIDEBAR SEARCH END _______________-->
+						<!--SIDEBAR SEARCH END
+----------------------------------------------------------------->
 						<li class="active">
 							<a href="#"><i class="fa fa-university"></i> <span class="nav-label">Minu töölaud</span><span class="fa arrow"></span></a>
 							<ul class="nav nav-second-level">
@@ -125,16 +128,20 @@
 
 				</div>
 			</nav>
-			<!--_________CONTENT__________________________-->
+			<!--SIDEBAR END
+--------------------------------------------------------------->
+			<!--CONTENT
+--------------------------------------------------------------->
 			<div id="page-wrapper" class="gray-bg">
-				<!--_____TOP NAVBAR _______________-->
+				<!--TOP NAVBAR
+--------------------------------------------------------------->
 				<div class="row border-bottom">
 					<nav class="navbar navbar-static-top cherry-bg" role="navigation">
 						<div class="navbar-header">
 							<a class="navbar-minimalize minimalize-styl-2" href="#"><i class="fa fa-bars"></i> </a>
 
 							<ul class="nav navbar-nav">
-								<li class="dropdown">
+								<li class="dropdown hidden-xs">
 									<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Dokumendid <span class="caret"></span></a>
 									<ul role="menu" class="dropdown-menu">
 										<li><a href="">Menu item</a></li>
@@ -143,16 +150,7 @@
 										<li><a href="">Menu item</a></li>
 									</ul>
 								</li>
-								<li class="dropdown">
-									<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Ülikool <span class="caret"></span></a>
-									<ul role="menu" class="dropdown-menu">
-										<li><a href="">Menu item</a></li>
-										<li><a href="">Menu item</a></li>
-										<li><a href="">Menu item</a></li>
-										<li><a href="">Menu item</a></li>
-									</ul>
-								</li>
-								<li class="dropdown dropdown-large">
+								<li class="dropdown dropdown-large hidden-xs">
 									<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Inimesed <span class="caret"></span></a>
 									<ul class="dropdown-menu dropdown-menu-large row">
 										<li class="col-sm-4">
@@ -197,10 +195,7 @@
 									</ul>
 
 								</li>
-								<!-- TÖÖKORRALDUS BEGIN -->
-								<li class="dropdown dropdown-large" id="too"></li>
-								<!-- TÖÖKORRALDUS END -->
-								<li class="dropdown dropdown-large">
+								<li class="dropdown dropdown-large hidden-xs">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teenused <b class="caret"></b></a>
 									<ul class="dropdown-menu dropdown-menu-large row">
 
@@ -242,7 +237,7 @@
 													<li class="level-3"><a href="#">TTÜ põhikirja kriitika</a></li>
 												</div>
 											</ul>
-											</li>
+										</li>
 										<li class="col-sm-4">
 											<ul>
 												<li class="level-1 dropdown-header"><a href="#">Terviktekstid, vormid</a></li>
@@ -292,76 +287,77 @@
 
 						</div>
 						<!--RIGHT NAVBAR
-							---------------------------------------------------------->
-							<ul class="nav navbar-top-links navbar-right">
-								<li class="dropdown m-l">
-									<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-										<i class="fa fa-bell"></i>  <span class="label label-primary">3</span>
-									</a>
-									<ul class="dropdown-menu dropdown-alerts">
-										<li>
-											<a href="mailbox.html">
-												<div>
-													<i class="fa fa-envelope fa-fw"></i> Sul on 3 uut sõnumit
-													<span class="pull-right text-muted small">19 minutit tagasi</span>
-												</div>
-											</a>
-										</li>
-										<li class="divider"></li>
-										<li>
-											<a href="profile.html">
-												<div>
-													<i class="fa fa-calendar-o fa-fw"></i> Täna plaanis 2 sündmust
-													<span class="pull-right text-muted small">56 minutit tagasi</span>
-												</div>
-											</a>
-										</li>
-										<li class="divider"></li>
-										<li>
-											<a href="grid_options.html">
-												<div>
-													<i class="fa fa-upload fa-fw"></i> Kõik uuendused tehtud
-													<span class="pull-right text-muted small">4h tagasi</span>
-												</div>
-											</a>
-										</li>
-										<li class="divider"></li>
-										<li>
-											<div class="text-center link-block">
-												<a href="notifications.html">
-													<strong>Vaata kõiki teavitusi</strong>
-													<i class="fa fa-angle-right"></i>
-												</a>
+--------------------------------------------------------------->
+						<ul class="nav navbar-top-links navbar-right">
+							<li class="dropdown m-l">
+								<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+									<i class="fa fa-bell"></i>  <span class="label label-primary">3</span>
+								</a>
+								<ul class="dropdown-menu dropdown-alerts">
+									<li>
+										<a href="mailbox.html">
+											<div>
+												<i class="fa fa-envelope fa-fw"></i> Sul on 3 uut sõnumit
+												<span class="pull-right text-muted small">19 minutit tagasi</span>
 											</div>
-										</li>
-									</ul>
-								</li>
-								<li class="show-icon ">
-									<a href="login.html">
-										<i class="fa fa-sign-out"></i>
-									</a>
-								</li>
-								<li  class="show-icon hidden-xs">
-									<a class="right-sidebar-toggle">
-										<i class="fa fa-tasks"></i>
-									</a>
-								</li>
-							</ul>
-							<!--RIGHT NAVBAR END
-							---------------------------------------------------------->
-							<!--NAVBAR SEARCH
-							---------------------------------------------------------->
-							<ul class="nav navbar-top-links navbar-right visible-lg">
-								<form>
-									<input type="text" class="form-control" placeholder="&#xF002; Otsi" name="srch-term" id="srch-term" style="font-family:Arial, FontAwesome">
-									</form>
-							</ul>
-							<!--NAVBAR SEARCH END
-							---------------------------------------------------------->
+										</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="profile.html">
+											<div>
+												<i class="fa fa-calendar-o fa-fw"></i> Täna plaanis 2 sündmust
+												<span class="pull-right text-muted small">56 minutit tagasi</span>
+											</div>
+										</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="grid_options.html">
+											<div>
+												<i class="fa fa-upload fa-fw"></i> Kõik uuendused tehtud
+												<span class="pull-right text-muted small">4h tagasi</span>
+											</div>
+										</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<div class="text-center link-block">
+											<a href="notifications.html">
+												<strong>Vaata kõiki teavitusi</strong>
+												<i class="fa fa-angle-right"></i>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="show-icon ">
+								<a href="login.html">
+									<i class="fa fa-sign-out"></i>
+								</a>
+							</li>
+							<li  class="show-icon hidden-xs">
+								<a class="right-sidebar-toggle">
+									<i class="fa fa-tasks"></i>
+								</a>
+							</li>
+						</ul>
+						<!--RIGHT NAVBAR END
+--------------------------------------------------------------->
+						<!--NAVBAR SEARCH
+--------------------------------------------------------------->
+						<ul class="nav navbar-top-links navbar-right visible-lg">
+							<form>
+								<input type="text" class="form-control" placeholder="&#xF002; Otsi" name="srch-term" id="srch-term" style="font-family:Arial, FontAwesome">
+							</form>
+						</ul>
+						<!--NAVBAR SEARCH END
+--------------------------------------------------------------->
 
 					</nav>
 				</div>
-				<!--_____TOP NAVBAR END________________________-->
+				<!--TOP NAVBAR END
+--------------------------------------------------------------->
 				<div class="row wrapper border-bottom white-bg">
 					<div class="col-md-4">
 						<ol class="breadcrumb">
@@ -376,111 +372,140 @@
 					<div class="col-sm-8">
 					</div>
 				</div>
-				<!--_______CONTENT _____________________________________-->
+				<!--PAGE
+--------------------------------------------------------------->
 				<div class="wrapper wrapper-content animated fadeInRight" style="font-size: 1.3em">
-					<!--______ 1ST BLOCK ERRAND FORM __________-->
+					<!--1ST BLOCK ERRAND FORM
+--------------------------------------------------------------->
 					<div>
 						<div class="row"><div class="col-sm- text-center font-bold m-b-xs">Üldandmed</div></div>
 						<div class="row">
-							<div class="col-xs-6 text-right">Lähetatu nimi</div><div class="col-xs-6"><a href="#" id="name" data-type="text" data-pk="1" data-url="/post">Peeter Kuusk</a></div>
+							<div class="col-xs-6 text-right m-b-xs">Lähetatu nimi</div><div class="col-xs-6"><a href="#" id="name" data-type="text" data-pk="1" data-url="/post">Peeter Kuusk</a></div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right">Struktuuriüksus</div><div class="col-xs-6"><a href="#" id="department" data-type="text" data-pk="1" data-url="/post">Tarkvara osakond</a></div>
+							<div class="col-xs-6 text-right m-b-xs">Struktuuriüksus</div><div class="col-xs-6"><a href="#" id="department" data-type="text" data-pk="1" data-url="/post">Tarkvara osakond</a></div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right">Amet</div><div class="col-xs-6"><a href="#" id="position" data-type="text" data-pk="1" data-url="/post">Arendusjuht</a></div>
+							<div class="col-xs-6 text-right m-b-xs">Amet</div><div class="col-xs-6"><a href="#" id="position" data-type="text" data-pk="1" data-url="/post">Arendusjuht</a></div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right">Lähetuse kestus</div><div class="col-xs-6"><a href="#" id="errand_duration_b" data-type="combodate" data-value="2015-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-original-title="Select Date of birth" class="editable editable-click">15/05/2015</a> - <a href="#" id="errand_duration_e" data-type="combodate" data-value="2015-05-19" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-original-title="Select Date of birth" class="editable editable-click">19/05/2015</a></div>
+							<div class="col-xs-6 text-right m-b-xs">Lähetuse kestus</div><div class="col-xs-6"><a href="#" id="errand_duration_b" data-type="combodate" data-value="2015-12-09" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-original-title="Select Date of birth" class="editable editable-click"></a> - <a href="#" id="errand_duration_e" data-type="combodate" data-value="2015-12-16" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-original-title="Select Date of birth" class="editable editable-click"></a></div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right">Finantseerimise allikad</div><div class="col-xs-6"><a href="#" id="financing" data-type="text" data-pk="1" data-url="/post">NATO</a></div>
+							<div class="col-xs-6 text-right">Finantseerimise allikad</div><div class="col-xs-6"><a href="#" id="financing" data-type="text" data-value="NATO" data-pk="1" data-url="/post" data-placeholder="Puuduvad"></a></div>
 						</div>
 					</div>
-					<!--______ 1ST BLOCK ERRAND FORM END ______-->
-					<!--______ 2ND BLOCK ERRAND FORM __________-->
+					<!--1ST BLOCK ERRAND FORM END
+--------------------------------------------------------------->
+					<!--2ND BLOCK ERRAND FORM
+--------------------------------------------------------------->
 					<div>
 						<div class="row"><div class="col-sm-12 text-center font-bold m-b-xs m-t-md">Lähetuse sisu</div></div>
 						<div class="row">
-							<div class="col-xs-6 text-right">Sihtkoht</div><div class="col-xs-6"><a href="#" id="destination" data-type="text" data-pk="1" data-title="Please, fill address">Holland</a>
+							<div class="col-xs-6 text-right m-b-xs">Sihtkoht</div><div class="col-xs-6"><a href="#" id="destination" data-type="text" data-value="Leyden, Holland" data-pk="1" data-title="Please, fill address"></a>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right">Organisatsioon</div><div class="col-xs-6"><a href="#" id="organization" data-type="text" data-pk="1" data-url="/post">MSG-117 </a></div>
+							<div class="col-xs-6 text-right m-b-xs">Organisatsioon</div><div class="col-xs-6"><a href="#" id="organization" data-type="text" data-value="MSG-117" data-pk="1" data-url="/post"></a></div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right">Lähetuse eesmärk</div><div class="col-xs-6"><a href="#" id="errand_goal" data-type="text" data-pk="1" data-url="/post">MSG-117 töögrupi 8's kogunemine</a></div>
+							<div class="col-xs-6 text-right m-b-xs">Lähetuse eesmärk</div><div class="col-xs-6"><a href="#" id="errand_goal" data-type="text" data-value="MSG-117 töögrupi 8's kogunemine" data-pk="1" data-url="/post"></a></div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right">Sõiduvahend</div><div class="col-xs-6"><a href="#" id="transportation" data-type="checklist" data-value="1,4,5" data-title="Select transportation" class="editable editable-click" data-original-title="" title="">auto<br>laev<br>rong</a></div>
+							<div class="col-xs-6 text-right">Sõiduvahend</div><div class="col-xs-6"><a href="#" id="transportation" data-type="checklist" data-title="Select transportation" data-value="1,2,4" class="editable editable-click" data-original-title="" title=""><br><br></a></div>
 						</div>
 					</div>
-					<!--______ 2ND BLOCK ERRAND FORM END ______-->
-					<!--______ 3RD BLOCK ERRAND FORM __________-->
+					<!--2ND BLOCK ERRAND FORM END
+--------------------------------------------------------------->
+					<!--3RD BLOCK ERRAND FORM
+--------------------------------------------------------------->
 					<div>
 						<div class="row">
 							<div class="col-sm-12 text-center font-bold m-b-xs m-t-md">Planeeritavad kulud</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right">Päevaraha</div>
-							<div class="col-xs-6"><a href="#" id="daily-cost" data-type="text" data-pk="1" data-value="1000 €" data-title="enter amount" style="color: gray; display: inline;">1000 €</a>
+							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Päevaraha</span></div>
+							<div class="col-xs-6">
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right"></div>
+							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
+							<div class="col-xs-6"><a href="#" id="daily-cost" data-type="text" data-pk="1" data-value="350€" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
 							<div class="col-xs-6 m-b-xs">
-								<a href="#" id="daily-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel rerum adipisci, ad ipsam! Assumenda quod temporibus distinctio soluta quam id laboriosam voluptatum nostrum ducimus iusto officiis, unde sint accusantium eligendi nihil hic repellendus tenetur sequi labore, quidem sapiente adipisci, eum veritatis tempore! Eum similique in earum, labore provident quidem tempora maxime doloremque impedit officia nemo, magni, ducimus, possimus enim sint." data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel rerum adipisci, ad ipsam! Assumenda quod temporibus distinctio soluta quam id laboriosam voluptatum nostrum ducimus iusto officiis, unde sint accusantium eligendi nihil hic repellendus tenetur sequi labore, quidem sapiente adipisci, eum veritatis tempore! Eum similique in earum, labore provident quidem tempora maxime doloremque impedit officia nemo, magni, ducimus, possimus enim sint.</a>
+								<a href="#" id="daily-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iure sapiente sint ut quod eligendi earum inventore odit natus voluptas, soluta rem dolorum possimus. Quaerat sapiente sunt perferendis obcaecati aliquid." data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;"></a>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right"></div>
+							<div class="col-xs-6 text-right"><span>Avansi soov</span></div>
 							<div class="col-xs-6 m-b">
-								<a href="#" id="daily-cost-advance" data-type="select" data-pk="1" data-value="Soovin avansi" data-title="enter amount">Soovin avansi</a>
+								<a href="#" id="daily-cost-advance" data-type="select" data-pk="1" data-value="1" data-title="enter amount"></a>
 							</div>
 						</div>
+
 						<div class="row">
-							<div class="col-xs-6 text-right">Sõidukulu</div><div class="col-xs-6"><a href="#" id="travel-cost" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;">Sisesta summa</a></div>
-								<div class="row">
-							<div class="col-xs-6 text-right"></div>
+							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Sõidukulu</span></div>
 							<div class="col-xs-6">
-								<a href="#" id="daily-cost-comment" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;"> Lisa selgitus</a>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right"></div>
+							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
+							<div class="col-xs-6"><a href="#" id="travel-cost" data-type="text" data-pk="1" data-value="452€" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
+							<div class="col-xs-6  m-b-xs">
+								<a href="#" id="travel-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, consequatur, rem! Voluptates nesciunt iure esse illo, ipsam qui, perspiciatis nihil!" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;"></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-right m-b-xs"><span>Avansi soov</span></div>
 							<div class="col-xs-6 m-b">
-								<span>Ei soovi avansi</span>
+								<a href="#" id="travel-cost-advance" data-type="select" data-pk="1" data-value="2" data-title="enter amount"></a>
 							</div>
 						</div>
-						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right">Majutuskulu</div><div class="col-xs-6"><a href="#" id="accomodation-cost" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;">Sisesta summa</a></div>
-						</div>
-							<div class="row">
-							<div class="col-xs-6 text-right"></div>
+							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Majutuskulu</span></div>
 							<div class="col-xs-6">
-								<a href="#" id="daily-cost-comment" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;"> Lisa selgitus</a>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right"></div>
+							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
+							<div class="col-xs-6"><a href="#" id="accomodation-cost" data-type="text" data-pk="1" data-value="1240€" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
+							<div class="col-xs-6  m-b-xs">
+								<a href="#" id="accomodation-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, tempora hic ducimus doloribus! Magni doloremque atque non voluptate temporibus ab quas excepturi rem, itaque inventore eveniet sequi, eaque fugit architecto, omnis voluptas possimus nisi iure eum placeat rerum corrupti quibusdam commodi ipsum nostrum. Eligendi recusandae esse sint, ullam maiores voluptates tempore quam mollitia expedita, delectus dolor nam excepturi omnis labore!" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;"></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-right m-b-xs"><span>Avansi soov</span></div>
 							<div class="col-xs-6 m-b">
-								<span>Ei soovi avansi</span>
+								<a href="#" id="accomodation-cost-advance" data-type="select" data-pk="1" data-value="2" data-title="enter amount"></a>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right">Muud kulud</div><div class="col-xs-6"><a href="#" id="other-cost" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;">Sisesta summa</a></div>
-						</div>
-							<div class="row">
-							<div class="col-xs-6 text-right"></div>
+							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Muud kulud</span></div>
 							<div class="col-xs-6">
-								<a href="#" id="daily-cost-comment" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;"> Lisa selgitus</a>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right"></div>
-							<div class="col-xs-6">
-								<span>Ei soovi avansi</span>
+							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
+							<div class="col-xs-6"><a href="#" id="other-cost" data-type="text" data-pk="1" data-value="77€" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;"></a></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
+							<div class="col-xs-6 m-b-xs">
+								<a href="#" id="other-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptatem iste eos vitae necessitatibus, ratione veniam itaque. Nulla quos voluptatum rem natus animi esse tempore voluptate, blanditiis saepe at, eum?" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;"></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-right m-b-xs"><span>Avansi soov</span></div>
+							<div class="col-xs-6 m-b">
+								<a href="#" id="other-cost-advance" data-type="select" data-pk="1" data-value="2" data-title="enter amount"></a>
 							</div>
 						</div>
 						<div class="row">
@@ -490,7 +515,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right">Kokku</div><div class="col-xs-6 m-b"><a href="#" id="total-cost" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;">1000€</a></div>
+							<div class="col-xs-6 text-right">Kokku</div><div class="col-xs-6 m-b"><a href="#" id="total-cost" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" style="color: gray; display: inline;">2042€</a></div>
 						</div>
 
 						<div class="row">
@@ -504,247 +529,245 @@
 								<button class="btn btn-primary">Tühista</button>
 							</div>
 							<div class="col-xs-6 m-b">
-								<span><button class="btn btn-primary">Salvesta</button></span>
+								<span><button class="btn btn-primary">Nõustu ja saada</button></span>
 							</div>
 						</div>
+					</div>
+					<!--3RD BLOCK ERRAND FORM END
+--------------------------------------------------------------->
+					<!--MODAL CONTENT
+--------------------------------------------------------------->
+					<div id="right-sidebar" class="">
+						<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;">
+							<div class="sidebar-container" style="overflow: hidden; width: auto; height: 100%;">
 
-						<!--______ 3RD BLOCK ERRAND FORM END ______-->
-						<!--_______MODAL CONTENT __________________-->
-						<div id="right-sidebar" class="">
-							<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;">
-								<div class="sidebar-container" style="overflow: hidden; width: auto; height: 100%;">
+								<ul class="nav nav-tabs navs-3">
 
-									<ul class="nav nav-tabs navs-3">
+									<li class="active"><a data-toggle="tab" href="#tab-11" aria-expanded="true">
+										Valik 1
+										</a>
+									</li>
+									<li><a data-toggle="tab" href="#tab-22">
+										Valik 2
+										</a>
+									</li>
+									<li class="">
+										<a data-toggle="tab" href="#tab-33" aria-expanded="false">
+											<i class="fa fa-gear"></i>
+										</a>
+									</li>
+								</ul>
 
-										<li class="active"><a data-toggle="tab" href="#tab-11" aria-expanded="true">
-											Valik 1
-											</a>
-										</li>
-										<li><a data-toggle="tab" href="#tab-22">
-											Valik 2
-											</a>
-										</li>
-										<li class="">
-											<a data-toggle="tab" href="#tab-33" aria-expanded="false">
-												<i class="fa fa-gear"></i>
-											</a>
-										</li>
-									</ul>
-
-									<div class="tab-content">
+								<div class="tab-content">
 
 
-										<div id="tab-11" class="tab-pane active">
-											<div class="sidebar-title">
-												<h3> <i class="fa fa-folder"></i> Minu failid</h3>
-												<small><i class="fa fa-tim"></i> Kaustas on 2 dokumenti</small>
-											</div>
-											<div>
-												<ul class="sidebar-list">
-													<li class="">
-														<a href="#" class="">
-															<div class="pull-left text-center m-r">
-																<i class="fa fa-file-text-o fa-3x"></i>
-															</div>
-															<div class="m-l m-b-xs">Puhkuste graafiku koostamise juhend ja soovitused tuleviku mudeli laiendamiseks.pdf</div>
-															<div class="small text-muted pull-right ">Lisatud 15.02.2015</div>
-														</a>
-													</li>
-													<li>
-														<a href="#">
-															<div class="pull-left text-center m-r">
-																<i class="fa fa-file-text-o fa-3x"></i>
-															</div>
-															<div class="m-l m-b-xs">Majandusaruande kolmas lisa ja seletused.pdf</div>
-															<div class="small text-muted pull-right">Lisatud 12.06.2014</div>
-														</a>
-													</li>
-												</ul>
-											</div>
-
+									<div id="tab-11" class="tab-pane active">
+										<div class="sidebar-title">
+											<h3> <i class="fa fa-folder"></i> Minu failid</h3>
+											<small><i class="fa fa-tim"></i> Kaustas on 2 dokumenti</small>
 										</div>
-
-										<div id="tab-22" class="tab-pane">
-
-											<div class="sidebar-title">
-												<h3> <i class="fa fa-cube"></i> Viimased uuendused</h3>
-												<small><i class="fa fa-tim"></i> Paigaldatud 14 uuendust. 1 on paigaldamata.</small>
-											</div>
-
+										<div>
 											<ul class="sidebar-list">
+												<li class="">
+													<a href="#" class="">
+														<div class="pull-left text-center m-r">
+															<i class="fa fa-file-text-o fa-3x"></i>
+														</div>
+														<div class="m-l m-b-xs">Puhkuste graafiku koostamise juhend ja soovitused tuleviku mudeli laiendamiseks.pdf</div>
+														<div class="small text-muted pull-right ">Lisatud 15.02.2015</div>
+													</a>
+												</li>
 												<li>
 													<a href="#">
-														<div class="small pull-right m-t-xs">5 tundi tagasi</div>
-														<h4>Versiooni uuendus 1.0.0.14</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio accusantium saepe id.
-
-														<div class="small">Paigaldatud: 22%</div>
-														<div class="progress progress-mini">
-															<div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+														<div class="pull-left text-center m-r">
+															<i class="fa fa-file-text-o fa-3x"></i>
 														</div>
-														<div class="small text-muted m-t-xs">Paigalduse lõpuni 3 minutit</div>
+														<div class="m-l m-b-xs">Majandusaruande kolmas lisa ja seletused.pdf</div>
+														<div class="small text-muted pull-right">Lisatud 12.06.2014</div>
 													</a>
 												</li>
 											</ul>
-
 										</div>
 
-										<div id="tab-33" class="tab-pane">
+									</div>
 
-											<div class="sidebar-title">
-												<h3><i class="fa fa-gears"></i> Sätted</h3>
-												<small><i class="fa fa-tim"></i> Siin saad muuta oma põhisätteid</small>
-											</div>
+									<div id="tab-22" class="tab-pane">
 
-											<div class="setings-item">
-												<span>
-													Näita teateid
-												</span>
-												<div class="switch">
-													<div class="onoffswitch">
-														<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
-														<label class="onoffswitch-label" for="example">
-															<span class="onoffswitch-inner"></span>
-															<span class="onoffswitch-switch"></span>
-														</label>
+										<div class="sidebar-title">
+											<h3> <i class="fa fa-cube"></i> Viimased uuendused</h3>
+											<small><i class="fa fa-tim"></i> Paigaldatud 14 uuendust. 1 on paigaldamata.</small>
+										</div>
+
+										<ul class="sidebar-list">
+											<li>
+												<a href="#">
+													<div class="small pull-right m-t-xs">5 tundi tagasi</div>
+													<h4>Versiooni uuendus 1.0.0.14</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio accusantium saepe id.
+
+													<div class="small">Paigaldatud: 22%</div>
+													<div class="progress progress-mini">
+														<div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
 													</div>
+													<div class="small text-muted m-t-xs">Paigalduse lõpuni 3 minutit</div>
+												</a>
+											</li>
+										</ul>
+
+									</div>
+
+									<div id="tab-33" class="tab-pane">
+
+										<div class="sidebar-title">
+											<h3><i class="fa fa-gears"></i> Sätted</h3>
+											<small><i class="fa fa-tim"></i> Siin saad muuta oma põhisätteid</small>
+										</div>
+
+										<div class="setings-item">
+											<span>
+												Näita teateid
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+													<label class="onoffswitch-label" for="example">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
 												</div>
 											</div>
-											<div class="setings-item">
-												<span>
-													Keela messenger
-												</span>
-												<div class="switch">
-													<div class="onoffswitch">
-														<input type="checkbox" name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example2">
-														<label class="onoffswitch-label" for="example2">
-															<span class="onoffswitch-inner"></span>
-															<span class="onoffswitch-switch"></span>
-														</label>
-													</div>
+										</div>
+										<div class="setings-item">
+											<span>
+												Keela messenger
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example2">
+													<label class="onoffswitch-label" for="example2">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
 												</div>
 											</div>
-											<div class="setings-item">
-												<span>
-													Luba ajaloo salvestus
-												</span>
-												<div class="switch">
-													<div class="onoffswitch">
-														<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
-														<label class="onoffswitch-label" for="example3">
-															<span class="onoffswitch-inner"></span>
-															<span class="onoffswitch-switch"></span>
-														</label>
-													</div>
+										</div>
+										<div class="setings-item">
+											<span>
+												Luba ajaloo salvestus
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+													<label class="onoffswitch-label" for="example3">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
 												</div>
 											</div>
-											<div class="setings-item">
-												<span>
-													Näita tabeleid
-												</span>
-												<div class="switch">
-													<div class="onoffswitch">
-														<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
-														<label class="onoffswitch-label" for="example4">
-															<span class="onoffswitch-inner"></span>
-															<span class="onoffswitch-switch"></span>
-														</label>
-													</div>
+										</div>
+										<div class="setings-item">
+											<span>
+												Näita tabeleid
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+													<label class="onoffswitch-label" for="example4">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
 												</div>
 											</div>
-											<div class="setings-item">
-												<span>
-													Kasutaja teavitused
-												</span>
-												<div class="switch">
-													<div class="onoffswitch">
-														<input type="checkbox" checked="" name="collapsemenu" class="onoffswitch-checkbox" id="example5">
-														<label class="onoffswitch-label" for="example5">
-															<span class="onoffswitch-inner"></span>
-															<span class="onoffswitch-switch"></span>
-														</label>
-													</div>
+										</div>
+										<div class="setings-item">
+											<span>
+												Kasutaja teavitused
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" checked="" name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+													<label class="onoffswitch-label" for="example5">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
 												</div>
 											</div>
-											<div class="setings-item">
-												<span>
-													Globaalne otsing
-												</span>
-												<div class="switch">
-													<div class="onoffswitch">
-														<input type="checkbox" checked="" name="collapsemenu" class="onoffswitch-checkbox" id="example6">
-														<label class="onoffswitch-label" for="example6">
-															<span class="onoffswitch-inner"></span>
-															<span class="onoffswitch-switch"></span>
-														</label>
-													</div>
+										</div>
+										<div class="setings-item">
+											<span>
+												Globaalne otsing
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" checked="" name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+													<label class="onoffswitch-label" for="example6">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
 												</div>
 											</div>
-											<div class="setings-item">
-												<span>
-													Uuenda igapäev
-												</span>
-												<div class="switch">
-													<div class="onoffswitch">
-														<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
-														<label class="onoffswitch-label" for="example7">
-															<span class="onoffswitch-inner"></span>
-															<span class="onoffswitch-switch"></span>
-														</label>
-													</div>
+										</div>
+										<div class="setings-item">
+											<span>
+												Uuenda igapäev
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+													<label class="onoffswitch-label" for="example7">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
 												</div>
 											</div>
-											<div class="sidebar-content">
-												<h4>Sätted</h4>
-												<div class="small">
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia doloremque ducimus, iste cum molestiae unde recusandae dolorem necessitatibus, quod? Pariatur officia omnis aperiam doloribus, impedit ipsa laborum provident accusamus quos obcaecati mollitia beatae. Placeat, totam, fugiat. Ad architecto repudiandae, non.
-												</div>
+										</div>
+										<div class="sidebar-content">
+											<h4>Sätted</h4>
+											<div class="small">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia doloremque ducimus, iste cum molestiae unde recusandae dolorem necessitatibus, quod? Pariatur officia omnis aperiam doloribus, impedit ipsa laborum provident accusamus quos obcaecati mollitia beatae. Placeat, totam, fugiat. Ad architecto repudiandae, non.
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 894px; background: rgb(0, 0, 0);"></div>
-								<div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.4; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
 							</div>
+							<div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 894px; background: rgb(0, 0, 0);"></div>
+							<div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.4; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
 						</div>
-						<!--_______MODAL CONTENT END_______________-->
-						<!--______ CONTENT END _______________________ -->
-						<!--______ FOOTER ____________________________ -->
-						<div class="footer">
-							<div class="pull-right">
-								10GB of <strong>250GB</strong> Free.
-							</div>
-							<div>
-								<strong>Copyright</strong> Example Company &copy; 2014-2015
-							</div>
-						</div>
-						<!--______ FOOTER END ________________________ -->
 					</div>
-					<!--______ 3RD BLOCK ERRAND FORM END ______-->
+					<!--MODAL CONTENT END
+--------------------------------------------------------------->
 				</div>
-				<!--_________CONTENT END_______________________________-->
-				<!-- Mainly scripts -->
+				<!--PAGE END
+--------------------------------------------------------------->
+					<!--FOOTER
+--------------------------------------------------------------->
+					<div class="footer">
+						<div class="pull-right">
+							TTÜ Siseportaal &copy; 2014 - 2015
+						</div>
+					</div>
+				<!--SCRIPTS
+--------------------------------------------------------------->
+				<!-- Main scripts -->
 				<script src="js/jquery-2.1.1.js"></script>
 				<script src="js/bootstrap.min.js"></script>
-
-				<!-- page scripts -->
+				<!-- Plugin javascript -->
 				<script src="js/plugins/moment/moment.min.js"></script>
 				<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
 				<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-
-				<!-- Custom and plugin javascript -->
 				<script src="js/inspinia.js"></script>
 				<script src="js/plugins/pace/pace.min.js"></script>
 				<script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
 				<script src="js/plugins/x-editable/bootstrap-editable.js"></script>
 				<script src="js/plugins/iCheck/icheck.min.js"></script>
 				<script src="js/plugins/switchery/switchery.min.js"></script>
+				<!-- Custom javascript -->
 				<script src="js/navbar_menu.js"></script>
 				<script src="js/lahetus.js"></script>
-				<!--___________ ON PAGE SCRIPTS_______________________ -->
-				<script>
+				<script src="js/sidebar.js"></script>
 
-				</script>
 			</div>
+			<!--CONTENT END
+--------------------------------------------------------------->
 		</div>
 	</body>
 
