@@ -106,8 +106,8 @@ li.level-2 a:hover {
 	white-space: nowrap;
 	z-index: 999;
 	-webkit-box-shadow: 9px 10px 5px -6px rgba(230,225,230,0.57);
--moz-box-shadow: 9px 10px 5px -6px rgba(230,225,230,0.57);
-box-shadow: 9px 10px 5px -6px rgba(230,225,230,0.57);
+	-moz-box-shadow: 9px 10px 5px -6px rgba(230,225,230,0.57);
+	box-shadow: 9px 10px 5px -6px rgba(230,225,230,0.57);
 }
 .dropdown-menu-large .l3:after, .dropdown-menu-large .l3:before {
 	right: 100%;
@@ -334,9 +334,12 @@ white-space: normal;
 .nav-header {
 	padding: 0px 0px;
 	background: @cherry;
-
 }
-
+@media(max-width: 992px) {
+	.nav-header {
+		background: #77073D;
+	}
+}
 .pace-done .nav-header {
 	transition:all 0.5s;
 }
@@ -377,7 +380,7 @@ white-space: normal;
 	float: left;
 }
 .minimalize-styl-2:active, .minimalize-styl-2:focus, .minimalize-styl-2:hover {
-		color: white;
+	color: white;
 }
 .navbar-form-custom {
 	float: left;
@@ -427,16 +430,16 @@ white-space: normal;
 	transition: all 0.7s ease 0s;
 }
 #srch-term:focus {
-    background: #fcfcfc;
-    color: #6a6f75;
-    width: 190px;
-    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
-    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
-    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	background: #fcfcfc;
+	color: #6a6f75;
+	width: 190px;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 #srch-term::-webkit-input-placeholder {
-   color: white;
+	color: white;
 	webkit-transition: all 0.7s ease 0s;
 	-moz-transition: all 0.7s ease 0s;
 	-o-transition: all 0.7s ease 0s;
@@ -444,7 +447,7 @@ white-space: normal;
 }
 
 #srch-term:-moz-placeholder { /* Firefox 18- */
-   color: white;
+	color: white;
 	webkit-transition: all 0.7s ease 0s;
 	-moz-transition: all 0.7s ease 0s;
 	-o-transition: all 0.7s ease 0s;
@@ -452,7 +455,7 @@ white-space: normal;
 }
 
 #srch-term::-moz-placeholder {  /* Firefox 19+ */
-   color: white;
+	color: white;
 	webkit-transition: all 0.7s ease 0s;
 	-moz-transition: all 0.7s ease 0s;
 	-o-transition: all 0.7s ease 0s;
@@ -460,23 +463,23 @@ white-space: normal;
 }
 
 #srch-term:-ms-input-placeholder {
-   color: white;
+	color: white;
 	webkit-transition: all 0.7s ease 0s;
 	-moz-transition: all 0.7s ease 0s;
 	-o-transition: all 0.7s ease 0s;
 	transition: all 0.7s ease 0s;
 }
 #srch-term:focus::-webkit-input-placeholder {
-   color: @text-color;
+	color: @text-color;
 }
 #srch-term:focus:-moz-placeholder {
-   color: @text-color;
+	color: @text-color;
 }
 #srch-term:focus::-moz-placeholder {
-   color: @text-color;
+	color: @text-color;
 }
 #srch-term:focus:-ms-input-placeholder {
-   color: @text-color;
+	color: @text-color;
 }
 /* end
 --------------------------------------------------------------------*/
@@ -502,16 +505,16 @@ white-space: normal;
 	transition: all 0.7s ease 0s;
 }
 #srch-term2:focus {
-    background: #fcfcfc;
-    color: #6a6f75;
-    width: 150px;
-    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
-    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
-    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	background: #fcfcfc;
+	color: #6a6f75;
+	width: 150px;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 #srch-term2::-webkit-input-placeholder {
-   color: white;
+	color: white;
 	webkit-transition: all 0.7s ease 0s;
 	-moz-transition: all 0.7s ease 0s;
 	-o-transition: all 0.7s ease 0s;
@@ -519,7 +522,7 @@ white-space: normal;
 }
 
 #srch-term2:-moz-placeholder { /* Firefox 18- */
-   color: white;
+	color: white;
 	webkit-transition: all 0.7s ease 0s;
 	-moz-transition: all 0.7s ease 0s;
 	-o-transition: all 0.7s ease 0s;
@@ -527,7 +530,7 @@ white-space: normal;
 }
 
 #srch-term2::-moz-placeholder {  /* Firefox 19+ */
-   color: white;
+	color: white;
 	webkit-transition: all 0.7s ease 0s;
 	-moz-transition: all 0.7s ease 0s;
 	-o-transition: all 0.7s ease 0s;
@@ -535,23 +538,23 @@ white-space: normal;
 }
 
 #srch-term2:-ms-input-placeholder {
-   color: white;
+	color: white;
 	webkit-transition: all 0.7s ease 0s;
 	-moz-transition: all 0.7s ease 0s;
 	-o-transition: all 0.7s ease 0s;
 	transition: all 0.7s ease 0s;
 }
 #srch-term2:focus::-webkit-input-placeholder {
-   color: @text-color;
+	color: @text-color;
 }
 #srch-term2:focus:-moz-placeholder {
-   color: @text-color;
+	color: @text-color;
 }
 #srch-term2:focus::-moz-placeholder {
-   color: @text-color;
+	color: @text-color;
 }
 #srch-term2:focus:-ms-input-placeholder {
-   color: @text-color;
+	color: @text-color;
 }
 /* end
 --------------------------------------------------------------------*/
@@ -568,7 +571,7 @@ white-space: normal;
 }
 
 .fa.arrow:before {
-	content: "\f104";
+	content: "\f105";
 }
 
 .active > a > .fa.arrow:before {
@@ -751,7 +754,7 @@ body.canvas-menu .logo-element {
 
 body.mini-navbar .nav-header {
 	padding: 0;
-	background-color: @cherry;
+	background-color: #77073D;
 }
 
 body.canvas-menu .nav-header {
