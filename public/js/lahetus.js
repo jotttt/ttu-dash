@@ -24,8 +24,8 @@ $(document).ready(function(){
 		checkboxClass: 'icheckbox_square-grey',
 		radioClass: 'iradio_square-grey',
 		increaseArea: '20%' // optional
-	});
-	// END CHECKBOX PLUGIN
+	}); //end
+
 	//DATEPICKER PLUGIN
 	$.fn.datepicker.defaults.format = 'dd-mm-yyyy';
 	// END DATEPICKER PLUGIN
@@ -34,6 +34,7 @@ $(document).ready(function(){
 	//defaults
 	$.fn.editable.defaults.url = '/post';
 	$.fn.editable.defaults.showbuttons = false;
+	$.fn.editable.defaults.emptytext = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
 	//enable / disable
 	$('#enable').click(function() {
 		$('#user .editable').editable('toggleDisabled');
@@ -111,17 +112,53 @@ $(document).ready(function(){
 			{value: 2, text: 'Ei soovi avansi'}
 		]
 	});
-	$('#travel_cost').editable({
+	$('#travel-cost').editable({
 		type: 'text',
 		url: '/post',
 	});
-	$('#accomodation_cost').editable({
+	$("#travel-cost-comment").editable({
+		type: 'textarea',
+		url: '/post',
+	});
+	$("#travel-cost-advance").editable({
+		type: 'select',
+		url: '/post',
+		source: [
+			{value: 1, text: 'Soovin avansi'},
+			{value: 2, text: 'Ei soovi avansi'}
+		]
+	});
+	$('#accomodation-cost').editable({
 		type: 'text',
 		url: '/post',
 	});
-	$('#other_cost').editable({
+	$("#accomodation-cost-comment").editable({
+		type: 'textarea',
+		url: '/post',
+	});
+	$("#accomodation-cost-advance").editable({
+		type: 'select',
+		url: '/post',
+		source: [
+			{value: 1, text: 'Soovin avansi'},
+			{value: 2, text: 'Ei soovi avansi'}
+		]
+	});
+	$('#other-cost').editable({
 		type: 'text',
 		url: '/post',
+	});
+	$("#other-cost-comment").editable({
+		type: 'textarea',
+		url: '/post',
+	});
+	$("#other-cost-advance").editable({
+		type: 'select',
+		url: '/post',
+		source: [
+			{value: 1, text: 'Soovin avansi'},
+			{value: 2, text: 'Ei soovi avansi'}
+		]
 	});
 
 	// END INLINE EDITING PLUGIN
