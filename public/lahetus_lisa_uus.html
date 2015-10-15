@@ -16,6 +16,7 @@
 		<link href="css/plugins/datapicker/datepicker3.min.css" rel="stylesheet">
 		<link href="css/plugins/iCheck/grey.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/plugins/switchery/switchery.css" />
+		<link rel="stylesheet" href="css/plugins/select2/select2.min.css">
 		<link href="css/style.css" rel="stylesheet">
 
 
@@ -76,7 +77,7 @@
 						<a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Minu üksus</span><span class="fa arrow"></span></a>
 						<ul class="nav nav-second-level">
 							<li><a href="/myunit/9045239624610520" id="_myunit" class="ajax-load">Inimesed</a></li>
-							<li><a href="/trip/9045239624610520" id="_trip" class="ajax-load">Lähetused</a></li>
+							<li><a href="lahetus_uld.html" id="_trip" class="ajax-load">Lähetused</a></li>
 							<li><a href="/budget/9045239624610520" id="_budget" class="ajax-load">Eelarve</a></li>
 
 						</ul>
@@ -402,7 +403,7 @@
 					<div>
 						<div class="row"><div class="col-sm-12 text-center font-bold m-b-xs m-t-md">Lähetuse sisu</div></div>
 						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Sihtkoht</div><div class="col-xs-6"><a href="#" id="destination" data-type="text" data-pk="1" data-title="Please, fill address"></a>
+							<div class="col-xs-6 text-right m-b-xs">Sihtkoht</div><div class="col-xs-6"><a href="#" id="country" data-type="select2" data-pk="1" data-value="AL" data-title="Select country" class="editable editable-click"></a>
 							</div>
 						</div>
 						<div class="row">
@@ -421,116 +422,80 @@
 --------------------------------------------------------------->
 					<div>
 						<div class="row">
-							<div class="col-sm-12 text-center font-bold m-b-xs m-t-md">Planeeritavad kulud</div>
+							<div class="col-xs-6 text-right font-bold m-b-xs m-t-md">Planeeritavad kulud</div>
 						</div>
 						<div class="row">
 							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Päevaraha</span></div>
-							<div class="col-xs-6">
+							<div class="col-xs-6 ">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
-							<div class="col-xs-6"><a href="#" id="daily-cost" data-type="text" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a></div>
+							<div class="col-xs-6 "><a href="#" id="daily-cost" data-type="text" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a></div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Selgitus </span></div>
-							<div class="col-xs-6">
+							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
+							<div class="col-xs-6  m-b-xs">
 								<a href="#" id="daily-cost-comment" data-type="textarea" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right"><span>Avansi soov</span></div>
-							<div class="col-xs-6 m-b">
-								<a href="#" id="daily-cost-advance" data-type="select" data-pk="1" data-value="" data-title="enter amount"></a>
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Sõidukulu</span></div>
-							<div class="col-xs-6">
+							<div class="col-xs-6 ">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
-							<div class="col-xs-6"><a href="#" id="travel-cost" data-type="text" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a></div>
+							<div class="col-xs-6 "><a href="#" id="travel-cost" data-type="text" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a></div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Selgitus </span></div>
-							<div class="col-xs-6 m-b-xs">
+							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
+							<div class="col-xs-6   m-b-xs">
 								<a href="#" id="travel-cost-comment" data-type="textarea" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Avansi soov</span></div>
-							<div class="col-xs-6 m-b">
-								<a href="#" id="travel-cost-advance" data-type="select" data-pk="1" data-value="" data-title="enter amount"></a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Majutuskulu</span></div>
-							<div class="col-xs-6">
+							<div class="col-xs-6 text-right m-t m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Majutuskulu</span></div>
+							<div class="col-xs-6 ">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
-							<div class="col-xs-6"><a href="#" id="accomodation-cost" data-type="text" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a></div>
+							<div class="col-xs-6 "><a href="#" id="accomodation-cost" data-type="text" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a></div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Selgitus </span></div>
-							<div class="col-xs-6">
+							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
+							<div class="col-xs-6   m-b-xs">
 								<a href="#" id="accomodation-cost-comment" data-type="textarea" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Avansi soov</span></div>
-							<div class="col-xs-6 m-b">
-								<a href="#" id="accomodation-cost-advance" data-type="select" data-pk="1" data-value="" data-title="enter amount"></a>
-							</div>
-						</div>
-						<div class="row">
 							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Muud kulud</span></div>
-							<div class="col-xs-6">
+							<div class="col-xs-6 ">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
-							<div class="col-xs-6"><a href="#" id="other-cost" data-type="text" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a></div>
+							<div class="col-xs-6 "><a href="#" id="other-cost" data-type="text" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a></div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Selgitus </span></div>
-							<div class="col-xs-6 m-b-xs">
+							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
+							<div class="col-xs-6  m-b-xs">
 								<a href="#" id="other-cost-comment" data-type="textarea" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Avansi soov</span></div>
-							<div class="col-xs-6 m-b">
-								<a href="#" id="other-cost-advance" data-type="select" data-pk="1" data-value="" data-title="enter amount"></a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4"></div>
-							<div class="col-md-4 text-right">
+							<div class="col-md-12 text-right">
 								<div class="hr-line-solid"></div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right">Kokku</div><div class="col-xs-6 m-b"><a href="#" id="total-cost" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a></div>
+						<div class="row m-b-xs">
+							<div class="col-xs-6 text-right">Avanss</div><div class="col-xs-6"><a href="#" id="advance" data-type="text" data-pk="1" data-value="" data-title="advance" class="editable editable-click" ></a></div>
 						</div>
 
 						<div class="row">
-							<div class="col-lg-4 text-right"></div>
-							<div class="col-lg-4 m-t-lg m-b-lg">
-								<div style="border: 1px solid #c9c9c9; padding: 10px">Olen töölähetuse tingimustega nõus ning teadlik, et tähtajaks tagastamata avansi võib tööandja minu palgast kinni pidada.</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right">
-								<button class="btn btn-primary">Tühista</button>
-							</div>
-							<div class="col-xs-6 m-b">
-								<span><button class="btn btn-primary">Nõustu ja saada avaldus</button></span>
-							</div>
+							<div class="col-xs-6 text-right">Kokku</div><div class="col-xs-6  m-b"><a href="#" id="total-cost" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" ></a></div>
 						</div>
 					</div>
 					<!--3RD BLOCK ERRAND FORM END
@@ -738,13 +703,13 @@
 				</div>
 				<!--PAGE END
 --------------------------------------------------------------->
-					<!--FOOTER
+				<!--FOOTER
 --------------------------------------------------------------->
-					<div class="footer">
-						<div class="pull-right">
-							TTÜ Siseportaal &copy; 2014 - 2015
-						</div>
+				<div class="footer">
+					<div class="pull-right">
+						TTÜ Siseportaal &copy; 2014 - 2015
 					</div>
+				</div>
 				<!--SCRIPTS
 --------------------------------------------------------------->
 				<!-- Main scripts -->
@@ -758,6 +723,7 @@
 				<script src="js/plugins/pace/pace.min.js"></script>
 				<script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
 				<script src="js/plugins/x-editable/bootstrap-editable.js"></script>
+				<script src="js/plugins/select2/select2.min.js"></script>
 				<script src="js/plugins/iCheck/icheck.min.js"></script>
 				<script src="js/plugins/switchery/switchery.min.js"></script>
 				<!-- Custom javascript -->

@@ -19,6 +19,7 @@ body.full-height-layout #page-wrapper {
 
 #page-wrapper {
 	min-height: auto;
+	border-left: 1px solid @lightest-grey;
 }
 
 body.boxed-layout {
@@ -173,6 +174,7 @@ video {
 #wrapper {
 	width: 100%;
 	overflow-x: hidden;
+	background: white;
 }
 
 .wrapper {
@@ -686,7 +688,10 @@ table.table-mail tr td {
 .white-bg {
 	background-color: #ffffff;
 }
-
+.white-bordered-bg {
+	background-color: #ffffff;
+	border: 1px solid @lightest-grey;
+}
 .cherry-bg {
 	background-color: @cherry;
 	.voremodulatsioon-nav;
@@ -698,10 +703,13 @@ table.table-mail tr td {
 		background-repeat:repeat;
 	}
 }
-.cherry-bg-alt {
+.cherry-alt-bg {
 	background-color: @cherry;
 	.voremodulatsioon-nav;
 	background-position: 100% 0;
+}
+.cherry-trans-bg {
+	background: @cherry;
 }
 .blue-bg {
 	background-color: @blue;
@@ -721,6 +729,18 @@ table.table-mail tr td {
 
 .black-bg {
 	background-color: #262626;
+}
+.grey-modulation-bg {
+	background: url(../img/vv.svg) top left repeat, url(../img/v2.svg) top left no-repeat;
+    background-attachment: fixed;
+    background-position: top left;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    background-size: auto, cover;
+}
+.panel-group {
+	margin: 0px;
 }
 
 .panel-primary {
@@ -771,7 +791,15 @@ table.table-mail tr td {
 	border-color: @red;
 	color: #ffffff;
 }
-
+.errand-panel-title {
+	color: red;
+}
+.errand-panel {
+	background: transparent;
+	border-color: transparent;
+	border: 0px solid;
+	border-radius: 0px;
+}
 .progress-bar {
 	background-color: @cherry;
 }
@@ -809,6 +837,46 @@ table.table-mail tr td {
 	background-color: @red;
 }
 
+.progress-bar-10 {
+	background-color: #5C706C;
+}
+
+.progress-bar-20 {
+	background-color: #527A72;
+}
+
+.progress-bar-30 {
+	background-color: #478578;
+}
+
+.progress-bar-40 {
+	background-color: #3D8F7E;
+}
+
+.progress-bar-50 {
+	background-color: #339985;
+}
+
+.progress-bar-60 {
+	background-color: #29A38B;
+}
+
+.progress-bar-70 {
+	background-color: #1FAD91;
+}
+
+.progress-bar-80 {
+	background-color: #1AB394;
+}
+
+.progress-bar-90 {
+	background-color: #0AC29D;
+}
+
+.progress-bar-100 {
+	background-color: #00CCA3;
+}
+
 .panel-title {
 	font-size: inherit;
 }
@@ -823,6 +891,9 @@ table.table-mail tr td {
 }
 
 /* COLORS */
+.text-cherry {
+	color: @cherry;
+}
 
 .text-navy {
 	color: @cherry;
@@ -856,7 +927,9 @@ table.table-mail tr td {
 .text-lighter-grey {
 	color: @lighter-grey;
 }
-
+.text-white {
+	color: white !important;
+}
 .simple_tag {
 	background-color: #f3f3f4;
 	border: 1px solid #e7eaec;

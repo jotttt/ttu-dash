@@ -1,7 +1,35 @@
 // main: style.less
-//TEST
+//ARENGUKAVA MOODUL
 
-// TEST END
+.card {
+	border: 1px solid @lightest-grey;
+	position: absolute;
+	background-color: #FFF;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	margin-top: -26px;
+	padding: 5px 10px 0;
+	z-index: -1;
+	text-transform: uppercase;
+	color: @lighter-grey;
+	cursor: pointer;
+}
+.card:hover {
+	color: @cherry;
+	border-top: 1px solid @lighter-grey;
+	border-left: 1px solid @lighter-grey;
+	border-right: 1px solid @lighter-grey;
+}
+.card.active {
+	border-top: 1px solid @lightest-grey;
+	border-left: 1px solid @lightest-grey;
+	border-right: 1px solid @lightest-grey;
+	border-bottom: 1px solid transparent;
+	z-index: 1;
+	color: @grey;
+}
+
+//ARENGUKAVA MOODUL END
 /* DASBOARD */
 .dashboard-header {
 	border-top: 0;
@@ -52,12 +80,12 @@ ul.clear-list:first-child {
 
 }
 .news-heading img {
-display: block;
+	display: block;
 
 }
 .news-text {
 	position: absolute;
-  bottom: 0;
+	bottom: 0;
 	width: 100%;
 	padding: 20px;
 	margin: 0px;

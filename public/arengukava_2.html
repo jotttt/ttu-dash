@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="et">
+
+	<head>
+		<meta charset="utf-8">
+		<title>TTÜ | Arengukavad</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/plugins/chartist/chartist.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/arengukava_stiilid.css">
+	</head>
+
+	<body>
+		<button id="expand-menu-button" class="btn btn-round"><i class="fa fa-bars"></i></button>
+		<div id="sidebar-wrapper">
+
+			<h5 class="title text-center">Staatus</h5>
+			<div id="ct-1" class="ct-double-octave"></div>
+			<hr class="bottom">
+			<!--LEVEL START
+------------------------------------------------------------------>
+			<h5 class="title text-center">Tase</h5>
+			<div id="ct-2" class="ct-double-octave"></div>
+			<!--LEVEL END
+------------------------------------------------------------------>
+			<hr class="bottom">
+
+			<!--SUBJECT START
+------------------------------------------------------------------>
+			<h5 class="title text-center">Valdkond</h5>
+			<ul style="list-style-type: none;margin: 0px">
+				<li><a style="color:#4c4c4e;" href="#"><i class="fa fa-university"></i>Missioon, visioon, väärtused</a></li>
+				<li><a style="color:#4c4c4e;" href="#"><i class="fa fa-users"></i> Inimressurss</a></li>
+				<li style="background:white"><a style="color:#4c4c4e;" href="#"><i class="fa fa-arrows"></i> Juhtimissüsteem</a></li>
+				<li><a style="color:#4c4c4e;" href="#"><i class="fa fa-mortar-board"></i> Õppetöö</a></li>
+				<li style="background:white"><a style="color:#4c4c4e;" href="#"><i class="fa fa-flask"></i> Teadus-arendustöö</a></li>
+				<li><a style="color:#4c4c4e;" href="#"><i class="fa fa-flag"></i> Ühiskonna teenimine</a></li>
+				<li><a class="label label-white-o" style="color:#4c4c4e; padding: 0 0 0 200px" href="#">vaata veel <i class="fa fa-chevron-down"></i></a></li>
+			</ul>
+			<!--SUBJECT END
+------------------------------------------------------------------>
+			<hr class="bottom">
+			<!--SUBJECT START
+------------------------------------------------------------------>
+			<div class="m-md">
+				<h5 class="title text-center">Struktuuriüksus</h5>
+				<select class="form-control m-b" name="yks">
+					<option>Instituut</option>
+					<option>Valik 2</option>
+					<option>Valik 3</option>
+					<option>Valik 4</option>
+				</select>
+				<select class="form-control m-b" name="kaks">
+					<option>juhtkond, HTS</option>
+					<option>Valik 2</option>
+					<option>Valik 3</option>
+					<option>Valik 4</option>
+				</select>
+				<input type="text" placeholder="Töötaja otsing" class="form-control">
+			</div>
+			<!--SUBJECT END
+------------------------------------------------------------------>
+			<hr class="bottom">
+		</div>
+		<div id="content-wrapper">
+			<!--CONTENT BEGIN
+------------------------------------------------------------------>
+			<div class="widget white-bordered-bg no-padding m-b">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="p-m">
+							<h5 class="text-muted text-uppercase">Kuvatakse</h5>
+							<h1 class=" m-l">12</h1>
+							<h3 class="font-normal m-l">Tegevust</h3>
+						</div>
+						<div class="p-m">
+							<h5 class="text-muted text-uppercase m-b-md">Filtrid</h5>
+							<div>
+								<div class="label label-done m-l">Tehtud</div>
+								<div class="label label-in-progress m-l">Töös</div>
+							</div>
+							<div class="m-t">
+								<div class="label label-white-o m-l"><i class="fa fa-arrows"></i></div>
+								<div class="label label-white-o m-l"><i class="fa fa-flask"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="p-m">
+							<h5 class="text-muted text-uppercase">Staatus</h5>
+						</div>
+						<div id="ct-3" class="ct-square"></div>
+					</div>
+					<div class="col-md-4">
+						<div class="p-m">
+							<h5 class="text-muted text-uppercase">Tase</h5>
+						</div>
+						<div id="ct-4" class="ct-square"></div>
+					</div>
+				</div>
+			</div>
+			<!--GOAL NR 1
+------------------------------------------------------------------>
+			<div class="row goal">
+				<div class="widget white-bordered-bg no-padding no-margins">
+					<div class="p-m">
+						<div class="row">
+							<div class="col-md-6">
+								<select class="form-control" name="kolm">
+									<option>Konkreetne tegevus</option>
+									<option>Valik 2</option>
+									<option>Valik 3</option>
+									<option>Valik 4</option>
+								</select>
+							</div>
+							<div class="col-md-6">
+								<select class="form-control m-b" name="neli">
+									<option>Inimressurss</option>
+									<option>Valik 2</option>
+									<option>Valik 3</option>
+									<option>Valik 4</option>
+								</select>
+							</div>
+						</div>
+						<div class="row b-b" style="border-bottom: 1px solid #f1f1f1;">
+							<div class="col-md-12">
+								<strong>Seame sihiks jõuda teadus- ja arendustegevuse rahastamisel 3%-ni SKTst, sealhulgas erasektori osaluseni vähemalt 2/3 ulatuses sellest.</strong>
+							</div>
+						</div>
+						<div class="row m-t-sm">
+							<div class="col-md-6">
+								<h5 data-brackets-id="51" class="text-muted text-uppercase">Progress</h5>
+								<div class="progress m" data-toggle="tooltip" data-placement="top" title="" data-original-title="60%">
+									<div style="width: 60%;" class="progress-bar progress-bar-success"></div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<h5 data-brackets-id="51" class="text-muted text-uppercase">Vastutaja</h5>
+								<strong class="m-l">Sander Marandi</strong>
+							</div>
+							<div class="col-md-3">
+								<h5 data-brackets-id="51" class="text-muted text-uppercase">Osakond</h5>
+								<div  class="m-l"><strong>Küberneetika Instituut</strong></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--GOAL NR 2
+------------------------------------------------------------------>
+			<div class="row goal">
+				<div class="widget white-bordered-bg no-padding no-margins">
+					<div class="p-m">
+						<div class="row">
+							<div class="col-md-6">
+								<select class="form-control" name="kolm">
+									<option>Konkreetne tegevus</option>
+									<option>Valik 2</option>
+									<option>Valik 3</option>
+									<option>Valik 4</option>
+								</select>
+							</div>
+							<div class="col-md-6">
+								<select class="form-control m-b" name="neli">
+									<option>Inimressurss</option>
+									<option>Valik 2</option>
+									<option>Valik 3</option>
+									<option>Valik 4</option>
+								</select>
+							</div>
+						</div>
+						<div class="row b-b" style="border-bottom: 1px solid #f1f1f1;">
+							<div class="col-md-12">
+								<strong>Eesti majanduse konkurentsivõime tõstmiseks loome soodsa keskkonna välistudengite ja tippspetsialistide Eestisse tulekuks.</strong>
+							</div>
+						</div>
+						<div class="row m-t-sm">
+							<div class="col-md-6">
+								<h5 data-brackets-id="51" class="text-muted text-uppercase">Progress</h5>
+								<div class="progress m" data-toggle="tooltip" data-placement="top" title="" data-original-title="20%">
+									<div style="width: 20%;" class="progress-bar progress-bar-success"></div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<h5 data-brackets-id="51" class="text-muted text-uppercase">Vastutaja</h5>
+								<strong class="m-l">Priit Tamm</strong>
+							</div>
+							<div class="col-md-3">
+								<h5 data-brackets-id="51" class="text-muted text-uppercase">Osakond</h5>
+								<div  class="m-l"><strong>IT</strong></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--GOAL NR 2 END
+------------------------------------------------------------------>
+		</div>
+		<!--CONTENT END
+------------------------------------------------------------------>			<!--SCRIPTS
+------------------------------------------------------------------>
+		<script src="js/jquery-2.1.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+		<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+		<!-- Plugin javascript -->
+		<script src="js/inspinia.js"></script>
+		<script src="js/plugins/pace/pace.min.js"></script>
+		<!-- Chartist js library -->
+		<script src="js/plugins/chartist/chartist.min.js"></script>
+		<script src="js/plugins/chartist/chartist-plugin-tooltip.min.js"></script>
+		<!-- Custom scripts -->
+		<script src="js/arengukava.js"></script>
+		<script>
+			//STATUSBAR BEHAVIOUR
+	//--------------------------------------------------------------
+	$("#ct-1").click(function(){
+		console.log($(this).children("svg").children("g:nth-child(2)").children("g:first-child").children().children().css("color","blue"));
+	});
+		</script>
+	</body>
+</html>

@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>TTÜ | Lähetused</title>
+		<title>TTÜ | Juhi töölaud</title>
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -16,7 +16,9 @@
 		<link href="css/plugins/datapicker/datepicker3.min.css" rel="stylesheet">
 		<link href="css/plugins/iCheck/grey.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/plugins/switchery/switchery.css" />
+		<link rel="stylesheet" href="css/plugins/chartist/chartist.min.css">
 		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/arengukava_stiilid.css">
 
 
 	</head>
@@ -362,10 +364,10 @@
 					<div class="col-md-4">
 						<ol class="breadcrumb">
 							<li>
-								<a href="index.html">This is</a>
+								<a href="index.html">Juhi töölaud</a>
 							</li>
 							<li class="active">
-								<strong>Breadcrumb</strong>
+								<strong>Arengukavad</strong>
 							</li>
 						</ol>
 					</div>
@@ -374,131 +376,227 @@
 				</div>
 				<!--PAGE
 --------------------------------------------------------------->
-				<div class="wrapper wrapper-content animated fadeInRight" style="font-size: 1.3em">
-					<!--1ST BLOCK ERRAND FORM
---------------------------------------------------------------->
-					<div>
-						<div class="row"><div class="col-sm- text-center font-bold m-b-xs">Üldandmed</div></div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Lähetatu nimi</div><div class="col-xs-6"><a href="#" id="name" data-type="text" data-pk="1" data-url="/post">Peeter Kuusk</a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Struktuuriüksus</div><div class="col-xs-6"><a href="#" id="department" data-type="text" data-pk="1" data-url="/post">Tarkvara osakond</a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Amet</div><div class="col-xs-6"><a href="#" id="position" data-type="text" data-pk="1" data-url="/post">Arendusjuht</a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Lähetuse kestus</div><div class="col-xs-6"><a href="#" id="errand_duration_b" data-type="combodate" data-value="2015-12-09" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-original-title="Select Date of birth" class="editable editable-click"></a> - <a href="#" id="errand_duration_e" data-type="combodate" data-value="2015-12-16" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-original-title="Select Date of birth" class="editable editable-click"></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right">Finantseerimise allikad</div><div class="col-xs-6"><a href="#" id="financing" data-type="text" data-value="NATO" data-pk="1" data-url="/post" data-placeholder="Puuduvad"></a></div>
-						</div>
-					</div>
-					<!--1ST BLOCK ERRAND FORM END
---------------------------------------------------------------->
-					<!--2ND BLOCK ERRAND FORM
---------------------------------------------------------------->
-					<div>
-						<div class="row"><div class="col-sm-12 text-center font-bold m-b-xs m-t-md">Lähetuse sisu</div></div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Sihtkoht</div><div class="col-xs-6"><a href="#" id="destination" data-type="text" data-value="Leyden, Holland" data-pk="1" data-title="Please, fill address"></a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Organisatsioon</div><div class="col-xs-6"><a href="#" id="organization" data-type="text" data-value="MSG-117" data-pk="1" data-url="/post"></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Lähetuse eesmärk</div><div class="col-xs-6"><a href="#" id="errand-goal" data-type="select" data-value="9" data-pk="1" data-url="/post"></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right">Sõiduvahend</div><div class="col-xs-6"><a href="#" id="transportation" data-type="checklist" data-title="Select transportation" data-value="1,2,4" class="editable editable-click" data-original-title="" title=""><br><br></a></div>
-						</div>
-					</div>
-					<!--2ND BLOCK ERRAND FORM END
---------------------------------------------------------------->
-									<!--3RD BLOCK ERRAND FORM
---------------------------------------------------------------->
-					<div>
-						<div class="row">
-							<div class="col-xs-6 text-right font-bold m-b-xs m-t-md">Planeeritavad kulud</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Päevaraha</span></div>
-							<div class="col-xs-6 ">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
-							<div class="col-xs-6 "><a href="#" id="daily-cost" data-type="text" data-pk="1" data-value="350€" data-title="Select sex" class="editable editable-click" ></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
-							<div class="col-xs-6  m-b-xs">
-								<a href="#" id="daily-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iure sapiente sint ut quod eligendi earum inventore odit natus voluptas, soluta rem dolorum possimus. Quaerat sapiente sunt perferendis obcaecati aliquid." data-title="Select sex" class="editable editable-click" ></a>
-							</div>
-						</div>
+				<div class="wrapper wrapper-content animated fadeInRight">
+					<!--CONTENT BEGIN
+------------------------------------------------------------------>
+					<div id="content-wrapper2">
+						<!--RIGHT SIDEBAR FILTER
+------------------------------------------------------------------>
+						<div id="right-sidebar-filter" class="pull-right">
+							<h2 class="text-muted text-uppercase m-l">filter</h2>
+							<!-- STATUS BEGIN
+------------------------------------------------------------------>
+							<h5 class="text-uppercase text-center m-b m-t-lg">Staatus</h5>
+							<ul class="list-unstyled m-l m-r">
+								<li  class="m-b-xs">
+									<a href="#">
+										<span class="fa fa-circle m-r-xs" style="color: red;"></span>Alustamata
+									</a>
+								</li>
+								<li  class="m-b-xs">
+									<a href="#">
+										<span class="fa fa-circle m-r-xs" style="color: orange;"></span>Töös
+									</a>
+								</li>
+								<li  class="m-b-xs">
+									<a href="#">
+										<span class="fa fa-circle m-r-xs" style="color: green;"></span>Valmis
+									</a>
+								</li>
+							</ul>
+							<hr class="bottom">
+							<!-- STATUS END
+------------------------------------------------------------------>
+							<!--LEVEL START
+------------------------------------------------------------------>
+							<h5 class="text-uppercase text-center m-b">Tase</h5>
+							<ul class="list-unstyled m-l m-r">
+								<li  class="m-b-xs">
+									<a href="#">
+										<span class="fa fa-italic m-r-xs"></span>Eesmärk
+									</a>
+								</li>
+								<li  class="m-b-xs">
+									<a href="#">
+										<span class="fa fa-italic"></span><span class="fa fa-italic m-r-xs"></span>Alleesmärk
+									</a>
+								</li>
+								<li  class="m-b-xs">
+									<a href="#">
+										<span class="fa fa-italic"></span><span class="fa fa-italic"></span><span class="fa fa-italic m-r-xs"></span>Konkreetne tegevus
+									</a>
+								</li>
+							</ul>
+							<hr class="bottom">
+							<!--LEVEL END
+------------------------------------------------------------------>
 
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Sõidukulu</span></div>
-							<div class="col-xs-6 ">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
-							<div class="col-xs-6 "><a href="#" id="travel-cost" data-type="text" data-pk="1" data-value="452€" data-title="Select sex" class="editable editable-click" ></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
-							<div class="col-xs-6   m-b-xs">
-								<a href="#" id="travel-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, consequatur, rem! Voluptates nesciunt iure esse illo, ipsam qui, perspiciatis nihil!" data-title="Select sex" class="editable editable-click" ></a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-t m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Majutuskulu</span></div>
-							<div class="col-xs-6 ">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
-							<div class="col-xs-6 "><a href="#" id="accomodation-cost" data-type="text" data-pk="1" data-value="1240€" data-title="Select sex" class="editable editable-click" ></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
-							<div class="col-xs-6   m-b-xs">
-								<a href="#" id="accomodation-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, tempora hic ducimus doloribus! Magni doloremque atque non voluptate temporibus ab quas excepturi rem, itaque inventore eveniet sequi, eaque fugit architecto, omnis voluptas possimus nisi iure eum placeat rerum corrupti quibusdam commodi ipsum nostrum. Eligendi recusandae esse sint, ullam maiores voluptates tempore quam mollitia expedita, delectus dolor nam excepturi omnis labore!" data-title="Select sex" class="editable editable-click" ></a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Muud kulud</span></div>
-							<div class="col-xs-6 ">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
-							<div class="col-xs-6 "><a href="#" id="other-cost" data-type="text" data-pk="1" data-value="77€" data-title="Select sex" class="editable editable-click" ></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
-							<div class="col-xs-6  m-b-xs">
-								<a href="#" id="other-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptatem iste eos vitae necessitatibus, ratione veniam itaque. Nulla quos voluptatum rem natus animi esse tempore voluptate, blanditiis saepe at, eum?" data-title="Select sex" class="editable editable-click" ></a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 text-right">
-								<div class="hr-line-solid"></div>
-							</div>
-						</div>
-						<div class="row m-b-xs">
-							<div class="col-xs-6 text-right">Avanss</div><div class="col-xs-6"><a href="#" id="advance" data-type="text" data-pk="1" data-value="" data-title="advance" class="editable editable-click" >350€</a></div>
-						</div>
 
+							<!--SUBJECT START
+------------------------------------------------------------------>
+							<h5 class="text-uppercase text-center m-b">Valdkond</h5>
+							<ul class="list-unstyled m-l m-r">
+								<li  class="m-b-xs">
+									<a href="#">
+										<span class="fa fa-university m-r-xs"></span>Visioon, väärtused
+									</a>
+								</li>
+								<li  class="m-b-xs">
+									<a href="#">
+										<span class="fa fa-users m-r-xs"></span>inimressurss
+									</a>
+								</li>
+								<li  class="m-b-xs">
+									<a href="#">
+										<span class="fa fa-arrows m-r-xs"></span>Juhtimissüsteem
+									</a>
+								</li>
+								<li  class="m-b-xs">
+									<a href="#">
+										<span class="fa fa-graduation-cap m-r-xs"></span>Õppetöö
+									</a>
+								</li>
+								<li  class="m-b-xs">
+									<a href="#">
+										<span class="fa fa-flask m-r-xs"></span>Teadus-arendustöö
+									</a>
+								</li>
+								<li  class="m-b-xs">
+									<a href="#">
+										<span class="fa fa-flag m-r-xs"></span>Ühiskonna teenimine
+									</a>
+								</li>
+								<li  class="m-t">
+									<a class="label label-white-o"  href="#">vaata veel <i class="fa fa-chevron-down"></i></a>
+								</li>
+							</ul>
+
+							<!--SUBJECT END
+------------------------------------------------------------------>
+							<hr class="bottom">
+							<!--SUBJECT START
+------------------------------------------------------------------>
+							<div class="m-md">
+								<h5 class="text-uppercase text-center m-b">Struktuuriüksus</h5>
+								<select class="form-control m-b" name="yks">
+									<option>Instituut</option>
+									<option>Valik 2</option>
+									<option>Valik 3</option>
+									<option>Valik 4</option>
+								</select>
+								<select class="form-control m-b" name="kaks">
+									<option>juhtkond, HTS</option>
+									<option>Valik 2</option>
+									<option>Valik 3</option>
+									<option>Valik 4</option>
+								</select>
+								<input type="text" placeholder="Töötaja otsing" class="form-control">
+							</div>
+							<!--SUBJECT END
+------------------------------------------------------------------>
+						</div>
+						<!--RIGHT SIDEBAR FILTER END
+------------------------------------------------------------------>
+						<!--HEADER WIDGET
+------------------------------------------------------------------>
+						<div class="widget white-bordered-bg no-padding m-b">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="p-m">
+										<h2 class="text-muted text-uppercase">Eesmärk</h2>
+									</div>
+									<ul class="list-unstyled m-l m-r">
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Lorem ipsum dolor sit, consectetur adipisicing elit. Labore, quis.
+											</a>
+										</li>
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Consectetur adipisicing elit. Labore, quis.
+											</a>
+										</li>
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Labore, quis consectetur adipisicing.
+											</a>
+										</li>
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Harum molestiae similique sequi rem error libero ipsum dolor nihil.
+											</a>
+										</li>
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Sequi rem error libero ipsum dolor nihil., consectetur.
+											</a>
+										</li>
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Lorem ipsum dolor sit, consectetur adipisicing elit. Labore, quis.
+											</a>
+										</li>
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Consectetur adipisicing elit. Labore, quis.
+											</a>
+										</li>
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Labore, quis consectetur adipisicing.
+											</a>
+										</li>
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Harum molestiae similique sequi rem error libero ipsum dolor nihil.
+											</a>
+										</li>
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Sequi rem error libero ipsum dolor nihil., consectetur.
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-8">
+									<div class="p-m">
+										<h2 class="text-muted text-uppercase">Alleesmärk</h2>
+									</div>
+									<!--<ul class="list-unstyled m-l m-r">
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ducimus facilis deserunt, debitis dolore repellendus voluptate vitae aliquid, obcaecati, magnam sapiente ex. Perferendis at, quae assumenda praesentium distinctio vitae, sunt sed iusto rem placeat voluptate odit mollitia alias debitis sint soluta! Explicabo itaque blanditiis reiciendis ut nam, iste reprehenderit eius.
+											</a>
+										</li>
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Repellendus voluptate vitae aliquid, obcaecati, magnam sapiente ex. Perferendis at, quae assumenda praesentium distinctio vitae, sunt sed iusto rem placeat voluptate odit mollitia alias debitis sint soluta! Explicabo itaque blanditiis reiciendis ut nam, iste reprehenderit eius.
+											</a>
+										</li>
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Perferendis at, quae assumenda praesentium distinctio vitae, sunt sed iusto rem placeat voluptate odit mollitia alias debitis sint soluta! Explicabo itaque blanditiis reiciendis ut nam, iste reprehenderit eius.
+											</a>
+										</li>
+										<li  class="goal-badge m-b-xs">
+											<a style="color:#000;" href="#">
+												Exercitationem rerum, nam, explicabo maxime praesentium inventore dolorem in non sunt unde, placeat modi deleniti provident sapiente deserunt? Natus inventore enim labore, possimus atque eius necessitatibus, aliquam commodi quo id earum veritatis cupiditate accusamus distinctio facilis voluptatem amet aspernatur suscipit ipsa? Odio possimus ullam, distinctio, rerum quo qui aspernatur harum!
+											</a>
+										</li>
+									</ul>-->
+								</div>
+							</div>
+						</div>
+						<!--CHARTIST ANIMATED CHART
+------------------------------------------------------------------>
 						<div class="row">
-							<div class="col-xs-6 text-right">Kokku</div><div class="col-xs-6  m-b"><a href="#" id="total-cost" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" >2042€</a></div>
+							<div class="ct-chart ct-major-twelfth"></div>
 						</div>
 					</div>
-					<!--3RD BLOCK ERRAND FORM END
---------------------------------------------------------------->
+					<!--CONTENT END
+------------------------------------------------------------------>
+					<!--PAGE END
+----------------------------------------------------------------->
 					<!--MODAL CONTENT
 --------------------------------------------------------------->
 					<div id="right-sidebar" class="">
@@ -702,13 +800,13 @@
 				</div>
 				<!--PAGE END
 --------------------------------------------------------------->
-					<!--FOOTER
+				<!--FOOTER
 --------------------------------------------------------------->
-					<div class="footer">
-						<div class="pull-right">
-							TTÜ Siseportaal &copy; 2014 - 2015
-						</div>
+				<div class="footer">
+					<div class="pull-right">
+						TTÜ Siseportaal &copy; 2014 - 2015
 					</div>
+				</div>
 				<!--SCRIPTS
 --------------------------------------------------------------->
 				<!-- Main scripts -->
@@ -724,11 +822,12 @@
 				<script src="js/plugins/x-editable/bootstrap-editable.js"></script>
 				<script src="js/plugins/iCheck/icheck.min.js"></script>
 				<script src="js/plugins/switchery/switchery.min.js"></script>
+				<script src="js/plugins/chartist/chartist.min.js"></script>
+		<script src="js/plugins/chartist/chartist-plugin-tooltip.min.js"></script>
 				<!-- Custom javascript -->
+				<script src="js/arengukava.js"></script>
 				<script src="js/navbar_menu.js"></script>
-				<script src="js/lahetus.js"></script>
 				<script src="js/sidebar.js"></script>
-
 			</div>
 			<!--CONTENT END
 --------------------------------------------------------------->

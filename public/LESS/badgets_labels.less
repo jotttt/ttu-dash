@@ -1,113 +1,198 @@
 // main: style.less
 
 .label {
-  background-color: @light-gray;
-  color: @label-badget-color;
-  font-family: 'Open Sans';
-  font-size: 10px;
-  font-weight: 600;
-  padding: 3px 8px;
-  text-shadow: none;
+	background-color: @light-gray;
+	color: @label-badget-color;
+	font-family: 'Open Sans';
+	font-size: 10px;
+	font-weight: 600;
+	padding: 3px 8px;
+	text-shadow: none;
+	text-transform: uppercase;
 }
 
 .badge {
-  background-color: @light-gray;
-  color: @label-badget-color;
-  font-family: 'Open Sans';
-  font-size: 11px;
-  font-weight: 600;
-  padding-bottom: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
-  text-shadow: none;
+	background-color: @light-gray;
+	color: @label-badget-color;
+	font-family: 'Open Sans';
+	font-size: 11px;
+	font-weight: 600;
+	padding-bottom: 4px;
+	padding-left: 6px;
+	padding-right: 6px;
+	text-shadow: none;
 }
 
 .label-primary, .badge-primary {
-  background-color: @cherry;
-  color: #FFFFFF;
+	background-color: @cherry;
+	color: #FFFFFF;
 }
 
 .label-success, .badge-success {
-  background-color: @green;
-  color: #FFFFFF;
+	background-color: @green;
+	color: #FFFFFF;
 }
 
 .label-warning, .badge-warning {
-  background-color: @yellow;
-  color: #FFFFFF;
+	background-color: @yellow;
+	color: #FFFFFF;
 }
 
 .label-warning-light, .badge-warning-light {
-  background-color: @yellow;
-  color: #ffffff;
+	background-color: @yellow;
+	color: #ffffff;
 }
 
 .label-danger, .badge-danger {
-  background-color: @red;
-  color: #FFFFFF;
+	background-color: @red;
+	color: #FFFFFF;
 }
 
 .label-info, .badge-info {
-  background-color: @blue;
-  color: #FFFFFF;
+	background-color: @blue;
+	color: #FFFFFF;
 }
 
 .label-inverse, .badge-inverse {
-  background-color: #262626;
-  color: #FFFFFF;
+	background-color: #262626;
+	color: #FFFFFF;
 }
 
 .label-white, .badge-white {
-  background-color: #FFFFFF;
-  color: #5E5E5E;
-  border: 1px solid @lighter-grey;
+	background-color: #FFFFFF;
+	color: #5E5E5E;
+	border: 1px solid @lighter-grey;
 }
 
 .label-disable, .badge-disable {
-  background-color: #2A2E36;
-  color: #8B91A0;
+	background-color: #2A2E36;
+	color: #8B91A0;
 }
-
+.label-done, .badge-done {
+	background-color: #16e0a2;
+	color: @text-color;
+}
+.label-in-progress, .badge-in-progress {
+	background-color: #ffe86b;
+	color: @text-color;
+}
+.label-not-started, .badge-not-started {
+	background-color: #ffa6a6;
+	color: @text-color;
+}
+.label-goal, .badge-goal {
+	background-color:  #870042;
+	color: @text-color;
+}
+.label-subgoal, .badge-subgoal {
+	background-color: #b20057;
+	color: @text-color;
+}
+.label-action, .badge-action {
+	background-color:  #e60573;
+	color: @text-color;
+}
 //TRANSPARENT LABEL AND BADGE WITH OUTLINE
 
 .label-primary-o, .badge-primary-o {
-  background-color: transparent;
-  color: @text-color;
-  border: 1px solid @cherry;
+	background-color: transparent;
+	color: @text-color;
+	border: 1px solid @cherry;
 }
 
 .label-success-o, .badge-success-o {
-  background-color: transparent;
-  color: @text-color;
-  border: 1px solid @green;
+	background-color: transparent;
+	color: @text-color;
+	border: 1px solid @green;
 }
 
 .label-warning-o, .badge-warning-o {
-  background-color: transparent;
-  color: @text-color;
-  border: 1px solid @yellow;
+	background-color: transparent;
+	color: @text-color;
+	border: 1px solid @yellow;
 }
 
 .label-danger-o, .badge-danger-o {
-  background-color: transparent;
-  color: @text-color;
-  border: 1px solid @red;
+	background-color: transparent;
+	color: @text-color;
+	border: 1px solid @red;
 }
 
 .label-info-o, .badge-info-o {
-  background-color: transparent;
-  color: @text-color;
-  border: 1px solid @lazur;
+	background-color: transparent;
+	color: @text-color;
+	border: 1px solid @lazur;
 }
 
 .label-white-o, .badge-white-o {
-  background-color: transparent;
-  color: @text-color;
-  border: 1px solid @lighter-grey;
+	background-color: transparent;
+	color: @text-color;
+	border: 1px solid @lighter-grey;
 }
-
+.label-white2-o, .badge-white2-o {
+	background-color: transparent;
+	color: @text-color;
+	border: 1px solid white;
+}
 .label-disable-o, .badge-disable-o {
-  background-color: transparent;
-  color: @lighter-grey;
-  border: 1px solid @lighter-grey;
+	background-color: transparent;
+	color: @lighter-grey;
+	border: 1px solid @lighter-grey;
+}
+.goal-badge {
+	background-color: transparent;
+	border: 2px solid @lightest-grey;
+	border-radius: 2px;
+	padding: 2px;
+	font-weight: 700;
+}
+.goal-badge:hover {
+	padding: 2px 5px;
+	border: 2px solid @cherry;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 0px 2px #A6A6A6;
+	box-shadow:  0px 1px 4px 0px #A6A6A6;
+}
+.goal-badge a:visited {
+	color: @text-color;
+}
+.goal-badge a {
+	color: @text-color;
+}
+.goal-badge.active {
+	background: @cherry;
+	border: 2px solid @darker-cherry;
+	padding: 2px 5px;
+	-webkit-box-shadow: 0px 0px 0px 2px #A6A6A6;
+	box-shadow:  0px 1px 4px 0px #A6A6A6;
+}
+.goal-badge.active a {
+	color: white;
+}
+.action-badge {
+	background-color: transparent;
+	border: 2px solid @cherry;
+	border-radius: 2px;
+	padding: 3px;
+}
+.action-badge:hover, .action-badge:active, .action-badge:focus {
+	-webkit-box-shadow: 0px 0px 0px 2px #A6A6A6;
+	box-shadow:  0px 2px 8px 0px #A6A6A6;
+}
+.action-label {
+	background-color: #FFFFFF;
+	color: #5E5E5E;
+	border: 1px solid @lighter-grey;
+	font-size: 14px;
+}
+.sub-action-badge {
+	background-color: transparent;
+	border: 2px solid @cherry;
+	border-radius: 2px;
+	padding: 3px;
+	margin: 0 10px 10px;
+}
+.sub-action-badge:hover, .sub-action-badge:active, .sub-action-badge:focus {
+	-webkit-box-shadow: 0px 0px 0px 2px #A6A6A6;
+	box-shadow:  0px 2px 8px 0px #A6A6A6;
 }

@@ -375,130 +375,147 @@
 				<!--PAGE
 --------------------------------------------------------------->
 				<div class="wrapper wrapper-content animated fadeInRight" style="font-size: 1.3em">
-					<!--1ST BLOCK ERRAND FORM
+					<!-- ERRAND VIEW
 --------------------------------------------------------------->
-					<div>
-						<div class="row"><div class="col-sm- text-center font-bold m-b-xs">Üldandmed</div></div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Lähetatu nimi</div><div class="col-xs-6"><a href="#" id="name" data-type="text" data-pk="1" data-url="/post">Peeter Kuusk</a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Struktuuriüksus</div><div class="col-xs-6"><a href="#" id="department" data-type="text" data-pk="1" data-url="/post">Tarkvara osakond</a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Amet</div><div class="col-xs-6"><a href="#" id="position" data-type="text" data-pk="1" data-url="/post">Arendusjuht</a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Lähetuse kestus</div><div class="col-xs-6"><a href="#" id="errand_duration_b" data-type="combodate" data-value="2015-12-09" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-original-title="Select Date of birth" class="editable editable-click"></a> - <a href="#" id="errand_duration_e" data-type="combodate" data-value="2015-12-16" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-original-title="Select Date of birth" class="editable editable-click"></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right">Finantseerimise allikad</div><div class="col-xs-6"><a href="#" id="financing" data-type="text" data-value="NATO" data-pk="1" data-url="/post" data-placeholder="Puuduvad"></a></div>
-						</div>
-					</div>
-					<!--1ST BLOCK ERRAND FORM END
---------------------------------------------------------------->
-					<!--2ND BLOCK ERRAND FORM
---------------------------------------------------------------->
-					<div>
-						<div class="row"><div class="col-sm-12 text-center font-bold m-b-xs m-t-md">Lähetuse sisu</div></div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Sihtkoht</div><div class="col-xs-6"><a href="#" id="destination" data-type="text" data-value="Leyden, Holland" data-pk="1" data-title="Please, fill address"></a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Organisatsioon</div><div class="col-xs-6"><a href="#" id="organization" data-type="text" data-value="MSG-117" data-pk="1" data-url="/post"></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs">Lähetuse eesmärk</div><div class="col-xs-6"><a href="#" id="errand-goal" data-type="select" data-value="9" data-pk="1" data-url="/post"></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right">Sõiduvahend</div><div class="col-xs-6"><a href="#" id="transportation" data-type="checklist" data-title="Select transportation" data-value="1,2,4" class="editable editable-click" data-original-title="" title=""><br><br></a></div>
-						</div>
-					</div>
-					<!--2ND BLOCK ERRAND FORM END
---------------------------------------------------------------->
-									<!--3RD BLOCK ERRAND FORM
---------------------------------------------------------------->
-					<div>
-						<div class="row">
-							<div class="col-xs-6 text-right font-bold m-b-xs m-t-md">Planeeritavad kulud</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Päevaraha</span></div>
-							<div class="col-xs-6 ">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
-							<div class="col-xs-6 "><a href="#" id="daily-cost" data-type="text" data-pk="1" data-value="350€" data-title="Select sex" class="editable editable-click" ></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
-							<div class="col-xs-6  m-b-xs">
-								<a href="#" id="daily-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iure sapiente sint ut quod eligendi earum inventore odit natus voluptas, soluta rem dolorum possimus. Quaerat sapiente sunt perferendis obcaecati aliquid." data-title="Select sex" class="editable editable-click" ></a>
-							</div>
-						</div>
 
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Sõidukulu</span></div>
-							<div class="col-xs-6 ">
-							</div>
+					<div class="row">
+						<div class="col-sm-3">
+						<h2>Nimi</h2>
 						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
-							<div class="col-xs-6 "><a href="#" id="travel-cost" data-type="text" data-pk="1" data-value="452€" data-title="Select sex" class="editable editable-click" ></a></div>
+						<div class="col-sm-3">
+								<h2>Osakond</h2>
 						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
-							<div class="col-xs-6   m-b-xs">
-								<a href="#" id="travel-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, consequatur, rem! Voluptates nesciunt iure esse illo, ipsam qui, perspiciatis nihil!" data-title="Select sex" class="editable editable-click" ></a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-t m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Majutuskulu</span></div>
-							<div class="col-xs-6 ">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
-							<div class="col-xs-6 "><a href="#" id="accomodation-cost" data-type="text" data-pk="1" data-value="1240€" data-title="Select sex" class="editable editable-click" ></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
-							<div class="col-xs-6   m-b-xs">
-								<a href="#" id="accomodation-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, tempora hic ducimus doloribus! Magni doloremque atque non voluptate temporibus ab quas excepturi rem, itaque inventore eveniet sequi, eaque fugit architecto, omnis voluptas possimus nisi iure eum placeat rerum corrupti quibusdam commodi ipsum nostrum. Eligendi recusandae esse sint, ullam maiores voluptates tempore quam mollitia expedita, delectus dolor nam excepturi omnis labore!" data-title="Select sex" class="editable editable-click" ></a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Muud kulud</span></div>
-							<div class="col-xs-6 ">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right m-b-xs"><span>Summa</span></div>
-							<div class="col-xs-6 "><a href="#" id="other-cost" data-type="text" data-pk="1" data-value="77€" data-title="Select sex" class="editable editable-click" ></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-6 text-right"><span>Selgitus </span></div>
-							<div class="col-xs-6  m-b-xs">
-								<a href="#" id="other-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptatem iste eos vitae necessitatibus, ratione veniam itaque. Nulla quos voluptatum rem natus animi esse tempore voluptate, blanditiis saepe at, eum?" data-title="Select sex" class="editable editable-click" ></a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 text-right">
-								<div class="hr-line-solid"></div>
-							</div>
-						</div>
-						<div class="row m-b-xs">
-							<div class="col-xs-6 text-right">Avanss</div><div class="col-xs-6"><a href="#" id="advance" data-type="text" data-pk="1" data-value="" data-title="advance" class="editable editable-click" >350€</a></div>
-						</div>
-
-						<div class="row">
-							<div class="col-xs-6 text-right">Kokku</div><div class="col-xs-6  m-b"><a href="#" id="total-cost" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" >2042€</a></div>
+						<div class="col-sm-6">
+								<h2>Sihtkoht</h2>
 						</div>
 					</div>
-					<!--3RD BLOCK ERRAND FORM END
+					<div class="panel-group " id="accordion">
+						<div class="panel panel-default errand-panel">
+							<div class="panel-heading">
+								<h5 class="panel-title errand-panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><div class="row"><div class="col-sm-3">Sander Marandi</div><div class="col-sm-3">IT osakond</div><div class="col-sm-6">Holland, Leyden</div></div></a>
+								</h5>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-xs-2 text-right m-b-xs">Lähetuse kestus</div><div class="col-xs-10 "> 12/09/2015 - 16/09/2015</div>
+									</div>
+									<div class="row">
+									<div class="col-xs-2 text-right">Finantseerimise allikad</div><div class="col-xs-10 ">NATO</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-2 text-right m-b-xs">Organisatsioon</div><div class="col-xs-10 ">MSG-117 </div>
+								</div>
+								<div class="row">
+									<div class="col-xs-2 text-right m-b-xs">Lähetuse eesmärk</div><div class="col-xs-10 ">MSG-117 töögrupi 8's kogunemine</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-2 text-right">Sõiduvahend</div><div class="col-xs-10 ">Lennuk</div>
+								</div>
+								<!--3RD BLOCK ERRAND FORM
 --------------------------------------------------------------->
+								<div>
+									<div class="row">
+										<div class="col-xs-2 text-right font-bold m-b-xs m-t-md">Planeeritavad kulud</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Päevaraha</span></div>
+										<div class="col-xs-10 ">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2 text-right m-b-xs"><span>Summa</span></div>
+										<div class="col-xs-10 "><a href="#" id="daily-cost" data-type="text" data-pk="1" data-value="350€" data-title="Select sex" class="editable editable-click" ></a></div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2 text-right"><span>Selgitus </span></div>
+										<div class="col-xs-10  m-b-xs">
+											<a href="#" id="daily-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iure sapiente sint ut quod eligendi earum inventore odit natus voluptas, soluta rem dolorum possimus. Quaerat sapiente sunt perferendis obcaecati aliquid." data-title="Select sex" class="editable editable-click" ></a>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-2 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Sõidukulu</span></div>
+										<div class="col-xs-10 ">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2 text-right m-b-xs"><span>Summa</span></div>
+										<div class="col-xs-10 "><a href="#" id="travel-cost" data-type="text" data-pk="1" data-value="452€" data-title="Select sex" class="editable editable-click" ></a></div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2 text-right"><span>Selgitus </span></div>
+										<div class="col-xs-10   m-b-xs">
+											<a href="#" id="travel-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, consequatur, rem! Voluptates nesciunt iure esse illo, ipsam qui, perspiciatis nihil!" data-title="Select sex" class="editable editable-click" ></a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2 text-right m-t m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Majutuskulu</span></div>
+										<div class="col-xs-10 ">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2 text-right m-b-xs"><span>Summa</span></div>
+										<div class="col-xs-10 "><a href="#" id="accomodation-cost" data-type="text" data-pk="1" data-value="1240€" data-title="Select sex" class="editable editable-click" ></a></div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2 text-right"><span>Selgitus </span></div>
+										<div class="col-xs-10   m-b-xs">
+											<a href="#" id="accomodation-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, tempora hic ducimus doloribus! Magni doloremque atque non voluptate temporibus ab quas excepturi rem, itaque inventore eveniet sequi, eaque fugit architecto, omnis voluptas possimus nisi iure eum placeat rerum corrupti quibusdam commodi ipsum nostrum. Eligendi recusandae esse sint, ullam maiores voluptates tempore quam mollitia expedita, delectus dolor nam excepturi omnis labore!" data-title="Select sex" class="editable editable-click" ></a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2 text-right m-b-xs"><span class="" style="border-bottom: 1px solid #c9c9c9">Muud kulud</span></div>
+										<div class="col-xs-10 ">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2 text-right m-b-xs"><span>Summa</span></div>
+										<div class="col-xs-10 "><a href="#" id="other-cost" data-type="text" data-pk="1" data-value="77€" data-title="Select sex" class="editable editable-click" ></a></div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2 text-right"><span>Selgitus </span></div>
+										<div class="col-xs-10  m-b-xs">
+											<a href="#" id="other-cost-comment" data-type="textarea" data-pk="1" data-value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptatem iste eos vitae necessitatibus, ratione veniam itaque. Nulla quos voluptatum rem natus animi esse tempore voluptate, blanditiis saepe at, eum?" data-title="Select sex" class="editable editable-click" ></a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12 text-right">
+											<div class="hr-line-solid"></div>
+										</div>
+									</div>
+										<div class="row">
+										<div class="col-xs-2 text-right">Avanss</div><div class="col-xs-10"><a href="#" id="total-cost" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" >350€</a></div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-2 text-right">Kokku</div><div class="col-xs-10  m-b"><a href="#" id="total-cost" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" >2042€</a></div>
+									</div>
+								</div>
+								<!--3RD BLOCK ERRAND FORM END
+--------------------------------------------------------------->
+							</div>
+								<div class="panel-footer">
+									<button class=" btn btn-primary">Kinnita</button>
+										<button class="btn btn-default m-l">Ära kinnita</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h5 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><div class="row"><div class="col-sm-3">Sander Marandi</div><div class="col-sm-3">IT osakond</div><div class="col-sm-6">Holland, Leyden</div></div></a>
+								</h5>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse">
+								<div class="panel-body">
+								</div>
+							</div>
+						</div>
+					</div>
 					<!--MODAL CONTENT
 --------------------------------------------------------------->
 					<div id="right-sidebar" class="">
@@ -702,13 +719,13 @@
 				</div>
 				<!--PAGE END
 --------------------------------------------------------------->
-					<!--FOOTER
+				<!--FOOTER
 --------------------------------------------------------------->
-					<div class="footer">
-						<div class="pull-right">
-							TTÜ Siseportaal &copy; 2014 - 2015
-						</div>
+				<div class="footer">
+					<div class="pull-right">
+						TTÜ Siseportaal &copy; 2014 - 2015
 					</div>
+				</div>
 				<!--SCRIPTS
 --------------------------------------------------------------->
 				<!-- Main scripts -->
