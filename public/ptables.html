@@ -1,0 +1,2149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>TTÜ Siseportaal [arendus]</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/plugins/x-editable/bootstrap-editable.css" rel="stylesheet">
+		<link href="css/plugins/datapicker/datepicker3.min.css" rel="stylesheet">
+		<link href="css/plugins/iCheck/grey.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/plugins/ptables/style.css">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/arengukava_stiilid.css">
+
+	</head>
+	<body>
+		<div id="wrapper">
+			<nav class="navbar-default navbar-static-side" role="navigation">
+				<div class="sidebar-collapse">
+					<ul class="nav" id="side-menu">
+						<li class="nav-header">
+
+							<div class="dropdown profile-element">
+								<span>
+									<a href="#" class="cr-block"><div id="logo-minimal-w" class="center-block"></div></a>
+								</span>
+							</div>
+
+							<div class="logo-element">
+								<div id="logo-text-w" class="center-block"></div>
+							</div>
+						</li>
+
+						<li class="">
+							<form class="sidebar-search center-block" method="post" action="/contacts/2653410116806152" role="search">
+								<div class="input-group m-b">
+									<input type="text" class="form-control" name="search_user" maxlength="32" placeholder="{Otsi}" id="srch-term2" style="font-family:Arial, FontAwesome">
+								</div>
+							</form>
+						</li>
+
+						<li>
+							<a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">Minu töölaud</span><span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level">
+								<li><a href="/request" id="_request" class="ajax-load">Iseteenindus</a></li>
+								<li><a href="/news" id="_news" class="ajax-load">Uudised</a></li>
+
+							</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-play-circle"></i> <span class="nav-label">Meediapank</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/video" id="_video" class="ajax-load">Meediahaldus</a></li>
+							<li><a href="/tube" id="_tube" class="ajax-load">Videosirvik</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-play-circle"></i> <span class="nav-label">DevOps töölaud</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/logs" id="_logs" class="ajax-load">Serveri logid</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-bar-chart"></i> <span class="nav-label">Arengukava</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/timeline" id="_timeline" class="ajax-load">Eesmärgid</a></li>
+							<li><a href="/roadmap" id="_roadmap" class="ajax-load">Tegevuskava</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-group"></i> <span class="nav-label">Juhi töölaud</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/budget" id="_budget1" class="ajax-load">Eelarve</a></li>
+							<li><a href="/hrstats" id="_hrstats" class="ajax-load">Koosseisu aruanded</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Minu üksus</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/unit" id="_unit" class="ajax-load">Osakond</a></li>
+							<li><a href="/budget" id="_budget2" class="ajax-load">Eelarve</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-envelope"></i> <span class="nav-label">Multimail</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/msgprep" id="_msgprep" class="ajax-load">Sõnumihaldus</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-at"></i> <span class="nav-label">Kontaktikeskus</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/organizations" id="_organizations" class="ajax-load">Organisatsioonid</a></li>
+
+						</ul>
+						</li><li class="active">
+						<a href="#"><i class="fa fa-sliders"></i> <span class="nav-label">IT teenuste haldus</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/helpdesk" id="_helpdesk" class="ajax-load"><b>Kasutajatugi</b></a></li>
+							<li><a href="/cmdb" id="_cmdb" class="ajax-load">Seadmehaldus</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-phone"></i> <span class="nav-label">Sideteenused</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/mobiledb" id="_mobiledb" class="ajax-load">Mobiilinumbrid</a></li>
+							<li><a href="/deskphone" id="_deskphone" class="ajax-load">Lauanumbrid</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-building-o"></i> <span class="nav-label">Kinnisvarahaldus</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/room" id="_room" class="ajax-load">Ruumide register</a></li>
+							<li><a href="/fmreports" id="_fmreports" class="ajax-load">Aruanded</a></li>
+							<li><a href="/helpline" id="_helpline" class="ajax-load">Murekontor</a></li>
+
+						</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<div id="page-wrapper" class="gray-bg">
+				<div class="row border-bottom">
+					<nav class="navbar navbar-static-top cherry-bg" role="navigation">
+						<div class="navbar-header">
+							<a class="navbar-minimalize minimalize-styl-2" href="#"><i class="fa fa-bars"></i> </a>
+							<ul class="nav navbar-nav">
+								<li class="dropdown dropdown-large hidden-xs">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dokumendid <b class="caret"></b></a>
+									<ul class="dropdown-menu dropdown-menu-large row">
+
+										<li class="col-sm-4">
+											<ul>
+												<li class="level-1 dropdown-header"><a href="https://portal-dev.ttu.ee/wiki/go/et:portal.main" class="ajax-load">Põhiline</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:ttue-pohikiri" class="ajax-load">TTÜ põhikiri</a></li>
+												<li class="level-2"><a href="http://et/uus" target="_new">uus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pl:et:ttue-arengukava-2011-2015" class="ajax-load">TTÜ arengukava 2011−2015</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pl:et:ttue-kollektiivleping" class="ajax-load">TTÜ kollektiivleping</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:ttue-juhtimissuesteemi-kasiraamat" class="ajax-load">TTÜ juhtimissüsteemi käsiraamat</a></li>
+												<li class="level-2"><a href="https://www.riigiteataja.ee/akt/120062014002" target="_new">TTÜ seadus (Riigi Teataja)</a></li>
+												<li class="level-2"><a href="https://www.riigiteataja.ee/akt/108112010008&searchCurrent" target="_new">Ülikooliseadus (Riigi Teataja)</a></li>
+												<li class="level-2"><a href="https://www.riigiteataja.ee/akt/13243080&searchCurrent" target="_new">Teadus- ja arendustegevuse korralduse seadus (Riigi Teataja)</a></li>
+												<li class="level-2"><a href="https://www.riigiteataja.ee/akt/104012011005?leiaKehtiv" target="_new">Kõrgharidusstandard (Riigi Teataja)</a></li>
+												<li class="level-1 dropdown-header">Õigusaktid</li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:kuratooriumi-maarused" class="ajax-load">Kuratooriumi määrused</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:kuratooriumi-otsused" class="ajax-load">Kuratooriumi otsused</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:noukogu-maarused" class="ajax-load">Nõukogu määrused</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:noukogu-otsused" class="ajax-load">Nõukogu otsused</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:ueldkaskkirjad" class="ajax-load">Üldkäskkirjad</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:personalikaskkirjad" class="ajax-load">Personalikäskkirjad</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:korraldused" class="ajax-load">Korraldused</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:korraldused-asendaja-maaramiseks" class="ajax-load">Korraldused asendaja määramiseks</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:riigihangete-korraldused" class="ajax-load">Riigihangete korraldused</a></li>
+											</ul></li>
+
+										<li class="col-sm-4">
+											<ul>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:dekaani-korraldused" class="ajax-load">Dekaani korraldused</a></li>
+												<li class="level-1 dropdown-header">Terviktekstid, vormid</li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:portal.main" class="ajax-load">Õppetöö</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:teadus-ja-arendustoo" class="ajax-load">Teadus- ja arendustöö</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:taiendusope" class="ajax-load">Täiendusõpe</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:personalitoo" class="ajax-load">Personalitöö</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:dokumendihaldus" class="ajax-load">Dokumendihaldus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:lepingud-ja-volikirjad" class="ajax-load">Lepingud ja volikirjad</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:finantstegevus" class="ajax-load">Finantstegevus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:haldus-majandustegevus" class="ajax-load">Haldus-majandustegevus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:statuudid" class="ajax-load">Statuudid</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:hinnakirjad" class="ajax-load">Hinnakirjad</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:arengukavad-ja-strateegiad" class="ajax-load">Arengukavad ja strateegiad</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:asutuste-pohikirjad" class="ajax-load">Asutuste põhikirjad</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:akadeemiliste-struktuuriueksuste-pohimaarused" class="ajax-load">Akadeemiliste struktuuriüksuste põhimäärused</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:haldus-tugistruktuuriueksuste-pohimaarused" class="ajax-load">Haldus-tugistruktuuriüksuste põhimäärused</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:otsustuskogude-too" class="ajax-load">Otsustuskogude töö</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:ttue-struktuur-ja-ueldandmed" class="ajax-load">TTÜ struktuur ja üldandmed</a></li>
+												<li class="level-1 dropdown-header">Kirjaregister</li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:volikirjade-register" class="ajax-load">Volikirjade register</a></li>
+											</ul></li>
+
+										<li class="col-sm-4">
+											<ul>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:lepingute-register" class="ajax-load">Lepingute register</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:lahetuste-register" class="ajax-load">Lähetuste register</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:ttuega-seotud-juriidiliste-isikute-register" class="ajax-load">TTÜga seotud juriidiliste isikute register</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:oigusaktide-audit" class="ajax-load">Õigusaktide audit</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:oigusaktide-tolked-regulations-and-documents" class="ajax-load">Õigusaktide tõlked (regulations and documents)</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:ingliskeelne-terminoloogia" class="ajax-load">Ingliskeelne terminoloogia</a></li>
+												<li class="level-1 dropdown-header">Mallid</li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:dokumendimallid" class="ajax-load">Dokumendimallid</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:naidisdokumendid" class="ajax-load">Näidisdokumendid</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:slaidimallid" class="ajax-load">Slaidimallid</a></li>
+												<li class="level-1 dropdown-header">Turundusmaterjalid</li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:ttue-brandi-ja-tunnusgraafika-kogumik" class="ajax-load">TTÜ brändi ja tunnusgraafika kogumik</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:logod" class="ajax-load">Logod</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:rahvusvahelise-turunduse-kasiraamat" class="ajax-load">Rahvusvahelise turunduse käsiraamat</a></li>
+												<li class="level-1 dropdown-header">Infotund, avakoosolekud</li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:ueleuelikooliline-infotund" class="ajax-load">Üleülikooliline infotund</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/et:rektori-koned-oppeaasta-avakoosolekul" class="ajax-load">Rektori kõned õppeaasta avakoosolekul</a></li>
+											</ul></li>
+
+
+
+									</ul>
+								</li>
+
+								<li class="dropdown dropdown-large hidden-xs">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Töökorraldus <b class="caret"></b></a>
+									<ul class="dropdown-menu dropdown-menu-large row">
+
+										<li class="col-sm-4">
+											<ul>
+												<li class="level-1 dropdown-header"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:www.ttu.ee" class="ajax-load">Üldinfo</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:uus" class="ajax-load">uus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:juhtimine" class="ajax-load">Juhtimine</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:fakte-uelikoolist" class="ajax-load">Fakte ülikoolist</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:majajuht" class="ajax-load">Majajuht</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:liikumiskord-uelikoolis" class="ajax-load">Liikumiskord ülikoolis</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:vaba-aeg" class="ajax-load">Vaba aeg</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:traditsioonilised-suendmused" class="ajax-load">Traditsioonilised sündmused</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:akadeemiline-kalender" class="ajax-load">Akadeemiline kalender</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:ttue-valiskoostoolepingud" class="ajax-load">TTÜ väliskoostöölepingud</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:soodustused-tootajatele" class="ajax-load">Soodustused töötajatele</a></li>
+												<li class="level-1 dropdown-header">Tööohutus ja -tervishoid</li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:tookeskkonnavolinikule" class="ajax-load">Töökeskkonnavolinikule</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:struktuuriueksuse-juhile" class="ajax-load">Struktuuriüksuse juhile</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:juhendmaterjalid" class="ajax-load">Juhendmaterjalid</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:esmaabi" class="ajax-load">Esmaabi</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:tootervishoiu-teenused" class="ajax-load">Töötervishoiu teenused</a></li>
+												<li class="level-1 dropdown-header">Turvalisus ja tuleohutus</li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:kaitumisjuhendid-eriolukordadeks" class="ajax-load">Käitumisjuhendid eriolukordadeks</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:tulekahju-korral-tegutsemise-plaanid" class="ajax-load">Tulekahju korral tegutsemise plaanid</a></li>
+											</ul></li>
+
+										<li class="col-sm-4">
+											<ul>
+												<li class="level-1 dropdown-header">Personalitöö korraldus</li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:tooleping" class="ajax-load">Tööleping</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:ametijuhendid" class="ajax-load">Ametijuhendid</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:tootajate-tunnustamine" class="ajax-load">Töötajate tunnustamine</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:allkirjanaidis" class="ajax-load">Allkirjanäidis</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:toolahetus" class="ajax-load">Töölähetus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:juhised-valisoppejoududeja-teadlaste-kutsumiseks" class="ajax-load">Juhised välisõppejõududeja -teadlaste kutsumiseks</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:personalistatistika" class="ajax-load">Personalistatistika</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:emeeritus" class="ajax-load">Emeeritus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:arenguvestlused" class="ajax-load">Arenguvestlused</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:personaliuuringud" class="ajax-load">Personaliuuringud</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:tootasustamise-eeskiri" class="ajax-load">Töötasustamise eeskiri</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:tootasu-astmed" class="ajax-load">Töötasu astmed</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:lisatasud" class="ajax-load">Lisatasud</a></li>
+												<li class="level-1 dropdown-header">TTÜ nõukogu töö</li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:noukogus-menetlemisel" class="ajax-load">Nõukogus menetlemisel</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:noukogu-koosseis" class="ajax-load">Nõukogu koosseis</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:noukogu-tooplaan" class="ajax-load">Nõukogu tööplaan</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:noukogu-kodukord" class="ajax-load">Nõukogu kodukord</a></li>
+												<li class="level-1 dropdown-header">Asjaajamine</li>
+											</ul></li>
+
+										<li class="col-sm-4">
+											<ul>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:dokumendihaldus" class="ajax-load">Dokumendihaldus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:arhiiv" class="ajax-load">Arhiiv</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:post" class="ajax-load">Post</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:visiitkaardid" class="ajax-load">Visiitkaardid</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:meililistid" class="ajax-load">Meililistid</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:sisuveebide-peahaldajate-nimekiri" class="ajax-load">Sisuveebide peahaldajate nimekiri</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:riigihanked" class="ajax-load">Riigihanked</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:isikuandmete-kaitse" class="ajax-load">Isikuandmete kaitse</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:riskijuhtimine" class="ajax-load">Riskijuhtimine</a></li>
+												<li class="level-1 dropdown-header">Töö- ja puhkeaeg</li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:tooaeg" class="ajax-load">Tööaeg</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:toovoimetusleht" class="ajax-load">Töövõimetusleht</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:pohipuhkus" class="ajax-load">Põhipuhkus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:palgata-puhkus" class="ajax-load">Palgata puhkus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:oppepuhkus" class="ajax-load">Õppepuhkus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:vabad-paevad" class="ajax-load">Vabad päevad</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:isapuhkus" class="ajax-load">Isapuhkus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:oppejou-vaba-semester" class="ajax-load">Õppejõu vaba semester</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:lapsehoolduspuhkus" class="ajax-load">Lapsehoolduspuhkus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pp:et:lapsepuhkus" class="ajax-load">Lapsepuhkus</a></li>
+											</ul></li>
+
+
+
+									</ul>
+								</li>
+								<li class="dropdown dropdown-large hidden-xs">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teenused <b class="caret"></b></a>
+									<ul class="dropdown-menu dropdown-menu-large row">
+
+										<li class="col-sm-4">
+											<ul>
+												<li class="level-1 dropdown-header"><a href="https://portal-dev.ttu.ee/wiki/go/pr:et:portal.main" class="ajax-load">Dokumendid ja töökorraldus</a></li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pr:et:otsustuskogude-too" class="ajax-load">Otsustuskogude töö</a></li>
+												<div class = "l3">
+													<li class="level-3">Terviktekstid</li>
+													<li class="level-3">Vormid ja mallid</li>
+												</div>
+												<li class="level-1 dropdown-header">Selgitused</li>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pr:et:oppetoo" class="ajax-load">Õppetöö</a></li>
+												<div class = "l3">
+													<li class="level-3">Terviktekstid</li>
+													<li class="level-3">Vormid ja mallid</li>
+													<li class="level-3">Selgitused</li>
+												</div>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pr:et:teadus-ja-arendustoo" class="ajax-load">Teadus- ja arendustöö</a></li>
+												<div class = "l3">
+													<li class="level-3">Terviktekstid</li>
+													<li class="level-3">Vormid ja mallid</li>
+													<li class="level-3">Selgitused</li>
+												</div>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pr:et:personalitoo" class="ajax-load">Personalitöö</a></li>
+												<div class = "l3">
+													<li class="level-3">Terviktekstid</li>
+													<li class="level-3">Vormid ja mallid</li>
+													<li class="level-3">Selgitused</li>
+												</div>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pr:et:asjaajamine" class="ajax-load">Asjaajamine</a></li>
+												<div class = "l3">
+													<li class="level-3">Terviktekstid</li>
+													<li class="level-3">Vormid ja mallid</li>
+													<li class="level-3">Selgitused</li>
+												</div>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pr:et:finantstegevus" class="ajax-load">Finantstegevus</a></li>
+											</ul></li>
+
+										<li class="col-sm-4">
+											<ul>
+												<div class = "l3">
+													<li class="level-3">Terviktekstid</li>
+													<li class="level-3">Vormid ja mallid</li>
+													<li class="level-3">Selgitused</li>
+												</div>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pr:et:haldus-majandustegevus" class="ajax-load">Haldus-majandustegevus</a></li>
+												<div class = "l3">
+													<li class="level-3">Terviktekstid</li>
+													<li class="level-3">Vormid ja mallid</li>
+													<li class="level-3">Selgitused</li>
+												</div>
+												<li class="level-2"><a href="https://portal-dev.ttu.ee/wiki/go/pr:et:turundustegevus" class="ajax-load">Turundustegevus</a></li>
+												<div class = "l3">
+													<li class="level-3">Reklaamteenused</li>
+													<li class="level-3">Ülikooli meened</li>
+													<li class="level-3">Kujundus- ja küljendusteenused</li>
+												</div>
+												<li class="level-1 dropdown-header"><a href="https://portal-dev.ttu.ee/wiki/go/pr:et:koolitused" class="ajax-load">Koolitused</a></li>
+												<li class="level-1 dropdown-header"><a href="https://portal-dev.ttu.ee/wiki/go/pr:et:portal.main" class="ajax-load">Teenused</a></li>
+												<li class="level-2">Haldusteenused</li>
+												<div class = "l3">
+													<li class="level-3">Ruumide rentimine</li>
+													<li class="level-3">E-hooldusraamat</li>
+												</div>
+												<li class="level-2">IT-teenused</li>
+												<li class="level-2">Foto-, video- ja multimeediateenused</li>
+												<div class = "l3">
+													<li class="level-3">Fototeenused</li>
+													<li class="level-3">Videoteenused</li>
+													<li class="level-3">Haridustehnoloogia- ja multimeedia teenused</li>
+												</div>
+												<li class="level-2">Trüki-ja köitmisteenused</li>
+											</ul></li>
+
+										<li class="col-sm-4">
+											<ul>
+												<li class="level-2">Logistika- ja reisiteenused</li>
+												<li class="level-2">Ettevõtlusteenused</li>
+												<li class="level-2">Rahvusvaheliste suhete osakonna teenused</li>
+												<li class="level-1 dropdown-header"><a href="https://portal-dev.ttu.ee/wiki/go/pr:et:portal.main" class="ajax-load">TTÜ</a></li>
+												<li class="level-1 dropdown-header"><a href="https://portal-dev.ttu.ee/wiki/go/pr:et:statistika" class="ajax-load">Statistika</a></li>
+											</ul></li>
+
+
+
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<ul class="nav navbar-top-links navbar-right">
+
+
+							<li class=" m-l"><a href="#wiki_help" data-toggle="modal"><i class="fa fa-life-ring"></i> Abi</a></li>
+
+							<li class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+									<i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="/profile" class="ajax-load"><i class="fa fa-user fa-fw"></i> Profiil</a></li>
+									<li><a href="/settings" class="ajax-load"><i class="fa fa-gear fa-fw"></i> Seadistused</a></li>
+									<li class="divider"></li>
+									<li><a href="/logout"><i class="fa fa-sign-out fa-fw"></i> Logi välja</a></li>
+								</ul>
+							</li>
+						</ul>
+
+
+						<ul class="nav navbar-top-links navbar-right visible-lg">
+							<form ole="search" method="post" action="/contacts/2653410116806152">
+								<input type="text" class="form-control" placeholder="{Otsi}..." name="search_user" id="srch-term" style="font-family:Arial, FontAwesome"></form>
+						</ul>
+
+					</nav>
+				</div>
+				<div id="content-wrapper">
+
+
+					<div class="row wrapper border-bottom white-bg">
+						<div class="col-sm-12">
+							<ol class="breadcrumb">
+								<li><i class="fa fa-home"></i> <a href="/start/2653410116806152">Avaleht</a></li>
+
+								<li><i class="fa fa-medkit"></i> <a href="/helpdesk/go/" class="ajax-load">Kasutajatugi</a></li>
+							</ol>
+						</div>
+					</div>
+
+					<div class="wrapper wrapper-content animated fadeIn" style="font-size: 1.1em">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<i class="fa fa-building-o"></i> Kasutajatugi
+
+									</div>
+									<div class="panel-body">
+
+										<ul class="nav nav-tabs">
+											<li class="active"><a href="#a" id="link_a" data-toggle="tab">Minu ülesanded <span class="badge" id="badge_my_tasks"></span></a></li>
+											<li><a href="#b" data-toggle="tab">Teiste ülesanded <span class="badge" id="badge_others_tasks"></span></a></li>
+											<li><a href="#e" data-toggle="tab">Esita ülesanne</a></li>
+											<li><a href="#c" data-toggle="tab">Postkast <span class="badge" id="badge_emails">6</span></a></li>
+											<li><a href="#j" data-toggle="tab">Ootel ülesanded <span class="badge" id="badge_open_tasks"></span></a></li>
+											<li><a href="#d" data-toggle="tab">Ootel tellimused <span class="badge" id="badge_open_requests"></span></a></li>
+											<li><a href="#i" data-toggle="tab">Kõik tellimused <span class="badge" id="badge_all_requests"></span></a></li>
+											<li><a href="#f" data-toggle="tab">Täidetud ülesanded <span class="badge" id="badge_closed_tasks"></span></a></li>
+											<li style="display:none">
+												<a href="#g" class="nonav" disabled>Tellimus
+													<i class="close_tab ajax-load fa fa-times " data-url="/helpdesk//parent" title="Sulge"></i>
+												</a>
+											</li>
+											<li style="display:none">
+												<a href="#h" class="nonav" >Ülesanne
+													<i class="close_tab ajax-load fa fa-times" data-url="/helpdesk//parent" title="Sulge"></i>
+												</a>
+											</li>
+										</ul>
+
+										<div class="tab-content">
+											<div class="tab-pane fade in active" id="a">
+												<br />
+												<div class="row">
+													<div class="col-lg-12">
+														<div id="helpdesk_tasks_my" class="ptable no_border" data-user="Johann.Laulik" data-email="" data-sess="2653410116806152"></div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="b">
+												<br />
+												<div class="row">
+													<div class="col-lg-12">
+														<div id="helpdesk_tasks_others" class="ptable no_border" data-user="Johann.Laulik" data-email="" data-sess="2653410116806152"></div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="c">
+												<br />
+												<div class="col-xs-12">
+													<div class="panel-group" id="mailbox">
+														<a href="/helpdesk//markread:all" class="msg_markread btn btn-primary">Märgi kõik loetuks</a>&nbsp;&nbsp;&nbsp;&nbsp;
+														<a href="#" class="show_deleted_emails btn btn-primary">Kuva kustutatuid <i id="deleted_emails_active" class="fa fa-level-down"></i></a><br/><br/>
+
+														<div class="panel panel-default" id="msg_9173">
+															<div class="panel-heading">
+																<h4 class="panel-title">
+																	<a href="/helpdesk//create:9173" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9173" class="msg_details" data-target="#details_9173" data-toggle="collapse" data-parent="#mailbox" title="vello.tougu@ttu.ee"> 23.10 10:36 <i class="fa fa-envelope-o"></i> auditoorimite arvutid</a>
+																	<a href="/helpdesk//remove:9173" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:vello.tougu@ttu.ee">vello.tougu@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9173" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9173"></span><br/>&nbsp;Teema: <span id="subject_9173"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9173"></span></pre>
+																	<span id="body_9173"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9173" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9171">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9171" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9171" class="msg_details" data-target="#details_9171" data-toggle="collapse" data-parent="#mailbox" title="helpdesk@ttu.ee"> 23.10 07:16 <i class="fa fa-envelope-o"></i> TTU e-posti konto</a>
+																	<a href="/helpdesk//remove:9171" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:helpdesk@ttu.ee">helpdesk@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9171" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9171"></span><br/>&nbsp;Teema: <span id="subject_9171"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9171"></span></pre>
+																	<span id="body_9171"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9171" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default" id="msg_9164">
+															<div class="panel-heading">
+																<h4 class="panel-title">
+																	<a href="/helpdesk//create:9164" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9164" class="msg_details" data-target="#details_9164" data-toggle="collapse" data-parent="#mailbox" title="ander.iva@gmail.com"> 22.10 22:06 <i class="fa fa-envelope-o"></i> Ühiselamu toa netikaabli pesa seisund</a>
+																	<a href="/helpdesk//remove:9164" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:ander.iva@gmail.com">ander.iva@gmail.com</a></div>
+																</h4>
+															</div>
+															<div id="details_9164" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9164"></span><br/>&nbsp;Teema: <span id="subject_9164"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9164"></span></pre>
+																	<span id="body_9164"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9164" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default" id="msg_9161">
+															<div class="panel-heading">
+																<h4 class="panel-title">
+																	<a href="/helpdesk//create:9161" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9161" class="msg_details" data-target="#details_9161" data-toggle="collapse" data-parent="#mailbox" title="ylle.valtna@ttu.ee"> 22.10 16:08 <i class="fa fa-envelope-o"></i> FW: Water Services Invoice</a>
+																	<a href="/helpdesk//remove:9161" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:ylle.valtna@ttu.ee">ylle.valtna@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9161" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9161"></span><br/>&nbsp;Teema: <span id="subject_9161"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9161"></span></pre>
+																	<span id="body_9161"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9161" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9159">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9159" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9159" class="msg_details" data-target="#details_9159" data-toggle="collapse" data-parent="#mailbox" title="helpdesk@ttu.ee"> 22.10 14:30 <i class="fa fa-envelope-o"></i> TTU e-posti konto</a>
+                    <a href="/helpdesk//remove:9159" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:helpdesk@ttu.ee">helpdesk@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9159" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9159"></span><br/>&nbsp;Teema: <span id="subject_9159"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9159"></span></pre>
+                    <span id="body_9159"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9159" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9158">
+            <div class="panel-heading">
+																			<h4 class="panel-title read" style="color: #aa0000">
+																																												 <a href="/helpdesk//create:9158" class="ajax-load fa fa-mail-reply btn_border"></a>
+                    <a href="/helpdesk//fetch:9158" class="msg_details" data-target="#details_9158" data-toggle="collapse" data-parent="#mailbox" title="helpdesk@ttu.ee"> 22.10 14:30 <i class="fa fa-envelope-o"></i> TTU e-posti konto</a>
+                    <a href="/helpdesk//remove:9158" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:helpdesk@ttu.ee">helpdesk@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9158" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9158"></span><br/>&nbsp;Teema: <span id="subject_9158"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9158"></span></pre>
+                    <span id="body_9158"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9158" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9157">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9157" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9157" class="msg_details" data-target="#details_9157" data-toggle="collapse" data-parent="#mailbox" title="helpdesk@ttu.ee"> 22.10 13:36 <i class="fa fa-envelope-o"></i> TTU e-posti konto</a>
+																	<a href="/helpdesk//remove:9157" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:helpdesk@ttu.ee">helpdesk@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9157" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9157"></span><br/>&nbsp;Teema: <span id="subject_9157"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9157"></span></pre>
+																	<span id="body_9157"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9157" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9156">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9156" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9156" class="msg_details" data-target="#details_9156" data-toggle="collapse" data-parent="#mailbox" title="helpdesk@ttu.ee"> 22.10 13:36 <i class="fa fa-envelope-o"></i> TTU e-posti konto</a>
+                    <a href="/helpdesk//remove:9156" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:helpdesk@ttu.ee">helpdesk@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9156" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9156"></span><br/>&nbsp;Teema: <span id="subject_9156"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9156"></span></pre>
+                    <span id="body_9156"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9156" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default" id="msg_9155">
+            <div class="panel-heading">
+																			<h4 class="panel-title">
+																														 <a href="/helpdesk//create:9155" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																																					 <a href="/helpdesk//fetch:9155" class="msg_details" data-target="#details_9155" data-toggle="collapse" data-parent="#mailbox" title="toomas.tamm@ttu.ee"> 22.10 12:52 <i class="fa fa-envelope-o"></i> Ürituse reklaam taustapildil?</a>
+                    <a href="/helpdesk//remove:9155" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:toomas.tamm@ttu.ee">toomas.tamm@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9155" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9155"></span><br/>&nbsp;Teema: <span id="subject_9155"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9155"></span></pre>
+                    <span id="body_9155"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9155" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default" id="msg_9154">
+            <div class="panel-heading">
+																			<h4 class="panel-title">
+																														 <a href="/helpdesk//create:9154" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																																					 <a href="/helpdesk//fetch:9154" class="msg_details" data-target="#details_9154" data-toggle="collapse" data-parent="#mailbox" title="kerti.sonmez@ttu.ee"> 22.10 12:06 <i class="fa fa-envelope-o"></i> FW: Choosing courses for exchange Semester</a>
+                    <a href="/helpdesk//remove:9154" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:kerti.sonmez@ttu.ee">kerti.sonmez@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9154" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9154"></span><br/>&nbsp;Teema: <span id="subject_9154"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9154"></span></pre>
+                    <span id="body_9154"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9154" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default" id="msg_9152">
+            <div class="panel-heading">
+																			<h4 class="panel-title">
+																														 <a href="/helpdesk//create:9152" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																																					 <a href="/helpdesk//fetch:9152" class="msg_details" data-target="#details_9152" data-toggle="collapse" data-parent="#mailbox" title="Jori.Laaksonen@ttu.ee"> 22.10 09:52 <i class="fa fa-envelope-o"></i> Profiil 6,8GB</a>
+                    <a href="/helpdesk//remove:9152" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:Jori.Laaksonen@ttu.ee">Jori.Laaksonen@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9152" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9152"></span><br/>&nbsp;Teema: <span id="subject_9152"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9152"></span></pre>
+                    <span id="body_9152"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9152" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9148">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9148" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9148" class="msg_details" data-target="#details_9148" data-toggle="collapse" data-parent="#mailbox" title="stukatuur@wantedeuestbids.eu"> 21.10 21:19 <i class="fa fa-envelope-o"></i> Töökeskkonnaspetsialist</a>
+																	<a href="/helpdesk//remove:9148" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:stukatuur@wantedeuestbids.eu">stukatuur@wantedeuestbids.eu</a></div>
+																</h4>
+															</div>
+															<div id="details_9148" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9148"></span><br/>&nbsp;Teema: <span id="subject_9148"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9148"></span></pre>
+																	<span id="body_9148"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9148" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9146">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9146" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9146" class="msg_details" data-target="#details_9146" data-toggle="collapse" data-parent="#mailbox" title="WesternDigital@mail135.subscribermail.com"> 21.10 17:35 <i class="fa fa-envelope-o"></i> All-new My Cloud OS 3 Â– Revolutionizing your personal cloud</a>
+                    <a href="/helpdesk//remove:9146" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:WesternDigital@mail135.subscribermail.com">WesternDigital@mail135.subscribermail.com</a></div>
+                </h4>
+            </div>
+            <div id="details_9146" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9146"></span><br/>&nbsp;Teema: <span id="subject_9146"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9146"></span></pre>
+                    <span id="body_9146"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9146" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9142">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9142" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9142" class="msg_details" data-target="#details_9142" data-toggle="collapse" data-parent="#mailbox" title="helpdesk@ttu.ee"> 21.10 15:43 <i class="fa fa-envelope-o"></i> TTU e-posti konto</a>
+																	<a href="/helpdesk//remove:9142" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:helpdesk@ttu.ee">helpdesk@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9142" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9142"></span><br/>&nbsp;Teema: <span id="subject_9142"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9142"></span></pre>
+																	<span id="body_9142"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9142" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9141">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9141" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9141" class="msg_details" data-target="#details_9141" data-toggle="collapse" data-parent="#mailbox" title="helpdesk@ttu.ee"> 21.10 14:29 <i class="fa fa-envelope-o"></i> TTU e-posti konto</a>
+                    <a href="/helpdesk//remove:9141" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:helpdesk@ttu.ee">helpdesk@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9141" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9141"></span><br/>&nbsp;Teema: <span id="subject_9141"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9141"></span></pre>
+                    <span id="body_9141"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9141" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9139">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9139" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9139" class="msg_details" data-target="#details_9139" data-toggle="collapse" data-parent="#mailbox" title="evelysaaroja@gmail.com"> 21.10 11:05 <i class="fa fa-envelope-o"></i> Säästa € - uus kontorimööbel PARIMA HINNAGA!</a>
+																	<a href="/helpdesk//remove:9139" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:evelysaaroja@gmail.com">evelysaaroja@gmail.com</a></div>
+																</h4>
+															</div>
+															<div id="details_9139" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9139"></span><br/>&nbsp;Teema: <span id="subject_9139"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9139"></span></pre>
+																	<span id="body_9139"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9139" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9133">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9133" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9133" class="msg_details" data-target="#details_9133" data-toggle="collapse" data-parent="#mailbox" title="imranpct@outlook.com"> 21.10 07:43 <i class="fa fa-envelope-o"></i> MD IMRAN AHMAD, New delhi, India</a>
+                    <a href="/helpdesk//remove:9133" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:imranpct@outlook.com">imranpct@outlook.com</a></div>
+                </h4>
+            </div>
+            <div id="details_9133" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9133"></span><br/>&nbsp;Teema: <span id="subject_9133"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9133"></span></pre>
+                    <span id="body_9133"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9133" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9132">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9132" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9132" class="msg_details" data-target="#details_9132" data-toggle="collapse" data-parent="#mailbox" title="Noreply@intra.ttu.ee"> 21.10 00:15 <i class="fa fa-envelope-o"></i> User accounts expired</a>
+																	<a href="/helpdesk//remove:9132" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:Noreply@intra.ttu.ee">Noreply@intra.ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9132" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9132"></span><br/>&nbsp;Teema: <span id="subject_9132"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9132"></span></pre>
+																	<span id="body_9132"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9132" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9130">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9130" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9130" class="msg_details" data-target="#details_9130" data-toggle="collapse" data-parent="#mailbox" title="helpdesk@ttu.ee"> 20.10 16:29 <i class="fa fa-envelope-o"></i> TTU e-posti konto</a>
+                    <a href="/helpdesk//remove:9130" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:helpdesk@ttu.ee">helpdesk@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9130" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9130"></span><br/>&nbsp;Teema: <span id="subject_9130"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9130"></span></pre>
+                    <span id="body_9130"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9130" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9119">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9119" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9119" class="msg_details" data-target="#details_9119" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 19.10 13:56 <i class="fa fa-envelope-o"></i> RECOVERY [nublu.intra.ttu.ee:/mnt] OK</a>
+																	<a href="/helpdesk//remove:9119" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9119" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9119"></span><br/>&nbsp;Teema: <span id="subject_9119"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9119"></span></pre>
+																	<span id="body_9119"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9119" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9118">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9118" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9118" class="msg_details" data-target="#details_9118" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 19.10 13:56 <i class="fa fa-envelope-o"></i> RECOVERY [nublu:UP]</a>
+                    <a href="/helpdesk//remove:9118" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9118" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9118"></span><br/>&nbsp;Teema: <span id="subject_9118"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9118"></span></pre>
+                    <span id="body_9118"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9118" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9117">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9117" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9117" class="msg_details" data-target="#details_9117" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 19.10 13:52 <i class="fa fa-envelope-o"></i> PROBLEM [nublu:DOWN]</a>
+																	<a href="/helpdesk//remove:9117" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9117" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9117"></span><br/>&nbsp;Teema: <span id="subject_9117"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9117"></span></pre>
+																	<span id="body_9117"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9117" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9109">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9109" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9109" class="msg_details" data-target="#details_9109" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 19.10 10:36 <i class="fa fa-envelope-o"></i> PROBLEM [nublu.intra.ttu.ee:/mnt] WARNING</a>
+                    <a href="/helpdesk//remove:9109" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9109" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9109"></span><br/>&nbsp;Teema: <span id="subject_9109"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9109"></span></pre>
+                    <span id="body_9109"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9109" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9107">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9107" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9107" class="msg_details" data-target="#details_9107" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 19.10 08:59 <i class="fa fa-envelope-o"></i> RECOVERY [ERS2550T-MSI-STACK:UP]</a>
+																	<a href="/helpdesk//remove:9107" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9107" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9107"></span><br/>&nbsp;Teema: <span id="subject_9107"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9107"></span></pre>
+																	<span id="body_9107"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9107" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9106">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9106" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9106" class="msg_details" data-target="#details_9106" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 19.10 08:56 <i class="fa fa-envelope-o"></i> PROBLEM [ERS2550T-MSI-STACK:DOWN]</a>
+                    <a href="/helpdesk//remove:9106" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9106" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9106"></span><br/>&nbsp;Teema: <span id="subject_9106"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9106"></span></pre>
+                    <span id="body_9106"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9106" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9104">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9104" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9104" class="msg_details" data-target="#details_9104" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 19.10 06:56 <i class="fa fa-envelope-o"></i> PROBLEM [ERS2550T-MSI-STACK:DOWN]</a>
+																	<a href="/helpdesk//remove:9104" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9104" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9104"></span><br/>&nbsp;Teema: <span id="subject_9104"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9104"></span></pre>
+																	<span id="body_9104"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9104" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9103">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9103" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9103" class="msg_details" data-target="#details_9103" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 19.10 06:32 <i class="fa fa-envelope-o"></i> PROBLEM [nublu.intra.ttu.ee:/mnt] WARNING</a>
+                    <a href="/helpdesk//remove:9103" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9103" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9103"></span><br/>&nbsp;Teema: <span id="subject_9103"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9103"></span></pre>
+                    <span id="body_9103"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9103" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9102">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9102" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9102" class="msg_details" data-target="#details_9102" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 19.10 04:56 <i class="fa fa-envelope-o"></i> PROBLEM [ERS2550T-MSI-STACK:DOWN]</a>
+																	<a href="/helpdesk//remove:9102" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9102" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9102"></span><br/>&nbsp;Teema: <span id="subject_9102"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9102"></span></pre>
+																	<span id="body_9102"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9102" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9101">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9101" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9101" class="msg_details" data-target="#details_9101" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 19.10 02:54 <i class="fa fa-envelope-o"></i> PROBLEM [ERS2550T-MSI-STACK:DOWN]</a>
+                    <a href="/helpdesk//remove:9101" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9101" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9101"></span><br/>&nbsp;Teema: <span id="subject_9101"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9101"></span></pre>
+                    <span id="body_9101"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9101" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9100">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9100" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9100" class="msg_details" data-target="#details_9100" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 19.10 00:53 <i class="fa fa-envelope-o"></i> PROBLEM [ERS2550T-MSI-STACK:DOWN]</a>
+																	<a href="/helpdesk//remove:9100" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9100" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9100"></span><br/>&nbsp;Teema: <span id="subject_9100"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9100"></span></pre>
+																	<span id="body_9100"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9100" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9099">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9099" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9099" class="msg_details" data-target="#details_9099" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 18.10 22:51 <i class="fa fa-envelope-o"></i> PROBLEM [ERS2550T-MSI-STACK:DOWN]</a>
+                    <a href="/helpdesk//remove:9099" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9099" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9099"></span><br/>&nbsp;Teema: <span id="subject_9099"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9099"></span></pre>
+                    <span id="body_9099"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9099" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9098">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9098" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9098" class="msg_details" data-target="#details_9098" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 18.10 20:51 <i class="fa fa-envelope-o"></i> PROBLEM [ERS2550T-MSI-STACK:DOWN]</a>
+																	<a href="/helpdesk//remove:9098" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9098" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9098"></span><br/>&nbsp;Teema: <span id="subject_9098"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9098"></span></pre>
+																	<span id="body_9098"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9098" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9097">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9097" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9097" class="msg_details" data-target="#details_9097" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 18.10 20:44 <i class="fa fa-envelope-o"></i> PROBLEM [nublu.intra.ttu.ee:/mnt] WARNING</a>
+                    <a href="/helpdesk//remove:9097" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9097" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9097"></span><br/>&nbsp;Teema: <span id="subject_9097"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9097"></span></pre>
+                    <span id="body_9097"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9097" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9096">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9096" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9096" class="msg_details" data-target="#details_9096" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 18.10 18:51 <i class="fa fa-envelope-o"></i> PROBLEM [ERS2550T-MSI-STACK:DOWN]</a>
+																	<a href="/helpdesk//remove:9096" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9096" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9096"></span><br/>&nbsp;Teema: <span id="subject_9096"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9096"></span></pre>
+																	<span id="body_9096"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9096" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9094">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9094" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9094" class="msg_details" data-target="#details_9094" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 18.10 16:51 <i class="fa fa-envelope-o"></i> PROBLEM [ERS2550T-MSI-STACK:DOWN]</a>
+                    <a href="/helpdesk//remove:9094" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9094" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9094"></span><br/>&nbsp;Teema: <span id="subject_9094"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9094"></span></pre>
+                    <span id="body_9094"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9094" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9093">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9093" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9093" class="msg_details" data-target="#details_9093" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 18.10 16:40 <i class="fa fa-envelope-o"></i> PROBLEM [nublu.intra.ttu.ee:/mnt] WARNING</a>
+																	<a href="/helpdesk//remove:9093" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9093" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9093"></span><br/>&nbsp;Teema: <span id="subject_9093"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9093"></span></pre>
+																	<span id="body_9093"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9093" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9092">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9092" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9092" class="msg_details" data-target="#details_9092" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 18.10 14:50 <i class="fa fa-envelope-o"></i> PROBLEM [ERS2550T-MSI-STACK:DOWN]</a>
+                    <a href="/helpdesk//remove:9092" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9092" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9092"></span><br/>&nbsp;Teema: <span id="subject_9092"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9092"></span></pre>
+                    <span id="body_9092"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9092" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9091">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9091" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9091" class="msg_details" data-target="#details_9091" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 18.10 12:50 <i class="fa fa-envelope-o"></i> PROBLEM [ERS2550T-MSI-STACK:DOWN]</a>
+																	<a href="/helpdesk//remove:9091" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9091" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9091"></span><br/>&nbsp;Teema: <span id="subject_9091"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9091"></span></pre>
+																	<span id="body_9091"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9091" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9090">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9090" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9090" class="msg_details" data-target="#details_9090" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 18.10 12:36 <i class="fa fa-envelope-o"></i> PROBLEM [nublu.intra.ttu.ee:/mnt] WARNING</a>
+                    <a href="/helpdesk//remove:9090" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9090" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9090"></span><br/>&nbsp;Teema: <span id="subject_9090"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9090"></span></pre>
+                    <span id="body_9090"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9090" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9089">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9089" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9089" class="msg_details" data-target="#details_9089" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 18.10 10:48 <i class="fa fa-envelope-o"></i> PROBLEM [ERS2550T-MSI-STACK:DOWN]</a>
+																	<a href="/helpdesk//remove:9089" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9089" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9089"></span><br/>&nbsp;Teema: <span id="subject_9089"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9089"></span></pre>
+																	<span id="body_9089"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9089" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9088">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9088" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9088" class="msg_details" data-target="#details_9088" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 18.10 08:32 <i class="fa fa-envelope-o"></i> PROBLEM [nublu.intra.ttu.ee:/mnt] WARNING</a>
+                    <a href="/helpdesk//remove:9088" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9088" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9088"></span><br/>&nbsp;Teema: <span id="subject_9088"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9088"></span></pre>
+                    <span id="body_9088"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9088" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9087">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9087" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9087" class="msg_details" data-target="#details_9087" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 17.10 20:40 <i class="fa fa-envelope-o"></i> PROBLEM [nublu.intra.ttu.ee:/mnt] WARNING</a>
+																	<a href="/helpdesk//remove:9087" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9087" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9087"></span><br/>&nbsp;Teema: <span id="subject_9087"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9087"></span></pre>
+																	<span id="body_9087"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9087" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+														<div class="panel panel-default deleted" style="display: none" id="msg_9084">
+																																																				 <div class="panel-heading">
+																																																																	 <h4 class="panel-title read" style="color: #aa0000">
+                    <a href="/helpdesk//create:9084" class="ajax-load fa fa-mail-reply btn_border"></a>
+																																																	<a href="/helpdesk//fetch:9084" class="msg_details" data-target="#details_9084" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 17.10 16:36 <i class="fa fa-envelope-o"></i> PROBLEM [nublu.intra.ttu.ee:/mnt] WARNING</a>
+                    <a href="/helpdesk//remove:9084" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																																																										 <div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+                </h4>
+            </div>
+            <div id="details_9084" class="panel-collapse collapse">
+																																	<div class="panel-body">
+																																												 <pre>Saatja: <span id="sender_9084"></span><br/>&nbsp;Teema: <span id="subject_9084"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9084"></span></pre>
+                    <span id="body_9084"></span>
+																				<br/><br/>
+																				<a href="/helpdesk//create:9084" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																																																					</div>
+																																																					</div>
+																																																					</div>
+
+																																																					<div class="panel panel-default deleted" style="display: none" id="msg_9082">
+															<div class="panel-heading">
+																<h4 class="panel-title read" style="color: #aa0000">
+																	<a href="/helpdesk//create:9082" class="ajax-load fa fa-mail-reply btn_border"></a>
+																	<a href="/helpdesk//fetch:9082" class="msg_details" data-target="#details_9082" data-toggle="collapse" data-parent="#mailbox" title="nagios@ttu.ee"> 17.10 12:32 <i class="fa fa-envelope-o"></i> PROBLEM [nublu.intra.ttu.ee:/mnt] WARNING</a>
+																	<a href="/helpdesk//remove:9082" class="msg_remove fa fa-trash-o btn_border" style="float: right"></a>
+																	<div class="msg_from"><a href="mailto:nagios@ttu.ee">nagios@ttu.ee</a></div>
+																</h4>
+															</div>
+															<div id="details_9082" class="panel-collapse collapse">
+																<div class="panel-body">
+																	<pre>Saatja: <span id="sender_9082"></span><br/>&nbsp;Teema: <span id="subject_9082"></span><br/>&nbsp;&nbsp;&nbsp;Aeg: <span id="time_9082"></span></pre>
+																	<span id="body_9082"></span>
+																	<br/><br/>
+																	<a href="/helpdesk//create:9082" class="ajax-load btn btn-primary">Võta täitmiseks</a>
+																</div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="j">
+												<br />
+												<div class="row">
+													<div class="col-lg-12">
+														<div id="helpdesk_tasks_open" class="ptable no_border" data-user="Johann.Laulik" data-email="" data-sess="2653410116806152"></div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="d">
+												<br />
+												<div class="row">
+													<div class="col-lg-12">
+														<div id="helpdesk_requests_open" class="ptable no_border" data-user="Johann.Laulik" data-email="" data-sess="2653410116806152"></div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="e">
+												<br />
+												<style>
+													.onoffswitch-inner:before {
+														content: "Jah";
+													}
+													.onoffswitch-inner:after {
+														content: "Ei";
+													}
+												</style>
+												<div class="col-md-6">
+													<div class="panel panel-default">
+														<div class="panel-heading">
+															<h3 class="panel-title">Ülesanne: BAHSLY</h3>
+														</div>
+														<div class="panel-body">
+															<form method="post" id="task" action="/helpdesk/" data-before="on_task_add" class="ajax-form form-horizontal" role="form">
+																<input type="hidden" name="add_request_task" value="true">
+																<input type="hidden" name="request_id" value="BAHSLY">
+																<input type="hidden" name="task_id" value="M8UG52">
+																<input type="hidden" name="domain" value="32012">
+																<input type="hidden" name="msg_id" value="">
+
+																<div class="form-group">
+																	<label for="subject" class="control-label col-xs-3">Teema:<u>*</u></label>
+																	<div class="col-xs-9">
+																		<input type="text" name="subject" id="subject" class="form-control" value="">
+																		<span id="req_subject" class="req"><i class="fa fa-exclamation-circle"></i> Palun sisestage teema</span>
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<label for="requester" class="control-label col-xs-3">Taotleja:<u>*</u></label>
+																	<div class="col-xs-9">
+																		<input type="text" name="requester" id="requester" class="form-control" value="" autocomplete="off">
+																		<span id="req_requester" class="req"><i class="fa fa-exclamation-circle"></i> Palun sisestage korrektne kasutajanimi või emaili aadress</span>
+																		<div id="choose_requester" style="display: none"></div>
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<label for="type" class="control-label col-xs-3">Kategooria:</label>
+																	<div class="col-xs-9">
+																		<select id="task_type" name="type_id" class="form-control" style="width: 200px">
+
+																			<option value="10">Intsident</option>
+
+																			<option value="20">Infopäring</option>
+
+																			<option value="30">Muudatuse taotlus</option>
+
+																			<option value="40" selected>Muu pöördumine</option>
+
+																			<option value="90">Tagasiside</option>
+
+																		</select>
+																	</div>
+																</div>
+
+																<div class="form-group" id="service" style="display:none">
+																	<label for="service" class="control-label col-xs-3">Teenus:</label>
+																	<div class="col-xs-9">
+																		<select name="service" class="form-control" style="width: 200px">
+
+																			<option value="1">Andme- ja kõneside</option>
+
+																			<option value="2">Andmebaaside ja serverplatvormide haldus</option>
+
+																			<option value="3">Arvutitöökoht</option>
+
+																			<option value="4">Arvutusklastri arendus ja haldus</option>
+
+																			<option value="5">IT hanked</option>
+
+																			<option value="6">IT kasutajatugi</option>
+
+																			<option value="7">Uni-ID ja rollipõhiste juurdepääsude haldus</option>
+
+																			<option value="8">Ühis- ja kaugtöö vahendite haldus</option>
+
+																			<option value="9">Õppeinfosüsteemi arendus ja haldus</option>
+
+																		</select>
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<label for="prio" class="control-label col-xs-3">Mõju:</label>
+																	<div class="col-xs-9">
+																		<select name="prio" class="form-control" style="width: 200px">
+
+																			<option value="1">Kriitiline</option>
+
+																			<option value="2">Kõrge</option>
+
+																			<option value="3">Keskmine</option>
+
+																			<option value="4" selected>Madal</option>
+
+																		</select>
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<label for="owner_id" class="control-label col-xs-3">Täitja:</label>
+																	<div class="col-xs-9">
+																		<select id="owner_id" name="owner_id" data-user="current_user" data-owner="solver_selected" class="form-control" style="width: 200px">
+																			<option value="">-</option>
+
+																			<option value="Are.Hallikmann">Are Hallikmann</option>
+
+																			<option value="Andres.Lepp">Andres Lepp</option>
+
+																			<option value="Urve.Piksar">Urve Piksar</option>
+
+																			<option value="Andres.Pasoke">Andres Päsoke</option>
+
+																			<option value="Edgars.Zigurs">Edgars Žigurs</option>
+
+																			<option value="Roman.Zuravljov">Roman Žuravljov</option>
+
+																			<option value="Elton.Veide">Elton Veide</option>
+
+																			<option value="Reet.Aaremets">Reet Ääremets</option>
+
+																			<option value="Toomas.Lepik">Toomas Lepik</option>
+
+																			<option value="Simar.Tuula">Simar Tuula</option>
+
+																			<option value="Paul.Oja">Paul Oja</option>
+
+																			<option value="Margus.Vatko">Margus Vatko</option>
+
+																			<option value="Jori.Laaksonen">Jori Laaksonen</option>
+
+																			<option value="Vladislav.Zautin">Vladislav Zautin</option>
+
+																			<option value="Thomas.Lepik">Thomas Lepik</option>
+
+																			<option value="Ketlin.Karp">Ketlin Karp</option>
+
+																			<option value="ervin.korts-laur">Ervin Korts-Laur</option>
+
+																			<option value="Raido.Karro">Raido Karro</option>
+
+																			<option value="Kristo.Kallastu">Kristo Kallastu</option>
+
+																			<option value="Priit.Tolga">Priit Tolga</option>
+
+																			<option value="Erkki.Solvak">Erkki Solvak</option>
+
+																			<option value="Johann.Laulik" selected>Johann Laulik</option>
+
+																		</select>
+
+																		<textarea name="reassign_comment" id="reassign_comment" class="form-control" rows="4" maxlength="2048" placeholder="Kirjuta töö täitjale kommentaar" tabindex="2" style="margin-top: 15px; display: none"></textarea>
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<label for="status" class="control-label col-xs-3">Olek:</label>
+																	<div class="col-xs-9">
+																		<select id="task_status" name="status" class="form-control" style="width: 200px">
+
+																			<option value="0">Määratud</option>
+
+																			<option value="1">Ootel kasutaja järel</option>
+
+																			<option value="2">Täidetud</option>
+
+																		</select>
+																	</div>
+																</div>
+
+																<div class="form-group" id="hide_closing_reason" style="display:none">
+																	<label for="closing_reason" class="control-label col-xs-3">Lõpetamise põhjus:<u>*</u></label>
+																	<div class="col-xs-9">
+																		<select name="closing_reason" id="closing_reason" class="form-control" style="width: 200px">
+																			<option value="">--- Vali ----</option>
+
+																			<option value="1">Lahendatud</option>
+
+																			<option value="2">Lahendamatu</option>
+
+																			<option value="3">Tühistatud</option>
+
+																			<option value="4">Läinud</option>
+
+																		</select>
+																		<span id="req_closing_reason" class="req"><i class="fa fa-exclamation-circle"></i> Palun vali lõpetamise põhjus</span>
+																	</div>
+																</div>
+
+																<p class="padding"></p>
+
+																<div class="form-group" id="used_time" style="display:none">
+																	<label for="spent_time" class="control-label col-xs-3">Kulutatud aeg:</label>
+																	<div class="col-xs-9">
+																		<select name="spent_hrs" class="spent form-control">
+
+																			<option value="0">0</option>
+
+																			<option value="1">1</option>
+
+																			<option value="2">2</option>
+
+																			<option value="3">3</option>
+
+																			<option value="4">4</option>
+
+																			<option value="5">5</option>
+
+																			<option value="6">6</option>
+
+																			<option value="7">7</option>
+
+																			<option value="8">8</option>
+
+																			<option value="9">9</option>
+
+																			<option value="10">10</option>
+
+																		</select>
+																		<div class="spent_suf"> h </div>
+																		<select name="spent_min" class="spent form-control">
+
+																			<option value="0">00</option>
+
+																			<option value="15">15</option>
+
+																			<option value="30">30</option>
+
+																			<option value="45">45</option>
+
+																		</select>
+																		<div class="spent_suf">m</div>
+																	</div>
+
+																	<br/><br/>
+
+																	<label for="notice" class="control-label col-xs-3">Teavitus:</label>
+																	<div class="col-xs-9">
+																		<div class="switch" style="float: left">
+																			<div class="onoffswitch">
+																				<input type="checkbox" id="send_notice" name="send_notice" class="onoffswitch-checkbox" checked value="1" send_notice>
+																				<label class="onoffswitch-label" for="send_notice">
+																					<span class="onoffswitch-inner"/>
+																					<span class="onoffswitch-switch"/>
+																				</label>
+																			</div>
+																		</div>
+																		<span style="float: left">&nbsp;Saada kasutajale teavitus ülesande lõpetamise kohta</span>
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<label for="details" class="control-label col-xs-3">Täpsustused:<u>*</u></label>
+																	<div class="col-xs-9">
+																		<textarea name="details" id="details" class="form-control" rows="6" maxlength="8192" placeholder="Vabatekstilised märkmed piisavalt detailsed, et edasi anda pöördumise sisu" tabindex="2" task_details_disabled></textarea>
+																		<span id="req_details" class="req"><i class="fa fa-exclamation-circle"></i> Palun sisestage kirjeldus</span>
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<label for="deadline" class="control-label col-xs-3">Tähtaeg:<u>*</u></label>
+																	<div class="col-xs-9">
+																		<input name="deadline" id="deadline" type="text" value="30.10.2015" class="datepicker form-control" style="width: 200px" size="small">
+																	</div>
+																</div>
+
+																<div class="form-group" id="hide_comment" style="display:none">
+																	<label for="comment" class="control-label col-xs-3">Lisa märkus:<span id="comment_mark" style="display:none"><u>*</u></span></label>
+																	<div class="col-xs-9">
+																		<textarea name="comment" id="commentbox" class="form-control" rows="4" placeholder="Tagasiside töö tellijale" tabindex="2" maxlength="2048"></textarea>
+																		<span id="req_commentbox" class="req"><i class="fa fa-exclamation-circle"></i> Palun sisestage märkus</span>
+																	</div>
+																</div>
+
+																<p class="padding"></p>
+
+																<div class="form-group">
+																	<label for="submit" class="control-label col-xs-3"></label>
+																	<div class="col-xs-3">
+																		<button type="submit" class="btn btn-primary pull-left" tabindex="1">Salvesta</button>
+																	</div>
+
+																	<div class="col-xs-3"></div>
+																	<div class="col-xs-3">
+																		<a href="/helpdesk//parent" class="ajax-load btn btn-warning" style="display:none">Tühista</a>
+																	</div>
+																</div>
+
+																<p class="padding"></p>
+																<div class="form-group">
+																	<label for="submit" class="control-label col-xs-3">Manused:</label>
+																	<div class="col-xs-9">
+																		<div class="uploaded-files" style="position: relative; left: 0px; height: 100%;" data-parent="BAHSLY"></div>
+																		<br/>
+																		<div class="dropzone" style="position: relative; border: 1px solid #ccc">
+																			<div class="dropzone-previews">
+																				<div class="dz-message"><span data-dz-message>Lohista siia faile või kliki alal, et neid valida.</span></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</form>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-md-6" style="display:none">
+													<div class="panel panel-default">
+														<div class="panel-heading">
+															<h3 class="panel-title">Märkused</h3>
+														</div>
+														<div class="panel-body">
+
+
+															<div class="alert alert-info">
+																<i class="fa fa-user"></i> , regdate
+																<hr style="padding: 5px; margin: 0px"/>
+																descr
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<br clear="all"/>
+
+												<div class="col-md-12" style="display:none">
+													<p><b><a href="#changes" id="show_timeline">Muudatuste ajalugu <i id="timeline_active" class="fa fa-level-down"></i></a></b></p>
+													<div id="timeline" class="panel panel-default" style="display:none">
+														<div class="panel-body">
+															<table class="table table-hover table-condensed table-striped">
+																<thead>
+																	<tr>
+																		<th>Kasutaja</th>
+																		<th>Muudatuse aeg</th>
+																		<th>Täidetud</th>
+																		<th>Tähtaeg</th>
+																		<th>Mõju</th>
+																		<th>Olek</th>
+																		<th>Põhjus</th>
+																		<th>Kulutatud aeg</th>
+																		<th>Kategooria</th>
+																		<th>Teenus</th>
+																	</tr>
+																</thead>
+
+															</table>
+														</div>
+													</div>
+												</div>
+
+												<div class="modal fade" id="task_modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-label="Tühista"><span aria-hidden="true">&times;</span></button>
+																<h4 class="modal-title" id="service_modal_title">Hoiatus</h4>
+															</div>
+															<div class="modal-body">
+																<i class="fa fa-exclamation-circle"></i> txt_task_req_comment
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Tühista</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="f">
+												<br />
+												<div class="row">
+													<div class="col-lg-12">
+														<div id="helpdesk_tasks_closed" class="ptable no_border" data-user="Johann.Laulik" data-email="" data-sess="2653410116806152"></div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="g">
+												<br />
+												tab_g
+											</div>
+											<div class="tab-pane fade" id="h">
+												<br />
+												tab_h
+											</div>
+											<div class="tab-pane fade" id="i">
+												<br />
+												<div class="row">
+													<div class="col-lg-12">
+														<div id="helpdesk_requests_all" class="ptable no_border" data-user="Johann.Laulik" data-email="" data-sess="2653410116806152"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="footer">
+						<div class="pull-left">
+							TTÜ Siseportaal 2013 - 2015
+						</div>
+					</div>
+
+
+
+
+					<div id="_module" class="itsm"></div>
+					<div id="_focus" class="helpdesk"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="right-sidebar" class="">
+			<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;">
+				<div class="sidebar-container" style="overflow: hidden; width: auto; height: 100%;">
+
+					<ul class="nav nav-tabs navs-3">
+
+						<li class="active"><a data-toggle="tab" href="#tab-11" aria-expanded="true">
+							Valik 1
+							</a>
+						</li>
+						<li><a data-toggle="tab" href="#tab-22">
+							Valik 2
+							</a>
+						</li>
+						<li class="">
+							<a data-toggle="tab" href="#tab-33" aria-expanded="false">
+								<i class="fa fa-gear"></i>
+							</a>
+						</li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="tab-11" class="tab-pane active">
+							<div class="sidebar-title">
+								<h3> <i class="fa fa-folder"></i> Minu failid</h3>
+								<small><i class="fa fa-tim"></i> Kaustas on 2 dokumenti</small>
+							</div>
+							<div>
+								<ul class="sidebar-list">
+									<li class="">
+										<a href="#" class="">
+											<div class="pull-left text-center m-r">
+												<i class="fa fa-file-text-o fa-3x"></i>
+											</div>
+											<div class="m-l m-b-xs">Puhkuste graafiku koostamise juhend ja soovitused tuleviku mudeli laiendamiseks.pdf</div>
+											<div class="small text-muted pull-right ">Lisatud 15.02.2015</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="pull-left text-center m-r">
+												<i class="fa fa-file-text-o fa-3x"></i>
+											</div>
+											<div class="m-l m-b-xs">Majandusaruande kolmas lisa ja seletused.pdf</div>
+											<div class="small text-muted pull-right">Lisatud 12.06.2014</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div id="tab-22" class="tab-pane">
+							<div class="sidebar-title">
+								<h3> <i class="fa fa-cube"></i> Viimased uuendused</h3>
+								<small><i class="fa fa-tim"></i> Paigaldatud 14 uuendust. 1 on paigaldamata.</small>
+							</div>
+
+							<ul class="sidebar-list">
+								<li>
+									<a href="#">
+										<div class="small pull-right m-t-xs">5 tundi tagasi</div>
+										<h4>Versiooni uuendus 1.0.0.14</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio accusantium saepe id.
+
+										<div class="small">Paigaldatud: 22%</div>
+										<div class="progress progress-mini">
+											<div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+										</div>
+										<div class="small text-muted m-t-xs">Paigalduse lõpuni 3 minutit</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div id="tab-33" class="tab-pane">
+
+							<div class="sidebar-title">
+								<h3><i class="fa fa-gears"></i> Sätted</h3>
+								<small><i class="fa fa-tim"></i> Siin saad muuta oma põhisätteid</small>
+							</div>
+
+							<div class="setings-item">
+								<span>
+									Näita teateid
+								</span>
+								<div class="switch">
+									<div class="onoffswitch">
+										<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+										<label class="onoffswitch-label" for="example">
+											<span class="onoffswitch-inner"></span>
+											<span class="onoffswitch-switch"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="setings-item">
+								<span>
+									Keela messenger
+								</span>
+								<div class="switch">
+									<div class="onoffswitch">
+										<input type="checkbox" name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example2">
+										<label class="onoffswitch-label" for="example2">
+											<span class="onoffswitch-inner"></span>
+											<span class="onoffswitch-switch"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="setings-item">
+								<span>
+									Luba ajaloo salvestus
+								</span>
+								<div class="switch">
+									<div class="onoffswitch">
+										<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+										<label class="onoffswitch-label" for="example3">
+											<span class="onoffswitch-inner"></span>
+											<span class="onoffswitch-switch"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="setings-item">
+								<span>
+									Näita tabeleid
+								</span>
+								<div class="switch">
+									<div class="onoffswitch">
+										<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+										<label class="onoffswitch-label" for="example4">
+											<span class="onoffswitch-inner"></span>
+											<span class="onoffswitch-switch"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="setings-item">
+								<span>
+									Kasutaja teavitused
+								</span>
+								<div class="switch">
+									<div class="onoffswitch">
+										<input type="checkbox" checked="" name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+										<label class="onoffswitch-label" for="example5">
+											<span class="onoffswitch-inner"></span>
+											<span class="onoffswitch-switch"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="setings-item">
+								<span>
+									Globaalne otsing
+								</span>
+								<div class="switch">
+									<div class="onoffswitch">
+										<input type="checkbox" checked="" name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+										<label class="onoffswitch-label" for="example6">
+											<span class="onoffswitch-inner"></span>
+											<span class="onoffswitch-switch"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="setings-item">
+								<span>
+									Uuenda igapäev
+								</span>
+								<div class="switch">
+									<div class="onoffswitch">
+										<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+										<label class="onoffswitch-label" for="example7">
+											<span class="onoffswitch-inner"></span>
+											<span class="onoffswitch-switch"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="sidebar-content">
+								<h4>Sätted</h4>
+								<div class="small">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia doloremque ducimus, iste cum molestiae unde recusandae dolorem necessitatibus, quod? Pariatur officia omnis aperiam doloribus, impedit ipsa laborum provident accusamus quos obcaecati mollitia beatae. Placeat, totam, fugiat. Ad architecto repudiandae, non.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 894px; background: rgb(0, 0, 0);"></div>
+				<div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.4; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="wiki_help" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="help-wrapper"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button id="fullscreen-btn" class="btn btn-sm btn-grey pull-right hidden-xs" type="button"><i class="fa fa-arrows"></i></button>
+
+
+		<a href="#" class="scroll-up"><i class="fa fa-2x fa-angle-double-up"></i></a>
+
+		<div id="_sess_id" class="2653410116806152"></div>
+		<div id="_lang" class="et"></div>
+
+
+
+		<!--SCRIPTS
+--------------------------------------------------------------->
+		<!-- Main scripts -->
+		<script src="js/jquery-2.1.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Plugin javascript -->
+		<script src="js/plugins/moment/moment.min.js"></script>
+		<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+		<script src="js/plugins/slimscroll/jquery.slimscroll.js"></script>
+		<script src="js/inspinia.js"></script>
+		<script src="js/plugins/pace/pace.min.js"></script>
+		<script src="js/plugins/x-editable/bootstrap-editable.js"></script>
+		<script src="js/plugins/iCheck/icheck.min.js"></script>
+		<script src="js/plugins/chartist/chartist.min.js"></script>
+		<script src="js/plugins/chartist/chartist-plugin-tooltip.min.js"></script>
+		<script src="js/plugins/placeholder/jquery.placeholder.min.js"></script>
+		<script src="js/plugins/ptables/store.min.js"></script>
+		<script src="js/plugins/ptables/ptable.js"></script>
+		<!-- Custom javascript -->
+		<script src="js/navbar_menu.js"></script>
+		<script src="js/arengukava.js"></script>
+		<script src="js/sidebar.js"></script>
+		<script src="js/content_pages.js"></script>
+
+	</body>
+</html>
+
+<!--=========================
+------- v -------
+VARS Object
+(
+[get] => stdClass Object
+(
+[a] => helpdesk
+)
+
+[ret] => stdClass Object
+(
+[a] => 1
+)
+
+[post] => stdClass Object
+(
+)
+
+)
+=========================
+------- u -------
+USER Object
+(
+[focus] => helpdesk
+[login_name] => Johann.Laulik
+[user_id] => 419
+[title] => kasutajaliidese arendaja
+[phone] =>
+[email] => johann.laulik@ttu.ee
+[memberof] => SECDV3201208;SEC_CI_siseportaal;SEC_CI_webportaldev;SEC_CI_wiki_arendus;home_sjl;U Staff;SEC32012;home_jl;U Profile Redirect;U VPN
+[displayname] => Johann Laulik
+[personcode] => 38612050251
+[mobile] =>
+[sms_mobile] =>
+[lang] => et
+[skin] => ttu
+[module] => srm
+[acl] => Array
+(
+[helpdesk] => 3
+[cmdb] => 3
+)
+
+[focus_acl] => 3
+[unread_emails] => 6
+)
+=========================
+------- w -------
+AGENT Object
+(
+[debug] => 1
+[audit] =>
+[server_addr] => 192.168.199.30
+[server_name] => portal-dev.ttu.ee
+[remote_addr] => 192.168.115.12
+[access_denied] =>
+[init_error] =>
+[minify] =>
+[obfuscate] =>
+[acl_error] =>
+[auth_ok] => 1
+[is_developer] => 1
+[is_tester] =>
+[is_api_call] =>
+[is_ajax_focus] =>
+[is_ajax_request] =>
+[ajax_focus] => Array
+(
+[0] => query
+[1] => load
+)
+
+[utimer] => 1445586052.1807
+[sess_id] => 2653410116806152
+[redisok] => 1
+[sesshash] => bf27a3113067db1200ca61ea77c551ff
+[modules_hidden] => Array
+(
+[0] => am
+[1] => cms
+[2] => reports
+)
+
+[page_render_time] => 0.509718
+[rendering_kpi] => 254.859
+[msg] => Array
+(
+[debug] => Array
+(
+[0] => checkpoint #1 (init.complete): 0.013056 s. (6.5 per cent of 0.2 s.)
+[1] => checkpoint #2 (pre-content): 0.248104 s. (124.1 per cent of 0.2 s.)
+[2] => checkpoint #3 (post-content): 0.509718 s. (254.9 per cent of 0.2 s.)
+)
+
+)
+
+[navbar] => Array
+(
+[0] => pl
+[1] => pp
+[2] => pr
+)
+
+)
+------- last -------
+stdClass Object
+(
+[server] => stdClass Object
+(
+[PATH_INFO] =>
+[REQUEST_METHOD] => GET
+[CONTENT_TYPE] =>
+[CONTENT_LENGTH] =>
+[REQUEST_URI] => /helpdesk/2653410116806152/b
+[REMOTE_ADDR] => 192.168.115.12
+[SERVER_ADDR] => 192.168.199.30
+[HTTP_HOST] => portal-dev.ttu.ee
+[HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+[HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36
+[HTTP_REFERER] => https://portal-dev.ttu.ee/helpdesk
+[HTTP_X_SSL_CIPHER] => DHE-RSA-AES128-GCM-SHA256 TLSv1.2 Kx=DH       Au=RSA  Enc=AESGCM(128) Mac=AEAD
+[REQUEST_TIME] => 1445585661
+[PHP_AUTH_USER] => Johann.Laulik
+)
+
+[focus] => helpdesk
+[skin] => ttu
+[post] => stdClass Object
+(
+)
+
+[get] => stdClass Object
+(
+[a] => helpdesk
+[b] => 2653410116806152
+[c] => b
+)
+
+[breadcrumb] => Array
+(
+[start] => 1445585197
+[helpdesk] => 1445586052
+)
+
+[breadcrumb_item] => Array
+(
+[start] =>
+[helpdesk] =>
+)
+
+)
+=========================
+Array
+(
+[0] => get_agents
+[1] => utime
+[2] => stop_utimer
+[3] => get_build
+)
+-->
