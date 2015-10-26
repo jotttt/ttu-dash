@@ -1,8 +1,5 @@
 /*jshint -W117 */
 $(function() {
-	//TOOLTIPS
-	//--------------------------------------------------------------
-	$('[data-toggle="tooltip"]').tooltip();
 
 	//TOGGLE 1ST LVL BUTTON STATE
 	//--------------------------------------------------------------
@@ -10,7 +7,7 @@ $(function() {
 		$(this).toggleClass("active");
 	});
 
-	//TOGGLE CARDS AND LOAD CONTENT
+	//TOGGLE TABS AND LOAD CONTENT
 	//--------------------------------------------------------------
 	$(".card").click(function(){
 		$(this).toggleClass("active").siblings().removeClass("active");
@@ -27,12 +24,42 @@ $(function() {
 		}
 	});
 
+	//BACK TO TOP BUTTON
+	//--------------------------------------------------------------
+	var offset=150, // At what pixels show Back to Top Button
+			scrollDuration=300; // Duration of scrolling to top
+	$("#wrapper").scroll(function() {
+		if ($(this).scrollTop() > offset) {
+			$('.top').fadeIn(500); // Time(in Milliseconds) of appearing of the Button when scrolling down.
+		} else {
+			$('.top').fadeOut(500); // Time(in Milliseconds) of disappearing of Button when scrolling up.
+		}
+	});
+
+	// Smooth animation when scrolling
+	$('.top').click(function(event) {
+		event.preventDefault();
+		$('#wrapper').animate({
+			scrollTop: 0}, scrollDuration);
+	});
+	//--------------------------------------------------------------
+
+	//X-EDITABLE INIT
+	//---------------------------------------------------------------
+	$('#organization').editable({
+		type: 'text',
+		url: '/post',
+	});
+
+
+
 	//PROGRESS BAR GRADIENT
 	//--------------------------------------------------------------
 
 
 	// Chartist chart 1
 	//--------------------------------------------------------------
+	/*
 	new Chartist.Bar('#ct-1', {
 		labels: [''],
 		series: [
@@ -173,5 +200,5 @@ $(function() {
 			});
 		}
 	});
-
+*/
 });
