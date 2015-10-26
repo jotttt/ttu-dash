@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>TTÜ | Lähetused</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/plugins/x-editable/bootstrap-editable.css" rel="stylesheet">
+		<link href="css/plugins/datapicker/datepicker3.min.css" rel="stylesheet">
+		<link href="css/plugins/iCheck/grey.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/plugins/switchery/switchery.css" />
+		<link href="css/style.css" rel="stylesheet">
+
+
+	</head>
+
+	<body class="">
+
+		<div id="wrapper">
+			<!--SIDEBAR
+--------------------------------------------------------------->
+			<nav class="navbar-default navbar-static-side" role="navigation">
+				<div class="sidebar-collapse">
+					<ul class="nav" id="side-menu">
+						<li class="nav-header">
+							<div class="dropdown profile-element"> 			<span>
+								<a href="#" class="cr-block"><div id="logo-minimal-w" class="center-block"></div></a>
+								</span>
+							</div>
+							<div class="logo-element">
+								<div id="logo-text-w" class="center-block"></div>
+							</div>
+						</li>
+						<!--SIDEBAR SEARCH
+----------------------------------------------------------------->
+						<li>
+							<form class="sidebar-search center-block" role="search">
+								<div class="input-group m-b">
+									<input type="text" class="form-control" placeholder="&#xF002; Otsi" name="srch-term2" id="srch-term2" style="font-family:Arial, FontAwesome">
+								</div>
+							</form>
+						</li>
+						<!--SIDEBAR SEARCH END
+----------------------------------------------------------------->
+						<li class="active">
+							<a href="#"><i class="fa fa-university"></i> <span class="nav-label">Minu töölaud</span><span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level">
+								<li><a href="/contacts/9045239624610520" id="_contacts" class="ajax-load">Telefoniraamat</a></li>
+								<li><a href="/request/9045239624610520" id="_request" class="ajax-load">Iseteenindus</a></li>
+								<li><a href="/docs/9045239624610520" id="_docs" class="ajax-load">Töökorraldus</a></li>
+								<li><a href="/news/9045239624610520" id="_news" class="ajax-load">Uudised</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Meediapank</span><span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level">
+								<li><a href="/media/9045239624610520" id="_media" class="ajax-load">Meediahaldus</a></li>
+								<li><a href="/tube/9045239624610520" id="_tube" class="ajax-load">Videosirvik</a></li>
+
+							</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-wrench"></i> <span class="nav-label">Juhi töölaud</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/budget_view/9045239624610520" id="_budget_view" class="ajax-load">Eelarve vaade</a></li>
+							<li><a href="/budget_plan/9045239624610520" id="_budget_plan" class="ajax-load">Eelarve planeerimine</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Minu üksus</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/myunit/9045239624610520" id="_myunit" class="ajax-load">Inimesed</a></li>
+							<li><a href="lahetus_uld.html" id="_trip" class="ajax-load">Lähetused</a></li>
+							<li><a href="/budget/9045239624610520" id="_budget" class="ajax-load">Eelarve</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Multimail</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/msgprep/9045239624610520" id="_msgprep" class="ajax-load">Sõnumihaldus</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-at"></i> <span class="nav-label">Kontaktikeskus</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/organizations/9045239624610520" id="_organizations" class="ajax-load">Organisatsioonid</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-sliders"></i> <span class="nav-label">IT teenuste haldus</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/cmdb/9045239624610520" id="_cmdb" class="ajax-load">Seire</a></li>
+							<li><a href="/dns/9045239624610520" id="_dns" class="ajax-load">Nimeserver</a></li>
+							<li><a href="/helpdesk/9045239624610520" id="_helpdesk" class="ajax-load">Kasutajatugi</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-phone"></i> <span class="nav-label">Sideteenused</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/mobiledb/9045239624610520" id="_mobiledb" class="ajax-load">Mobiilinumbrid</a></li>
+							<li><a href="/deskphone/9045239624610520" id="_deskphone" class="ajax-load">Lauanumbrid</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-pencil"></i> <span class="nav-label">Sisuhaldus</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/edit/9045239624610520" id="_edit" class="ajax-load">Redigeerimine (näidis)</a></li>
+							<li><a href="/view/9045239624610520" id="_view" class="ajax-load">Vaatlemine (näidis)</a></li>
+
+						</ul>
+						</li><li>
+						<a href="#"><i class="fa fa-building-o"></i> <span class="nav-label">Kinnisvarahaldus</span><span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="/room/9045239624610520" id="_room" class="ajax-load">Ruumide register</a></li>
+							<li><a href="/fmreports/9045239624610520" id="_fmreports" class="ajax-load">Aruanded</a></li>
+							<li><a href="/assetlist/9045239624610520" id="_assetlist" class="ajax-load">Varahaldus</a></li>
+							<li><a href="/helpline/9045239624610520" id="_helpline" class="ajax-load">Murekontor</a></li>
+
+						</ul>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+			<!--SIDEBAR END
+--------------------------------------------------------------->
+			<!--CONTENT
+--------------------------------------------------------------->
+			<div id="page-wrapper" class="gray-bg">
+				<!--TOP NAVBAR
+--------------------------------------------------------------->
+				<div class="row border-bottom">
+					<nav class="navbar navbar-static-top cherry-bg" role="navigation">
+						<div class="navbar-header">
+							<a class="navbar-minimalize minimalize-styl-2" href="#"><i class="fa fa-bars"></i> </a>
+
+							<ul class="nav navbar-nav">
+								<li class="dropdown hidden-xs">
+									<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Dokumendid <span class="caret"></span></a>
+									<ul role="menu" class="dropdown-menu">
+										<li><a href="">Menu item</a></li>
+										<li><a href="">Menu item</a></li>
+										<li><a href="">Menu item</a></li>
+										<li><a href="">Menu item</a></li>
+									</ul>
+								</li>
+								<li class="dropdown dropdown-large hidden-xs">
+									<a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown"> Inimesed <span class="caret"></span></a>
+									<ul class="dropdown-menu dropdown-menu-large row">
+										<li class="col-sm-4">
+											<ul>
+												<li class="dropdown-header">Teaduskonnad</li>
+												<li><a href="#">Ehitusteaduskond</a></li>
+												<li><a href="#">Energeetikateaduskond</a></li>
+												<li class="divider"></li>
+												<li class="dropdown-header">Lorem</li>
+												<li><a href="#">Example</a></li>
+												<li><a href="#">Aligninment options</a></li>
+												<li><a href="#">Headers</a></li>
+												<li><a href="#">Disabled menu items</a></li>
+											</ul>
+										</li>
+										<li class="col-sm-4">
+											<ul>
+												<li class="dropdown-header">Asutused</li>
+												<li><a href="#">Basic example</a></li>
+												<li><a href="#">Button toolbar</a></li>
+												<li><a href="#">Sizing</a></li>
+												<li><a href="#">Nesting</a></li>
+												<li><a href="#">Vertical variation</a></li>
+												<li class="divider"></li>
+												<li class="dropdown-header">Ipsum</li>
+												<li><a href="#">Single button dropdowns</a></li>
+											</ul>
+										</li>
+										<li class="col-sm-4">
+											<ul>
+												<li class="dropdown-header">Üksused</li>
+												<li><a href="#">Basic example</a></li>
+												<li><a href="#">Sizing</a></li>
+												<li><a href="#">Checkboxes and radio addons</a></li>
+												<li class="divider"></li>
+												<li class="dropdown-header">Dolor</li>
+												<li><a href="#">Lorem ipsum dolor</a></li>
+												<li><a href="#">Pills</a></li>
+												<li><a href="#">Justified</a></li>
+											</ul>
+										</li>
+									</ul>
+
+								</li>
+								<li class="dropdown dropdown-large hidden-xs">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teenused <b class="caret"></b></a>
+									<ul class="dropdown-menu dropdown-menu-large row">
+
+										<li class="col-sm-4">
+											<ul>
+
+												<li class="level-1 dropdown-header"><a href="#">Põhiline</a></li>
+												<li class="level-2"><a href="#">TTÜ põhikiri</a></li>
+												<div class="l3">
+													<li class="level-3"><a href="#">TTÜ põhikirja analüüs</a></li>
+													<li class="level-3"><a href="#">TTÜ põhikirja ülevaade</a></li>
+													<li class="level-3"><a href="#">TTÜ põhikirja kriitika</a></li>
+													<li class="level-3"><a href="#">TTÜ põhikirja paraboolne eksistents</a></li>
+													<li class="level-3"><a href="#">TTÜ põhikirja kaatet</a></li>
+													<li class="level-3"><a href="#">TTÜ põhikirja sinusoidne üleminek paberkandjale</a></li>
+												</div>
+												<li class="level-2"><a href="#">TTÜ arengukava 2011−2015</a></li>
+												<li class="level-2"><a href="#">TTÜ kollektiivleping</a></li>
+												<li class="level-2"><a href="#">TTÜ juhtimissüsteemi käsiraamat</a></li>
+												<li class="level-2"><a href="#">TTÜ seadus (Riigi Teataja)</a></li>
+												<li class="level-2"><a href="#">Ülikooliseadus (Riigi Teataja)</a></li>
+												<li class="level-2"><a href="#">Teadus- ja arendustegevuse korralduse seadus (Riigi Teataja)</a></li>
+												<li class="level-2"><a href="#">Kõrgharidusstandard (Riigi Teataja)</a></li>
+												<li class="level-1 dropdown-header"><a href="#">Õigusaktid</a></li>
+												<li class="level-2"><a href="#">Kuratooriumi määrused</a></li>
+												<li class="level-2"><a href="#">Kuratooriumi otsused</a></li>
+												<li class="level-2"><a href="#">Nõukogu määrused</a></li>
+												<li class="level-2"><a href="#">Nõukogu otsused</a></li>
+												<li class="level-2"><a href="#">Üldkäskkirjad</a></li>
+												<li class="level-2"><a href="#">Personalikäskkirjad</a></li>
+												<li class="level-2"><a href="#">Korraldused</a></li>
+												<li class="level-2"><a href="#">Korraldused asendaja määramiseks</a></li>
+												<li class="level-2"><a href="#">Riigihangete korraldused</a></li>
+												<li class="level-2"><a href="#">Dekaani
+													korraldused</a></li>
+												<div class="l3">
+													<li class="level-3"><a href="#">TTÜ põhikirja analüüs</a></li>
+													<li class="level-3"><a href="#">TTÜ põhikirja ülevaade</a></li>
+													<li class="level-3"><a href="#">TTÜ põhikirja kriitika</a></li>
+												</div>
+											</ul>
+										</li>
+										<li class="col-sm-4">
+											<ul>
+												<li class="level-1 dropdown-header"><a href="#">Terviktekstid, vormid</a></li>
+												<li class="level-2"><a href="#">Õppetöö</a></li>
+												<li class="level-2"><a href="#">Teadus- ja arendustöö</a></li>
+												<li class="level-2"><a href="#">Täiendusõpe</a></li>
+												<li class="level-2"><a href="#">Personalitöö</a></li>
+												<li class="level-2"><a href="#">Dokumendihaldus</a></li>
+												<li class="level-2"><a href="#">Lepingud ja volikirjad</a></li>
+												<li class="level-2"><a href="#">Finantstegevus</a></li>
+												<li class="level-2"><a href="#">Haldus-majandustegevus</a></li>
+												<li class="level-2"><a href="#">Statuudid</a></li>
+												<li class="level-2"><a href="#">Hinnakirjad</a></li>
+												<li class="level-2"><a href="#">Arengukavad ja strateegiad</a></li>
+												<li class="level-2"><a href="#">Asutuste põhikirjad</a></li>
+												<li class="level-2"><a href="#">Akadeemiliste struktuuriüksuste põhimäärused</a></li>
+												<li class="level-2"><a href="#">Haldus-tugistruktuuriüksuste põhimäärused</a></li>
+												<li class="level-2"><a href="#">Otsustuskogude töö</a></li>
+												<li class="level-2"><a href="#">TTÜ struktuur ja üldandmed</a></li>
+												<li class="level-1 dropdown-header"><a href="#">Kirjaregister</a></li>
+												<li class="level-2"><a href="#">Volikirjade register</a></li>
+												<li class="level-2"><a href="#">Lepingute register</a></li>
+												<li class="level-2"><a href="#">Lähetuste register</a></li>
+												<li class="level-2"><a href="#">TTÜga seotud juriidiliste isikute register</a></li>
+												<li class="level-2"><a href="#">Õigusaktide audit</a></li>
+												<li class="level-2"><a href="#">Õigusaktide tõlked (regulations and documents)</a></li>
+												<li class="level-2"><a href="#">Ingliskeelne terminoloogia</a></li>
+											</ul></li>
+										<li class="col-sm-4">
+											<ul>
+												<li class="level-1 dropdown-header"><a href="#">Mallid</a></li>
+												<li class="level-2"><a href="#">Dokumendimallid</a></li>
+												<li class="level-2"><a href="#">Näidisdokumendid</a></li>
+												<li class="level-2"><a href="#">Slaidimallid</a></li>
+												<li class="level-1 dropdown-header"><a href="#">Turundusmaterjalid</a></li>
+												<li class="level-2"><a href="#">TTÜ brändi ja tunnusgraafika kogumik</a></li>
+												<li class="level-2"><a href="#">Logod</a></li>
+												<li class="level-2"><a href="#">Rahvusvahelise turunduse käsiraamat</a></li>
+												<li class="level-1 dropdown-header"><a href="#">Infotund, avakoosolekud</a></li>
+												<li class="level-2"><a href="#">Üleülikooliline infotund</a></li>
+												<li class="level-2"><a href="#">Rektori kõned õppeaasta avakoosolekul</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+
+						</div>
+						<!--RIGHT NAVBAR
+--------------------------------------------------------------->
+						<ul class="nav navbar-top-links navbar-right">
+							<li class="dropdown m-l">
+								<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+									<i class="fa fa-bell"></i>  <span class="label label-primary">3</span>
+								</a>
+								<ul class="dropdown-menu dropdown-alerts">
+									<li>
+										<a href="mailbox.html">
+											<div>
+												<i class="fa fa-envelope fa-fw"></i> Sul on 3 uut sõnumit
+												<span class="pull-right text-muted small">19 minutit tagasi</span>
+											</div>
+										</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="profile.html">
+											<div>
+												<i class="fa fa-calendar-o fa-fw"></i> Täna plaanis 2 sündmust
+												<span class="pull-right text-muted small">56 minutit tagasi</span>
+											</div>
+										</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="grid_options.html">
+											<div>
+												<i class="fa fa-upload fa-fw"></i> Kõik uuendused tehtud
+												<span class="pull-right text-muted small">4h tagasi</span>
+											</div>
+										</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<div class="text-center link-block">
+											<a href="notifications.html">
+												<strong>Vaata kõiki teavitusi</strong>
+												<i class="fa fa-angle-right"></i>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="show-icon ">
+								<a href="login.html">
+									<i class="fa fa-sign-out"></i>
+								</a>
+							</li>
+							<li  class="show-icon hidden-xs">
+								<a class="right-sidebar-toggle">
+									<i class="fa fa-tasks"></i>
+								</a>
+							</li>
+						</ul>
+						<!--RIGHT NAVBAR END
+--------------------------------------------------------------->
+						<!--NAVBAR SEARCH
+--------------------------------------------------------------->
+						<ul class="nav navbar-top-links navbar-right visible-lg">
+							<form>
+								<input type="text" class="form-control" placeholder="&#xF002; Otsi" name="srch-term" id="srch-term" style="font-family:Arial, FontAwesome">
+							</form>
+						</ul>
+						<!--NAVBAR SEARCH END
+--------------------------------------------------------------->
+
+					</nav>
+				</div>
+				<!--TOP NAVBAR END
+--------------------------------------------------------------->
+				<div class="row wrapper border-bottom white-bg">
+					<div class="col-md-4">
+						<ol class="breadcrumb">
+							<li>
+								<a href="index.html">This is</a>
+							</li>
+							<li class="active">
+								<strong>Breadcrumb</strong>
+							</li>
+						</ol>
+					</div>
+					<div class="col-sm-8">
+					</div>
+				</div>
+				<!--PAGE
+--------------------------------------------------------------->
+				<div class="wrapper wrapper-content animated fadeInRight" style="font-size: 1.3em">
+
+
+
+
+					<div class="row">
+						<div class="col-lg-12 ui-sortable">
+							<div class="panel panel-default">
+								<div class="panel-body">
+
+									<ul class="nav nav-tabs">
+										<li class=""><a href="#a" data-toggle="tab" aria-expanded="false">Ilmateenistus</a></li>
+										<li class=""><a href="#b" data-toggle="tab" aria-expanded="false">Uudised</a></li>
+										<li class=""><a href="#c" data-toggle="tab" aria-expanded="false">Siseuudised</a></li>
+										<li class=""><a href="#d" data-toggle="tab" aria-expanded="false">Sündmused</a></li>
+										<li class="active"><a href="#e" data-toggle="tab" aria-expanded="true">Meediakajastus</a></li>
+										<li class=""><a href="#f" data-toggle="tab" aria-expanded="false">Teadusuudised</a></li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane fade" id="a">
+											<br><div class="row">
+											<div class="col-lg-12 ui-sortable">
+
+												<table id="forecast" class="table table-bordered table-hover table-condensed">
+													<thead>
+														<tr>
+															<th>Kuupäev</th>
+															<th>Temperatuurid</th>
+															<th class="hidden-md hidden-sm hidden-xs">Kirjeldus</th>
+
+														</tr>
+													</thead>
+													<tbody>
+
+
+														<tr><td title="Light shower">23.10.2015</td><td>7..12 °C</td><td class="hidden-md hidden-sm hidden-xs">Pilves selgimistega ilm. Mitmel pool sajab vihma, õhtupoolikul sajuhood harvenevad. Tuul pöördub kõikjal läände ja loodesse 4-10, rannikul puhanguti 15 m/s. Õhutemperatuur on 7..12°C.</td></tr>
+														<tr><td title="Variable clouds">24.10.2015</td><td>7..12 °C</td><td class="hidden-md hidden-sm hidden-xs">Muutliku pilvisusega olulise sajuta ilm. Puhub läänekaare tuul 3-9 m/s. Õhutemperatuur on 7..12°C.</td></tr>
+														<tr><td title="Light rain">25.10.2015</td><td>6..11 °C</td><td class="hidden-md hidden-sm hidden-xs">Enamasti pilves ilm. Pärastlõunal hakkab saartelt alates vihma sadama. Puhub lõuna- ja edelatuul 5-12, saartel ja rannikul puhanguti 15 m/s. Õhutemperatuur on 6..11°C.</td></tr>
+														<tr><td title="Light shower">26.10.2015</td><td>7..10 °C</td><td class="hidden-md hidden-sm hidden-xs">Muutliku pilvisusega ilm. Kohati sajab hoovihma. Puhub läänetuul 7-12, rannikul puhanguti kuni 17 m/s. Õhutemperatuur on 7..10°C.</td></tr>
+													</tbody>
+												</table>
+											</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="b">
+											<br>
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Tule ja ela kaasa TTÜ - Kalev/Cramo korvpallikohtumisele</h3>
+													<hr width="90%" size="1">
+													Homme, 22. oktoobril kohtuvad Alexela meistriliiga korvpallimängus TTÜ ja Kalev/Cramo.
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Mereakadeemia avamerejaht Tormilind avalikul oksjonil </h3>
+													<hr width="90%" size="1">
+													Mereakadeemia avamerejaht Tormilind avalikul oksjonil Mereakadeemia avamerejaht Tormilind on väärikalt kooli teeninud ligi 22 aastat, pakkudes tudengitele head meresõidupraktikat. Kuna Mereakadeemia eesmärgiks on kaasajastada oma meresõidupraktika võimalusi, siis on Tormilind pandud nüüd avalikule oksjonile osta.ee keskkonnas SIIN.  Jahi alghind on 13 000€ ning oksjon lõppeb 6.11.15 kell 09:20:22Purjejahti saab näha Tallinnas, Pirita sadamas eelnevalt kokku leppides telefonil 53 40 4003 – Ringo Liepkalns.Kevadel jätkatakse purjeõpet uue kaasaegse jahiga Varianta 44, mille nimekonkurss kestab kuni 26. oktoobrini. Uue jahi nimi avalikustatakse 27. oktoobril Mereakadeemia 96. aastapäeva raames.Lisainfo: http://www.ttu.ee/ttu-uudised/uudised/asutused-2/ttu-eesti-mereakadeemia-3/mereakadeemia-uue-jahi-nimekonkurss/
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Eesti Noorte Purjeõppeselts "STA Estonia" kolis Mereakadeemia peahoonesse</h3>
+													<hr width="90%" size="1">
+													MTÜ Eesti Noorte Purjeõppeselts „STA Estonia“ kolis Mereakadeemia tiiva alla, et asuda lähemal oma peamisele sihtgrupile – purjetamishuvilistele noortele. Purjeõppeseltsi juhatuse liige Madis Rallmann räägib lähemalt seltsi tegevusest ja lähiaastate plaanidest.Purjeõppeseltsi tutvumisõhtu (keskel Margus Zahharov)<br>Purjeõppeseltsi põhitegevus on 15- kuni 25-aastaste noorte purjetama õpetamine. Eelnevad teadmised purjetamisest ei ole olulised, sest seltsi peamine eesmärk on viia noored merele ja anda neile võimalus sõita merd kogenud kaptenite käe all.  Purjeõppejahi St. Iv kapten Margus Zahharov viib noori kõige rohkem merele ja korraldab suviseid pikki purjesõite. Samuti annab jahtkapten Linda Marie Ormus, kes pikkadel sõitudel purjetab St. Ivi vanemabina, aktiivselt jungadele oma mereteadmisi edasi. Purjeõppeseltsil on täna ligi 50 liiget, kellest kümmekond on purjeõppeseltsi edasiviiv aktiivgrupp.<br>Miks kolis purjeõppeselts Mereakadeemia peahoonesse? „Oleme täheldanud, et Mereakadeemia keskkond on paremaks läinud ja on õppeasutusena meie tegevusega hästi kokku sobiv koht,“ põhjendab Madis uue kontori asukohta. Mitmed purjeõppeseltsi tulevad plaanid ongi seotud Mereakadeemia kui õppeasutusega. Oktoobri lõpus algab vahivanema programm, mille raames koolitatakse juba purjetamas käinud jungad (madruseõpilased) tulevasteks õpetajateks. Kevadel kolitakse aga koolihoonest merele, et vahivanema programmis osalevad noored saaksid korraliku merepraktika. Teine eesmärk on 2017. aasta Tallinna Merepäevade raames tuua pealinna The Tall Ship Race’i laevastik, mille jaoks hakatakse Mereakadeemia üliõpilasi 2016. aastal sideohvitserideks koolitama, kelle ülesandeks on avamerejahtide saatmine. Purjeõppeseltsi tutvumisõhtu<br>„Meie kõige suurem järgmise aasta ettevõtmine on regatt The Tall Ship Races, kus osaleb ka meie purjeõppejaht St.Iv,“ sõnab Madis. St. Ivi teekond Lõuna-Hispaaniasse ja tagasi koju kestab 81-päeva ja koosneb kaheksast etapist, mille igale etapile võetakse kaasa 6 jungat. Ka Mereakadeemia tudengitel on võimalus igal aastal toimuval The Tall Ship Races võidusõidust osa võtta, kandideerides purjeõppeseltsi stipendiumile, mis katab noore purjetamishuvilise pardatasud ja annab unustamatu meresõidukogemuse.<br>Purjeõppeselts pakub Mereakadeemia tudengitele ja teistele noortele teistki stipendiumit – Omaani Sultanaadi Stipendiumit – mille üheks eesmärgiks on tutvustada Omaani Sultanaati, kui purjetamist toetavat asukohta. Nimelt kuulub Omaani Sultanaat Rahvusvahelise Purjeõppeorganisatsiooni (Sail Training International) liikmesriikide hulka ning on loonud oma stipendiumifondi noorte purjetamise finantseerimiseks. Antud stipendiumi sai selle aasta alguses ka Mereakadeemia tudeng Loore Magus. „Omaani sultan on suur purjetamise fanatt ning Omaanil on nii suuri purjeõppelaevu kui ka rida väiksemaid aluseid, millega inimesed saavad purjetamist õppida,“ selgitab Madis.Purjeõppeseltsi trofeed<br>2016. aasta teine oluline sündmus on purjeõppejahi Vesta vette tõstmine. Mereakadeemia kandis maha oma vana purjeõppejahi Vesta ning andis selle purjeõppeseltsi STA Estonia soovil restaureerimiseks. „Mereakadeemia andis meile Vesta üle, kui ta oli üsna kehvas seisus ja me oleme seda koos noortega remontinud,“ tutvustab Madis avamerejahi praegust seisukorda. Tema sõnul liigutakse selles suunas, et maikuus Vesta vette tõsta ja ideaalis regatil Tormilind Cup osaleda. Nii Mereakadeemia kui ka purjeõppeseltsi jaoks on Vestal oluline ajalooline väärtus. Lisaks Mereakadeemia pikaaegsele teenimisele õppelaevana oli purjeõppejaht Vesta esimene The Tall Ship Races regatil osalenud sinimustvalge lipu all sõitnud avamerejaht, mille kapten oli tol ajal Purjeõppeseltsi asutaja jahtkapten Margus Zahharov. „Meil oli plaan, kuidas Vestat taastada ja Mereakadeemia juhtkond otsustas anda jahi sihtotstarbeliseks kasutamiseks noortele,“ lisab Madis.<br>Kuigi purjeõppeseltsi põhitegevus on suunatud noortele purjetamishuvilistele ja sinna kuulub palju Mereakadeemia õppureid, saavad liikmeks astuda ka kõik vanemad kui 25-aastased inimesed. Põhitingimusteks on, et soovitakse õppida purjetamist ja osaleda seltsi tegevuses. „Meie jaoks ei ole oluline, kas inimesel on kõrgem mereharidus, vaid oluline on kirg mere vastu,“ ütleb Madis lõpetuseks.<br>Madis Rallmann<br>Juhatuse liige<br>GSM: 53420206<br>madis@staestonia.eu<br>www.staestonia.eu<br>www.facebook.com/sta.estonia<br>Kopli 101, ruum 159<br>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Emeriitrektor Andres Keevallikut autasustati Mereakadeemia teenetemärgiga</h3>
+													<hr width="90%" size="1">
+													Professor Keevallik on andnud muu hulgas märkimisväärse panuse TTÜ ja Eesti Mereakadeemia liitumisprotsessi õnnestumiseks, mis omakorda on mõjunud väga positiivselt Mereakadeemia ja laiemalt ka Eesti merenduse arengule.
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Tehnikaülikooli külastasid Slovakkia majandusminister ja äri-, akadeemiline ning avaliku sektori delegatsioon</h3>
+													<hr width="90%" size="1">
+													TTÜ innovatsiooni- ja ettevõtluskeskust Mektory külastasid Eestis riigivisiidil viibivad Slovakkia majandusminister Vazil Hudák ja Slovakkia presidenti Andrej Kiska riigivisiiti saatvad äri-, akadeemiline ning avaliku sektori delegatsioon.Külaskäigu eesmärgiks oli tutvuda Eesti start-upide ökosüsteemiga.Innovatsiooni ja rahvusvaheliste suhete prorektor Tea Varrak andis külalistele põhjaliku ülevaate ülikooli innovatsioonitegevusest. Eriti pakkusid Slovakkia äridelegatsioonile huvi üliõpilaste start-upid, Tehnikaülikooli koostöö eraettevõtetega nii Eestist kui välismaalt. Samuti anti põhjalik ülevaade Mektory laboritest – eriti suurt tähelepanu pälvis ventilatsioonilabor. Kõrgelt hinnati ülikooli tööd kooliõpilastega valmistamaks neid ette tudengiteks saamisel.Kahetunnisel seminaril tutvustasid Tallinna Teaduspark Tehnopoli, Majandus- ja kommunikatsiooniministeeriumi, Eesti Arengufondi, EAS-i ja Kredexi esindajad Slovakkia delegatsioonile Eesti start-upide ökosüsteemi ning riiklikke ettevõtluse arendamise meetmeid ja programme.TTÜ rahvusvahelistumise ja innovatsiooni prorektor Tea Varrak: „ TTÜ-d külastab väga paljude riikide delegatsioone. Ja saame pidevalt kinnitust, et ülikool liigub õiges suunas ning on paljudele oma tegevuses eeskujuks.“TTÜ teadusprorektor Renno Veinthal: „Külalised tundsid elavat huvi TTÜ teadusprojektide sisu ja teadustöö rahastamisallikate vastu. Mõnevõrra imestust pälvis Eesti teaduse märkimisväärne projektipõhisus. Samas tunnustati TTÜ teadlaste silmapaistvat aktiivsust Euroopa Liidu teadusprojektide taotlemisel ja neis osalemises.“Päeva teises pooles esitles Slovakkia akadeemilisele delegatsioonile Tehnikaülikooli teadusstrateegiat ja pikaajalisi eesmärke TTÜ teadusprorektor Renno Veinthal, lisaks kohtus akadeemiline delegatsioon IT teaduskonna professori Mart Mini, keemia-ja materjalitehnoloogia teaduskonna dekaani Malle Krunksi ja mehaanikateaduskonna õppeprodekaani Priit Põdraga.Sel nädalal külastavad TTÜ Mektory keskust ka  Saksa Bundestagi, USA asevälisministri ning Prantsuse haridusdelegatsioonid. Lisainfo: Mari Laikre, TTÜ rahvusvahelise koostöö koordinaator, mari.laikre@ttu.ee
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Tehnikaülikooli külastasid Slovakkia majandusminister ja äri-, akadeemiline ning avaliku sektori delegatsioon</h3>
+													<hr width="90%" size="1">
+													TTÜ innovatsiooni- ja ettevõtluskeskust Mektory külastasid Eestis riigivisiidil viibivad Slovakkia majandusminister Vazil Hudák ja Slovakkia presidenti Andrej Kiska riigivisiiti saatvad äri-, akadeemiline ning avaliku sektori delegatsioon.
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>TTÜ keemiadoktor Peep Pitk: biojäätmed – Eesti riigi kasutamata võimalus rahvusvaheliseks tunnustuseks</h3>
+													<hr width="90%" size="1">
+													Hiljuti avaldati uudis, et Eestis hakatakse massiliselt rohemassist biometaani tootma, kuid põhjendamatult vähe räägiti selle artikli kontekstis biojäätmetest ja reoveesettest kui biometaani tootmise toorainest, kirjutab Eesti Biogaasi Assotsatsioon juhatuse liige keemiadoktor Peep Pitk.
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Prototronile laekunud 152 idee hulgas domineerivad roheideed</h3>
+													<hr width="90%" size="1">
+													15. oktoobril lõppenud Prototroni rahastu järjekordses taotlusvoorus esitati kokku 152 nutikat prototüübiideed, millest selgelt eristusid tugevad rohetehnoloogia lahendused.
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Uudiskirjanduse näitus 19.10-25.10</h3>
+													<hr width="90%" size="1">
+													Uudiskirjanduse näitusel 19.10-25.10 on 42 raamatut.Uudiskirjanduse näitus asub 2. korrusel (raamatukogusse sisenemise korrusel) teeninduskeskuse kõrval.Raamatutele järjekorda panemise võimalused:raamatukogu töötaja vahendusel kõigis teeninduspunktidese-posti teel teenindus@lib.ttu.ee telefonil 620 3555  TTÜR infoteenindus, 620 3553.
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>TTÜ teedeinstituudi ja TTK teadlased katsetasid koostöös Särevere vana silda. </h3>
+													<hr width="90%" size="1">
+													Artikkel, fotod ja video Järva Teatajas
+												</div>
+											</div>
+
+										</div>
+
+										<div class="tab-pane fade" id="c">
+											<br>
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Rektor Jaak Aaviksoo kinnitati SA TTÜ Arengufondi nõukogu liikmeks</h3>
+													<hr width="90%" size="1">
+													Eile, 20. oktoobril kinnitas TTÜ nõukogu sihtasutuse TTÜ Arengufond nõukogu liikmeks rektor Jaak Aaviksoo.
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Uuel aastal tõusevad TTÜs töötasu alammäärad </h3>
+													<hr width="90%" size="1">
+													TTÜ rektor Jaak Aaviksoo ja TTÜ Akadeemilise Ametiliidu esimees Toivo Roosimaa allkirjastasid 20. oktoobril töötasukokkuleppe, mis tõstab alates 1. jaanuarist 2016 palga alammäära kuni 20%.
+													Kokkuleppe kohaselt suureneb madalama astme akadeemiliste töötajate (assistent, lektor, teadur) töötasu alammäär 20%, teistel ametikohtadel on alammäära kasv 5-10%.
+													Rektor Jaak Aaviksoo sõnul on nii tehnikaülikooli juhtkond kui ka TTÜ Akadeemiline Ametiliit seisukohal, et ülikoolis akadeemilist karjääri alustavate töötajate töötasu ei tohiks olla madalam Eesti keskmisest palgast. „Ülikooli personalistrateegia eesmärk tagada akadeemilise personali järelkasv on ülikooli arengu üks võtmeküsimustest,“ ütles Aaviksoo. „Seepärast tõstetakse madalamatel akadeemilistel ametikohtadel alampalka kiiremas tempos, et hoida ära noorte lahkumist ülikoolist.“
+													Hinnanguliselt puudutab jaanuarist kehtima hakkav palga alammäära tõus ligikaudu 500 akadeemilist töötajat. Samuti lepiti kokku I ja II töötasu astme likvideerimises. Nendel astmetel paiknevad ametikohad viiakse üle III töötasu astmele alampalgaga 450 eurot, mis tõstab töötasu alammäära 15%.
+													Tabel. Töötasu astme alammäärad alates 1.01.2016
+
+
+
+
+													töötasu aste
+													töötasu astme   alammäär täistööajaga töötamisel
+													töötasu   astme alammäär täistööajaga töötamisel, kui tööstaaž TTÜs on üle 5 a
+													töötasu astme   alammäär täistööajaga töötamisel, kui tööstaaž TTÜs   on üle 10 a
+
+
+													III
+													450
+													473
+													495
+
+
+													IV
+													540
+													567
+													594
+
+
+													V
+													700
+													735
+													770
+
+
+													VI
+													850
+													893
+													935
+
+
+													VII
+													1100
+													1155
+													1210
+
+
+													VIII
+													1250
+													1313
+													1375
+
+
+													IX
+													1350
+													1418
+													1485
+
+
+													X
+													1710
+													1796
+													1881
+
+
+													XI
+													2040
+													2142
+													2244
+
+
+
+
+													Lisainfo <br>
+													TTÜ personaliosakond
+
+
+
+
+
+
+
+
+
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>„Tallinna Tehnikaülikool 100“ ideekonkursi võitis puidust amfiteater</h3>
+													<hr width="90%" size="1">
+													14. oktoobril valiti välja 2014. aasta lõpus välja kuulutatud arhitektuurilise ideekonkursi „Tallinna Tehnikaülikool 100“ " kolm parimat tööd. Žürii valis võitjaks kaasaegselt ökoloogilise, innovaatilise insenerilahendusega puidust amfiteatri „Hellas“.  Auväärsesse žüriisse kuulusid žürii esimees rektor Jaak Aaviksoo, haldusdirektor Margus Leivo, Tallinna peaarhitekt Endrik Mänd, arhitektuuri- ja urbanistikainstituudi direktori kohusetäitja Irina Raud, üliõpilaskonna juhatuse liige Maris Järvsoo, elektrotehnika instituudi teadur Heigo Mõlder ja ehitusosakonna juhataja Margus Tootmaa.  Žürii valis välja kolm auhinnalist kohta:   1. koht „Hellas“ (töö nr 32) – kaasaegselt ökoloogiline, innovaatilise insenerilahendusega puidust amfiteater, autor Karin Hallas-Murula – peaauhind 1000€2. koht „TTÜNNEL“ (töö nr 8) – tunnel Tallinna Tehnikaülikooli ning Ehitajate teest teisele poole jääva bussipeatuse vahel, autor Siim Talts – auhind 700€3. koht „Mõistuse ja käega“ (töö nr 39) – hariv ja põnevat avastamist pakkuv mänguväljak lastele ja täiskasvanutele Männi pargis, autorid Aigar Vaigu ja Ave Eesmaa – auhind 500€  Žürii liikme ja TTÜ haldusdirektori Margus Leivo sõnul oli žüriil hea meel, et konkurssi võeti tõsiselt ja laekus niivõrd palju häid ideid. „Žürii töö ei olnud lihtne, kuid lõppkokkuvõttes on kõik eelpoolnimetatud ideed esmahinnangul teostatavad. Asume võidutöö autoriga läbirääkimistesse ja tulenevalt vajadusest korrigeerime ka ülikooli eelarvet, eesmärgiga töö ülikooli 100. juubeliks ka valmis ehitada, “ kommenteeris Leivo seda, mis saab edasi.  Ideekonkurss „Tallinna Tehnikaülikool 100“ kuulutati välja 2014. aasta lõpus ja selle eesmärgiks oli saada ideid ülikooli juubelit markeeriva objekti rajamiseks ülikooli või selle lähiümbruse alale. Objekt/rajatis peab olema pilkupüüdev ja sellest peaks saama märgiline tähendus nii ülikoolile, Mustamäe linnaosale kui kogu Tallinnale.  Kõigi 44 esitatud tööga saab täpsemalt tutvuda SIIN
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>TTÜ Raamatukogu ECIL 2015 konverentsil </h3>
+													<hr width="90%" size="1">
+													19.–22. oktoobril 2015 toimub Tallinna Ülikoolis 3. Euroopa infopädevuse konverents European Conference on Information Literacy (ECIL 2015). ECIL 2015  peamiseks teemaks on meedia- ja infopädevuse arendamine elukestva õppe kontekstis. Konverentsi eesmärgiks on korraldada arutelufoorum teadlastele, infoprofessionaalidele,  haridustöötajatele, meediaspetsialistidele, poliitikutele ja teiste valdkondade esindajatele kogu maailmast meedia- ja infopädevuse arengusuundade, teoreetiliste käsitluste ja uurimistulemuste üle arutlemiseks ja kogemuste vahetamiseks.TTÜ raamatukogu pikaajalisi kogemusi infokirjaoskuse edendamisel tutvustavad Gerda Koidla ja Maie Pihlakas ettekandega „Chemical Information IL Course in Long-Time Cooperation with Faculty at Tallinn University of Technology.  Konverentsist lähemalt vt ECIL 2015.TTÜR infoteenindus, 620 3554.
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>TTÜ teadusprorektor: pseudoteaduse viljelemine ei sobi TTÜ väärtustega </h3>
+													<hr width="90%" size="1">
+													Selle nädala esmaspäeval kirjutas Eesti Päevaleht, et masinaehituse instituudi assistent Merili Kukuškin on üks eestvedajaid 3200 järgijaga Facebooki grupis, mis propageerib „maagilise mineraalse lahenduse“ (MMS, Magic Mineral Solution) ehk mürgise kloordioksiidi kasutamist raviks. Arstide, farmakoloogide ja teiste pädevate ekspertide sõnul võib selle riiete pleegitamiseks ja basseinivee desinfitseerimiseks kasutatava aine raviks tarvitamine põhjustada püsivaid tervisekahjustusi. Välisriikides on olnud ka surmajuhtumeid ning selle aine keelustamisi. Kahetsusväärselt on olnud Merili Kukuškin selles Facebooki grupis aktiivne kloordioksiidil põhinevate ravisoovituste jagaja.<br> <br> TTÜ hindab kõrgelt akadeemilist vabadust, kuid sellega kaasneb ka vastutus ja kriitiline meel. Teadusasutusena ei saa me kuidagi heaks kiita pseudoteaduse propageerimist, sest see on selges vastuolus TTÜ väärtustega. Ehkki Merili tegevus ohtliku aine raviks soovitamisel ei olnud seotud tema osalise koormusega assistenditööga masinaehituse instituudis või kaitstud doktorikraadiga, ei saanud TTÜ tööandjana seda ignoreerida. <br> <br> Seetõttu lõpetas TTÜ täna poolte kokkuleppel töösuhte masinaehituse instituudi assistendi Merili Kukuškiniga.<br> <br> Renno Veinthal<br> TTÜ teadusprorektor
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Köitekunsti biennaali 1. auhind Tähti Roostalule </h3>
+													<hr width="90%" size="1">
+													TTÜ Raamatukogu köitja Tähti Roostalu pälvis 1. preemia rahvusvahelisel köitekunstibiennaalil Prantsusmaal.Rahvusvaheline köitekunstibiennaal Biennale Mondiale de la Reliure d’Art Prantsusmaal,  St. Rémy-les-Chevreuse’is viiakse läbi iga kahe aasta tagant. Eesti köite- ja nahakunstnikud võtavad sellest biennaalist osa juba 1995. aastast. Sel aastal registreerus võistlusele üle 20 eesti kunstniku, sh TTÜ Raamatukogu köitja Tähti Roostalu.   Igal võistlusel antakse kunstnikele tõlgendamiseks  üks prantsuse kirjandusklassikasse kuuluv teos. Kunstnikele saadetakse valitud raamatu spetsiaalselt trükitud poognad, sh  illustratsioonid, mis tuleb raamatusse sobitada. Lõpptulemuseks on vaja raamat nahka köita, kasutades oma fantaasiat raamatu sisu lahtimõtestamisel. Tänavu tuli teha nahkköide Michel Tournier raamatule „Vendredi ou la vie sauvage", adapteeritud väljaanne romaanist „Friday, or the ohter island“, mis 1967. a oli saanud Grand Prix Prantsuse Akadeemialt. Biennaali võidutöödeks valiti 21 köidet, 300 osavõtja seast tunnistati auhinna vääriliseks kokku viie eesti kunstniku tööd. Koolkondade kategoorias "Inter-Ecoles“anti neli esimest auhinda eesti kunstnikele, sh sai 1. preemia ka TTÜ Raamatukogu köitja Tähti Roostalu.Võidutööd. Auhinnad antakse pidulikult üle 26. septembril St-Rémy-lès-Chevreuse`is. Näitus on väljas 23-27. septembrini 2015.TTÜ Raamatukogu infoteenindus, Taimi Nurmiste, 620 3554. <br>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>TTÜ nõukogul uus koosseis</h3>
+													<hr width="90%" size="1">
+													Rektor kinnitas 1. septembrist uue TTÜ nõukogu ja alaliste komisjonide koosseisud. Käskkirjad on avaldatud dokumendiregistris.Nõukogu esimene istung toimub teisipäeval, 22. septembril kell 14.00.1.	Jaak Aaviksoo – rektor, nõukogu esimees; <br>2.	Jakob Kübarsepp – õppeprorektor;<br>3.	Tea Varrak – innovatsiooni ja rahvusvaheliste suhete prorektor;<br>4.	Renno Veinthal – teadusprorektor;<br>5.	Üllas Ehrlich – majandusteaduskonna dekaan;<br>6.	Arvi Hamburg – energeetikateaduskonna dekaan;<br>7.	Siim Idnurm – ehitusteaduskonna dekaan;<br>8.	Gert Jervan – infotehnoloogia teaduskonna dekaan;<br>9.	Tõnis Kanger – matemaatika-loodusteaduskonna dekaan;<br>10.	Malle Krunks – keemia- ja materjalitehnoloogia teaduskonna dekaan;<br>11.	Sulev Mäeltsemees – sotsiaalteaduskonna dekaan;<br>12.	Tauno Otto – mehaanikateaduskonna dekaan;<br>13.	Viktor Andrejev – TTÜ Virumaa Kolledži direktor;<br>14.	Jüri Elken – TTÜ Meresüsteemide Instituudi direktor;<br>15.	Atko Heinsalu – TTÜ Geoloogia Instituudi direktor;<br>16.	Jüri Järs – TTÜ Raamatukogu direktor;<br>17.	Anne Keerberg – TTÜ Kuressaare Kolledži direktor;<br>18.	Roomet Leiger – TTÜ Eesti Mereakadeemia direktor;<br>19.	Kalju Meigas – TTÜ Tehnomeedikumi direktor;<br>20.	Udo Meriste – TTÜ Tallinna Kolledži direktori kt;<br>21.	Lembit Nei – TTÜ Tartu Kolledži direktor kt;<br>22.	Liia Rebane – TTÜ Muuseumi direktori kt;<br>23.	Andrus Salupere – TTÜ Küberneetika Instituudi direktor;<br>24.	Tanel Tuisk − TTÜ Sertifitseerimisasutuse direktor;<br>25.	Andres Keevallik – eelmine rektor;<br>26.	Artu Ellmann – ehitusteaduskonna esindaja;<br>27.	Raavo Josepson – matemaatika-loodusteaduskonna esindaja;<br>28.	Maarja Kruusmaa – infotehnoloogia teaduskonna esindaja;<br>29.	Tiit Nirk – keemia- ja materjalitehnoloogia teaduskonna esindaja;<br>30.	Toomas Piliste – majandusteaduskonna esindaja;<br>31.	Tiina Randma-Liiv – sotsiaalteaduskonna esindaja;<br>32.	Argo Rosin – energeetikateaduskonna esindaja;<br>33.	Fjodor Sergejev – mehaanikateaduskonna esindaja;<br>34.	Mare Pihel – haldus-tugistruktuuri esindaja;<br>35.	Raul Hansosn – üliõpilaste esindaja;<br>36.	Maris Järvsoo – üliõpilaste esindaja;<br>37.	Oliver Liiv – üliõpilaste esindaja;<br>38.	Martin Malm – üliõpilaste esindaja;<br>39.	Taavi Simson – üliõpilaste esindaja;<br>40.	Tõnis Soodla – üliõpilaste esindaja;<br>41.	Kaur Tuttelberg – üliõpilaste esindaja;<br>42.	Sander Udam – üliõpilaste esindaja;<br>43.	Taavi Valgerist – üliõpilaste esindaja.Nõukogu sekretäri ülesandeid täidab ülikooli sekretär Kai Aviksoo.
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>TTÜ kuratooriumi liikme valimine</h3>
+													<hr width="90%" size="1">
+													Seoses professor Renno Veinthali asumisega teadusprorektori ametikohale ja lahkumisega kuratooriumist, kuulutas rektor välja uue kuratooriumi liikme valimise. Korraldus on avaldatud dokumendiregistris.Valimiskomisjoni kuuluvad TTÜ Küberneetika Instituudi direktor Andrus Salupere, energeetikateaduskonna dekaan Arvi Hamburg ning üliõpilaste esindaja Maris Järvsoo. Kandidaatide esitamise tähtaeg on 30. september 2015.Valimised viiakse läbi salajasel hääletamisel TTÜ nõukogu 20. oktoobri istungil. Valituks osutumiseks peab kandidaat saama nõukogu koosseisu poolthäälteenamuse.
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Rünnak TTÜ arvutivõrgus</h3>
+													<hr width="90%" size="1">
+													Täna, 2. septembril kell 12.45 tabas TTÜ arvutivõrku rünnak. Häiritud oli nii majasisene kui ka majaväline võrguliiklus.
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Kuratoorium kinnitas TTÜ arengukava lähtekohad </h3>
+													<hr width="90%" size="1">
+													Kuratoorium kuulas 25. augustil ära uue rektori Jaak Aaviksoo ettekande aastateks 2016-2020/2025 TTÜ arengukava koostamisest. Pärast rektori ettepanekute läbiarutamist kinnitas kuratoorium alljärgnevad arengukava koostamise lähtekohad ja tegevussuundade prioriteedid: <br> <br> 1. Kuratoorium näeb TTÜ sihina usaldusväärset partnerlust Põhjamaade juhtivate tehnikaülikoolidega ja aktiivset panustamist Eesti majandusarengusse.<br> <br> 2. Kuratoorium toetab suundumust oluliselt vähendada esimese taseme õppekavade arvu, suurendades õppekavade paindlikkust ja paremat seotust tööturu nõudmistega.<br> <br> 3. Kuratoorium näeb TTÜ peamise väljakutsena teadusliku konkurentsivõime kasvu ja sellel põhineva doktoriõppe tulemuslikkuse suurendamist.<br> <br> 4. Kuratoorium toetab teadus- ja õppetöö suuremat integratsiooni ning selleks vajalikke struktuurseid ja töökorralduslikke muutusi.<br> <br> 5. Kuratoorium näeb TTÜ olulise arengupotentsiaalina tihedamat sidet Eesti ja rahvusvahelise ettevõtlusega ning selle toel suuremat osalust euroliidu vastavates programmides.<br> <br> 6. Kuratoorium peab oluliseks TTÜ rahvusvahelistumise jätkuvat kasvu, nähes seda eelkõige vahendina akadeemilise taseme tõstmiseks ja täiendavaks panustamiseks Eesti majandusarengusse.<br> <br> 7. Kuratoorium näeb ülaltoodud eesmärkide saavutamise eeldusena TTÜ struktuuri kaasajastamist konsolideerimise ning läbipaistvuse ja paindlikkuse suurendamisega, samuti seda toetavate juhtimis- ja motivatsioonimehhanismide käivitamist. <br> <br> 8. Kuratoorium peab ülikooli tervikliku toimimise tagamiseks oluliseks üliõpilaste ja liikmeskonna eneseteostuse toetamist ning ühiskonna teenimist kultuuriasutusena.<br> <br> Rektori poolt ettevalmistatud arengukava koostamise lähtealused, mis annavad ülevaate ka uue arengukava planeeritud ülesehitusest ja väljatöötamise ajakavast, on lisatud käesolevale kirjale.<br> <br> Kuratoorium arutas muuhulgas ka oma töökorraldust. Vastavalt TTÜ seadusele korraldavad kuratooriumi pädevusse kuuluvate küsimuste ettevalmistamise rektor ja tema nimetatud ülikooli üksused, kui kuratoorium ei otsusta teisiti. Kuratoorium lähtub põhimõttest, et kuratoorium väldib sekkumist ülikooli operatiivjuhtimise küsimustesse, mis on rektori ja tema meeskonna pädevuses. Samal ajal on rektoril tema äranägemisel võimalus küsida kõikides küsimustes kuratooriumilt arvamust. Selleks, et kuratooriumi liikmed oleksid kursis ülikooli jooksvate küsimustega, tehti rektorile ettepanek iga kuratooriumi koosoleku alguses anda ülevaade koosolekute vahepealsel ajal toimunud olulisematest sündmustest ülikooli elus.<br> <br> Kuratoorium kutsus tagasi auditikomitee liikme Heikko Mäe vastavalt tema avaldusele. Auditikomitee liikmeks ja esimeheks nimetati Martti Talgre, kes on AS SEB Pank jaepanganduse ja tehnoloogia valdkonna juhi asetäitja ning samal ajal ka TTÜ Vilistlaskogu juhatuse liige ja SA TTÜ Arengufond nõukogu liige.<br> <br> Allpool on ära toodud rektor Jaak Aaviksoo lähtekohad arengukava koostamiseks. <br> <br> Ardo Kamratov<br> Kuratooriumi aseesimees<br> <br> ARENGUKAVA KOOSTAMISE LÄHTEKOHAD<br> <br> 1. Arengukava on strateegiline dokument, millega määratletakse ülikooli areng keskpikas (5+5 aastat) perspektiivis. Arengukavas sõnastatakse ülikooli eesmärgid, prioriteedid ja peamised valikud ning tegevussuunad eesmärkideni jõudmiseks.<br> <br> 2. Arengukava lisadeks on: a) tegevuskava, milles nähakse ette konkreetsed tegevused eesmärkideni jõudmiseks, b) võtmenäitajad arengu hindamiseks, c) ressursi hinnangud ja d) investeeringute kava.<br> <br> 3. Vastavalt TTÜ seadusele korraldab arengukava ettevalmistamise rektor, arengukava (koos lisade ja seletuskirjaga) võtab vastu nõukogu ja kinnitab kuratoorium.<br> <br> 4. Rektor nimetab arengukava ettevalmistava töörühma, kes kaasab oma tegevusse eksperte ja konsulteerib vajadusel nõukogu ja kuratooriumi liikmetega. Arengukava koostamise sisenditeks on: eelmine arengukava ja selle täitmise aruanne, institutsionaalse evalvatsiooni raport ja hinnang, riiklikud arengukavad, TTÜ SWOT analüüs ja eksperthinnangud.<br> <br> 5. Arengukava valmimise ajakava:<br> 5.1. Kuratoorium, kuulanud ära rektori ettekande arengukava koostamise alustest, esitab ettepanekud ülikooli arengukava koostamiseks – 25. august 2015.<br> 5.2. Rektor moodustab arengukava töörühma – septembri esimene pool.<br> 5.3. Arengukava koostamine, arutelud allüksustes – september-oktoober.<br> 5.4. Arengukava esimene versioon konsultatsioonideks – 5. november.<br> 5.5. Konsultatsioonid – november.<br> 5.6. Kuratooriumi ja nõukogu ülikooli arengu eesmärkide (arengukava) ühine arutelu (Strateegiaseminar) – 26.-27. november 2015.<br> 5.7. Arengukava esimene lugemine kuratooriumis (väljatöötatud eesmärkide ja arengusuundade vahel valiku tegemine) – 17. detsember 2015.<br> 5.8. TTÜ arengukonverents – jaanuar 2016.<br> 5.9. Arengukava esitamine nõukogu poolt ja kinnitamine kuratooriumis – jaanuar või veebruar 2016. <br> <br> 6. Kuratooriumi sisendit eeldavad lähtekohad ja tegevussuundade prioriseerimine:<br> 6.1. TTÜ enesemäärang (visioon ja missioon), positsioneering (Eestis, Läänemerepiirkonnas, Euroopas) ja side ühiskonnaga.<br> 6.2. Bakalaureuse/rakenduskõrghariduse õppekavade arv, ülesehitus ja väljundid. Vastuvõtt, väljalangevus, lõpetajate arv.<br> 6.3. Teaduslik tase ja doktoriõpe.<br> 6.4. Õppetöö ja teadustöö konsolideerimine – struktuursed ja organisatoorsed muutused.<br> 6.5. Sidemed ettevõtlusega (Eestis ja rahvusvaheliselt) ja EL programmidega – vastava rahastamise dünaamika.<br> 6.6. Rahvusvahelistumise prioriteedid – välisüliõpilased, õppejõud, koostöö.<br> 6.7. Organisatoorne korraldus – struktuur, juhtimiskorraldus, motivatsioonisüsteem (karjäärimudel).<br> <br> Jaak Aaviksoo<br> 18.08.2015
+												</div>
+											</div>
+
+										</div>
+
+										<div class="tab-pane fade" id="d">
+											<br>
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Mereteadlikkuse töötuba 28. oktoobril</h3>
+													<hr width="90%" size="1">
+													Aasta 2016 on pühendatud merekultuurile ning selle teema-aasta peavastutaja Eesti Meremuuseum on jaganud tuleva aasta nö nelja lainesse. Teine laine keskendub mereharidusele ja -teadlikkusele ning laine kommunikatsiooni eestvedajaks on valitud TTÜ Eesti Mereakadeemia.  18. septembril toimus töötuba, mis keskendus mereharidusele ning järgmine töötuba keskendub mereteadlikkusele ehk mereohutus, merel käitumine, merel sportimine (purjetamine) jm. Töötuba toimub 28. oktoobril kell 12:00-13:30 Mereakadeemia peamaja (Kopli 101, Tallinn) ruumis 208. Lisainfo ja registreerimine:  Jane Niit<br> TTÜ Eesti Mereakadeemia<br> Kommunikatsioonijuht<br> GSM +372 5333 2217<br> jane.niit@ttu.ee
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>TTÜ - Kalev/Cramo korvpallimäng TTÜ Spordihoones 22. oktoobril </h3>
+													<hr width="90%" size="1">
+													Neljapäeval, 22. oktoobril kohtuvad Alexela meistriliiga korvpallimängus TTÜ ja Kalev/Cramo.Mäng algab kell 18.30. Pileti hind  1€/3€Olete oodatud kaasa elama!Rohkem infot SIIT
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Majandusteaduskonna teadusseminar 28. oktoobril</h3>
+													<hr width="90%" size="1">
+													28. oktoobril kell 16.00 toimub ruumis SOC-415 majandusteaduskonna teadusseminar teemal "Shorter Dinner and Other Aspects of Growing Up with a Single-Mother".
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Doktoritöö "Degradation of Pharmaceuticals by Advanced Oxidation Technologies in Aqueous Matrices" kaitsmine 19. novembril</h3>
+													<hr width="90%" size="1">
+													Keemiatehnika instituudi doktorant Irina Epold kaitseb 19. novembril 2015 algusega kell 14:00 oma doktoritööd "Degradation of Pharmaceuticals by Advanced Oxidation Technologies in Aqueous Matrices" (Ravimite lagundamine vesikeskkonnas süvaoksüdatsioonitehnoloogiatega). Kaitsmine toimub sotsiaal- ja majandusteaduskonna hoones (Akadeemia tee 3), ruumis 209.Ravimite olemasolu pinna- ja põhjavees ning heitvee suublates on saanud ülemaailmseks keskkonnaprobleemiks. Kõige tõenäolisemaks lahenduseks ravimitega seotud reostusele on eelkõige radikaalide aktiivsusel põhinevate süvaoksüdatsioonitehnoloogiate rakendamine. Käesoleva töö peamiseks eesmärgiks oli hinnata erinevate süvaoksüdatsioonitehnoloogiate efektiivsust kahe olulise ravimigrupi hulka kuuluvate ühendite lagundamisel vees/reovees. Uuritavateks ühenditeks olid mittesteroidsete põletikuvastaste valuvaigistite alla kuuluvad ibuprofeen ja diklofenak ning mikroobivastaste ravimite alla kuuluvad sulfametoksasool ja levofloksatsiin.Juhendajad professor Marina Trapido ja vanemteadur Niina Dulova (TTÜ)Oponendid Professor Tatyana Poznyak (Mehhiko Polütehniline Instituut, Mehhiko)Dr. Artur Jõgi (OÜ Liprafarm, Eesti)Doktoritöö on avalikustatud raamatukogu digikogus aadressil http://digi.lib.ttu.ee/i/?3698
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Doktoritöö "Mutation-Based Verification and Error Correction in High-Level Designs" kaitsmine 12. novembril</h3>
+													<hr width="90%" size="1">
+													Arvutitehnika instituudi doktorant Hanno Hantson kaitseb 12. novembril 2015 algusega kell 10:00 oma doktoritööd "Mutation-Based Verification and Error Correction in High-Level Designs" (Mutatsioonidel põhinev verifitseerimine ja vigade parandamine kõrgtaseme skeemides). Kaitsmine toimub TTÜ infotehnoloogia maja (Akadeemia tee 15A) ruumis 507AB.Käesolev doktoritöö käsitleb infotehnoloogiliste seadmete õigsuse kontrolli ehk verifitseerimise lahendusi. Doktoritöö keskendub automatiseeritult vigade leidmise ja parandamise teemale.<br>Dissertatsiooni peamiseks panuseks on uute, automatiseeritud töövahendite loomine, juhtumiuuring ja meetodid võimaldamaks riistvara projekteerijal säästa aega raskesti tuvastatavate vigade leidmisel.Juhendaja professor Jaan Raik (TTÜ)Oponendid Dr. Maria K. Michael (Küprose Ülikool, Küpros)Prof. Heinrich Theodor Vierhaus (Brandenburgi Tehnikaülikool, Saksamaa)Doktoritöö on avalikustatud raamatukogu digikogus aadressil http://digi.lib.ttu.ee/i/?3703
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Vega fondi stipendiumikonkurss</h3>
+													<hr width="90%" size="1">
+													Vega fond annab teaduspõhistele äriideedele 36 000 eurot.
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Seminar "Avatud teaduse poole" 29. oktoobril </h3>
+													<hr width="90%" size="1">
+													Neljapäeval, 29. oktoobril 2015 kell 14.00 toimub TTÜ Raamatukogu 5. korrusel, LIB-524 seminar “AVATUD TEADUSE POOLE ”. <br>Sihtgrupp: doktorandid, noorteadlased jt huvilised Kava:14.00 Avasõna. Jüri Järs   <br>14.15 Avatud teadus Eestis ─ hetkeseis ja perspektiivid.  Olle Hints  15.00   Kohvipaus15.20   TTÜ dissertatsioonid kogu maailmas nähtavad: TTÜR Digikogu ja DART-Europe. Katri Mägi15.40   TTÜ lõputööde avalikustamine ja säilitamine TTÜR Digikogus ─ aastajagu kogemusi. Kai Kalvik Eelregistreerimine kuni 26. oktoober: info@lib.ttu.ee, tel 620 3553.TTÜR infoteenindus
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Raamatukogupäevad 20.-30. oktoober 2015</h3>
+													<hr width="90%" size="1">
+													Traditsioonilised ülevabariigilised raamatukogupäevad toimuvad 20.-30. oktoobrini 2015.2015. aasta on Eestis kuulutatud muusika-aastaks: kõlab hästi! Sel puhul on ka raamatukogudes sel aastal põhjust muusikat avastada ja märgata. Muusika raamatukogus - kõlab hästi!  Kavas: 20.10–30.10 <br> Veebipõhine mäng „Kuula, kuidas kõlab raamatukogus!" pakub kuulamiseks helisid meie raamatukogust.<br>Kuula  veebis audiofaile ja märka raamatukogu argipäevaseid helisid!  Kuula nt  klammerdaja häält, skaneerimise heli, liftiuste avanemist jms. <br>Märka ja tunne oma raamatukogu erinevate helide kaudu!<br>Mänguline-rõõmus tegevus, mida saab teha nii kodus kui raamatukogus.  <br>Osavõtjaid ootavad auhinnad.21.10–30.10<br> raamatukogu 2. korruse teeninduskeskuses pop-up väljapanek "Wahvad, Winged &amp; Wõluvad Winüülid"<br>Kohapeal plaatide kuulamise võimalus. 29.10 kl 14.00 <br>raamatukogu 5. korrusel ruumis LIB-524 seminar noorteadlastele „AVATUD TEADUSE POOLE“<br>Avatud teadus Eestis<br>  20.10–30.10 <br>Vt ka raamatuid suvel väljas olnud muusikaaasta näituselt : <br> http://www.ttu.ee/public/r/raamatukogu/raamatukogust/naitused/Muusika-aasta_2015.pdfKohtume raamatukogus!
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>Sündmused TTÜ-s 19.–25.10.2015</h3>
+													<hr width="90%" size="1">
+													JUHTKOND   E. 19.10 võtab innovatsiooni ja rahvusvaheliste suhete prorektor Tea Varrak Mektorys vastu Slovakkia presidendi Hr Andrej Kiska äridelegatsiooni, 2030  E. 19.10 kell 15.00 kohtub teadusprorektor Renno Veinthal Nõukogu saalis Slovakkia president Hr Andrej Kiska akadeemilise delegatsiooniga, 2005  19.–20.10 rektor Jaak Aaviksoo Helsingis OECD Global Education Industry Summitil  T. 20.10 kell 15.00 TTÜ Nõukogu koosolek  T. 20.10 kohtub rektor Jaak Aaviksoo Aalto ülikooli rektori Tuula Teeriga, 2003  T. 20.10 osalevad teadusprorektor Renno Veinthal ja innovatsiooni ja rahvusvaheliste suhete prorektor Tea Varrak Teaduspark Tehnopolis Slovakkia presidendi Hr Andrej Kiska ja Eesti Vabariigi presidendi hr Toomas Hendrik Ilvese arutelupaneelil iduettevõtluse ja investeeringute teemal, 2030  K. 21.10 osaleb õppeprorektor Jakob Kübarsepp transporditeenuste õppekavagrupi kvaliteedihindamise kohtumisel hindamiskomisjoni liikmetega, 2006  K. 21.10 rektor Jaak Aaviksoo Tallinna Reaalkoolis ettekandega "IT-hariduse 10 aastat", 2003  K. 21.10 võtab innovatsiooni ja rahvusvaheliste suhete prorektor Tea Varrak Mektorys vastu Saksamaa parlamendi Bundestag digitaalse agenda komisjoni liikmed, 2030  K. 21.10 õppeprorektor Jakob Kübarsepp teaduskondade ja kolledžite külastuskava raames kohtumisel majandusteaduskonnas, 2006  N. 22.10 õppeprorektor Jakob Kübarsepp teaduskondade ja kolledžite külastuskava raames kohtumisel sotsiaalteaduskonnas, 2006  N. 22.10 võtab innovatsiooni ja rahvusvaheliste suhete prorektor Tea Varrak Mektorys vastu USA ase-välisministri Judith Garberi.  R. 23.10 õppeprorektor Jakob Kübarsepp teaduskondade ja kolledžite külastuskava raames kohtumisel Virumaa Kolledžis, 2006  VARIA   kuni 20.10 registreerimine TTÜ Eesti Merekadeemia 96. aastapäeva üritustele  kuni 26.10 TTÜ Eesti Mereakadeemia uue jahi nimekonkurss19.-23. oktoober osalevad keemiainstituudi projektijuht Marek Strandberg ja teadus Katrin Idla NATO teadus- ja tehnoloogiaorganisatsiooni töögrupi kohtumisel ning rahvusvahelisel kaitsetehnoloogiate sümpoosiumil Saksamaal  TEADUS   E. 19.10 kell 11.00 ruumis ICT-327 kaitseb Natalja Buhhalko oma doktoritööd "Processes Influencing the Spatio-temporal Dynamics of Nutrients and Phytoplankton in Summer in the Gulf of Finland, Baltic Sea"  T. 20.10 kell 12:00 ruumis SOC-209 Jaapani majandusteadlase Hr. Hajime Takata avatud loeng „Abenoomika ning Jaapani minevik, olevik ja tulevik“  22.–23.10 Mektory majas rahvusvaheline konverents "28th Nordic Seminar on Computational Mechanics, NSCM28"  Kuni 05.11 on ülikooli võrgus avatud tasuta juurdepääs andmebaasile ASTM Digital Library  TUDENGID   E. 19.10 kell 17.45 Mektory saalis loengusarja „Kuidas luua startup-i“ seitsmes loeng „Action“  K 21.10 kell 16.00 ruumis U06A-201 Infotehnoloogia teaduskonna infotund lõputöödest ja lõpetamisest bakalaureuseõppe tudengitele  kuni 30.11 Tipikate Rattamatkaklubi iganädalased õhtused rattasõidud TTÜ tudengitele, vilistlastele ja töötajatele  RAHVUSVAHELISED SUHTED   14.–20.10 TTÜ turundusüritused Türgis (osalemine IEFT messil Istanbulis, infotunnid ja kohtumised ülikoolides – METU, Hacettepe University, Istanbul Kültur University, kohtumine Eesti Saatkonnas Ankaras), 3579  E. 19.10. kell 18.00  ruumi U03-301 Ameerika Klubi õhtu, teemaks Alaska  19.–20.10 Slovakkia presidendi Hr. Andrej Kiska delegatsiooni ja Slovakkia riigiametnike, akadeemikute ja innovaatiliste ettevõtjate visiit TTÜsse, 3542  T. 20.10. kell 16.00 ruumis U03-302 Balti-Ameerika Vabaduse Fondi  (BAFF) stipendiumiprogrammide infotund  T. 20.10 kell 12.00 ruumis SOC-209 Jaapani majandusteadlase Hr. Hajime Takata avatud loeng „Abenoomika ning Jaapani minevik, olevik ja tulevik“  K. 21.10 kell 10.30 Beijing Institute of Technology visiit TTÜsse, 3422  K. 21.10 kell 16.00 Saksamaa parlamendi Bundestag delegatsiooni visiit TTÜsse, 3542  N. 22.10 kl 10.00 EBS-is Eesti kõrghariduse rahvusvahelistumise aastaseminar „Koostöö“  N. 22.10 kell 10.30 USA ase-välisministri Judy Garberi ümarlaua kohtumine TTÜ Meresüsteemide instituudi teaduritega teemal „Using Technology and Innovation to Solve Environmental Challenges“ , 3543  N. 22.10. kell 16.00 ruumis U03-208 veebiseminar Florida State University esindajatega,  programmide ja õppimisvõimaluste  tutvustus  INNOVATSIOONI-JA ETTEVÕTLUSKESKUS MEKTORY   E. 19.10 kell 17.45 Mektory saalis loengusarja „Kuidas luua startup-i“ seitsmes loeng „Action“  E. 19.10 võtab innovatsiooni ja rahvusvaheliste suhete prorektor Tea Varrak Mektorys vastu Slovakkia presidendi Andrej Kiska äridelegatsiooni, 2030  19.– 22.10 Mektory Tehnoloogiakooli tehnoloogialaager  T. 20.10 osaleb innovatsiooni ja rahvusvaheliste suhete prorektor Tea Varrak Teaduspark Tehnopolis Slovakkia presidendi Hr Andrej Kiska ja Eesti Vabariigi presidendi hr Toomas Hendrik Ilvese arutelupaneelil iduettevõtluse ja investeeringute teemal, 2030  T. 20.10 Elisa Eesti AS koolitus  T. 20.10 Narva koolide õpilased Mektory külastusel  T. 20.10 Mikko Mängutuba Mektory külastusel ja töötoas  K. 21.10 võtab innovatsiooni ja rahvusvaheliste suhete prorektor Tea Varrak Mektorys vastu Saksamaa parlamendi Bundestag digitaalse agenda komisjoni liikmed, 2030  K. 21.10 kell 18.00 Mektroys CodeClub: Phython  K. 21.10 Mikko Mängutuba Mektory külastusel ja töötoas  N. 22.10 võtab innovatsiooni ja rahvusvaheliste suhete prorektor Tea Varrak Mektorys vastu USA ase-välisministri Judith Garberi.  N. 22.10 Järvamaa koolide õpetajad Mektory külastusel ja Samsung School demos  N. 22.10 Mähe Vaba Aja keskuse noored Mektory külastusel  N. 22.10 Ericsson Eesti AS koolitus  22.–23.10 Mektory majas rahvusvaheline konverents "28th Nordic Seminar on Computational Mechanics, NSCM28"  R. 23.10 Mustamäe Perekeskus Mektory külastusel  R. 23.10 MTÜ Spok linnalaager Mektory töötubades  R. 23.10 Vivendi linnalaager Mektory töötubades  L. 24.10 Oisu Pereklubi Järvamaalt päevasel kosmose avastusretkel  KULTUUR   17.–25.10 TTÜ muuseumis muuseumidevahelinefestival „Avatud mänguväljad“  kuni 19.10 ülikooli peahoone fuajees näitus „Agu Aarna 100“  19.10–09.11 ülikooli peahoone fuajees näitus „Ants Kukrus 75“  21.10–30.10  raamatukogu 2. korruse teeninduskeskuses raamatukogupäevade raames muusika-aastale pühendatud pop-up väljapanek "Wahvad, Winged &amp; Wõluvad Winüülid"  kuni 29.10 raamatukogu ja energeetikateaduskonna vahelises galeriis näitus „Arhitektuur ja planeerimine”  kuni 31.10 majandusteaduskonna galeriis ja fuajees näitus „Kellu ja kitarriga. Eesti üliõpilaste ehitusmaleva töösuved“  kuni 02.11 raamatukogu 2. korruse lugemisalas näitus „Aegumatu nahakunst“  kuni 20.12.2016 TTÜ muuseumis näitus „Eesti energeetika“  kuni 20.12.2017 TTÜ muuseumi galeriis Futurum näitus „Puder ja kapsad“  raamatukogu viiendal korrusel püsinäitus „Kõige, kõige, kõige...TTÜ Raamatukogus“  U03 õppehoone pikas koridoris TTÜ muuseumi püsiekspositsioon „Tallinna Laululava kõlaekraani mudel“  KONKURSS   käimasolevad akadeemilised konkursid  kuni 19.10 kandideerimine Lindau füüsikafoorumile  kuni 15.11 taotluste esitamine Eesti teadlaste individuaallähetusteks välismaale 2016. aastal  kuni 15.03.2016 Balti-Saksa Kõrgkoolide büroo 2016. aasta projektikonkurss  kuni 20.03.2016 kandideerimine Alfred Otsa stipendiumile õppimaks Chalmersi Tehnikaülikoolis Göteborgis  kuni 31.03.2016 Twinning grandi taotlusvoor teaduskoostöö süvendamiseks Kesk-Aasia riikidega  kuni 31.03.2016 Twinning grandi taotlusvoor teaduskoostöö süvendamiseks idapartnerluse riikidega SISEKOOLITUS   T. 20.10 kell 15.30 ruumis U06-401 Nutiminutid: Dipiti, Timerime  22.10–03.12. IGIP õppekava täienduskoolitusprogrammi valikaine: Coaching ja mentorlus hariduses, 2058  terve sügissemestri koolitusplaan  rahvusvahelise mobiilsuse võimalused välisriikides  SPORT   T. 20.10 kell 18.30 TTÜ Spordihoones Balti Liiga korvpallis mehed TTÜ – JEKABPILS (Läti), 2751  N. 22.10 kell 18.30 TTÜ Spordihoones Alexela meistriliiga mäng korvpallis TTÜ – Kalev/Cramo, 2751  P. 25.10 kell 14.00 TTÜ Spordihoones Saalihoki meistriliiga mäng TTÜ – Sparta Team Automaailm, 2751  HALDUSINFO   N. 22.10 TTÜ aulas Tallinna Kolmanda Nooruse Rahvaülikooli loeng „Miks me maiustame?“  kuni 30.10 ülikooli võrgust TTÜ liikmeskonnale tasuta kasutamiseks populaarse sisuga ajakirjade andmebaas „Flipster“   kuni 30.11 Tipikate Rattamatkaklubi iganädalased õhtused rattasõidud TTÜ tudengitele, vilistlastele ja töötajatele  kuni 10.01.2016 Meriton spordiklubi pakkumised TTÜ töötajatele  hambaravi soodustus TTÜ töötajatele Nordic Hambakliinikus  töötervishoiu teenused TTÜs  soodustused TTÜ töötjatele ja partneritele Academic Hostelis  avatud on TTÜ meenete e-pood
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-lg-12 ui-sortable">
+													<h3>15. oktoobri "KUIDAS SÜNNIB ARHITEKTUUR?" loeng TTÜ arhitektuuri- ja urbanistikainstituudis jääb ära</h3>
+													<hr width="90%" size="1">
+													Tänasele, 15. oktoobrile plaanitud Matthias Sauerbruchi loeng loengusarjast "KUIDAS SÜNNIB ARHITEKTUUR?" TTÜ arhitektuuri- ja urbanistikainstituudi katusestuudios jääb ära. Lisainfo mia.pajupuu@ttu.ee
+												</div>
+											</div>
+
+										</div>
+
+										<div class="tab-pane fade active in" id="e">
+											<br><div class="row">
+											<div class="col-lg-12 ui-sortable">
+
+												<li><a href="http://www.parnupostimees.ee/3371283/vanalinna-kool-kais-tallinnas-ikt-konverentsil" target="_new">Vanalinna kool käis Tallinnas IKT konverentsil</a> (parnupostimees.ee)</li>
+												<li><a href="http://www.sakala.ajaleht.ee/3371237/oige-kutmine-tagab-puhtama-ohu" target="_new">Õige kütmine tagab puhtama õhu</a> (sakala.ajaleht.ee)</li>
+												<li><a href="http://www.virumaateataja.ee/3371197/oige-kutmine-tagab-puhtama-ohu-valdi-olmeprugi-poletamist" target="_new">Õige kütmine tagab puhtama õhu : väldi olmeprügi põletamist</a> (virumaateataja.ee)</li>
+												<li><a href="http://www.virumaateataja.ee/3371171/tulevased-maastikuarhitektid-ja-kohalikud-noored-kujundavad-ida-virumaa-toostusalasid" target="_new">Tulevased maastikuarhitektid ja kohalikud noored kujundavad Ida-Virumaa tööstusalasid</a> (virumaateataja.ee)</li>
+												<li><a href="http://www.bns.ee/topic/638/news/54128257/" target="_new">Õige kütmine tagab puhtama õhu</a> (BNS (PR teated))</li>
+												<li><a href="http://www.bns.ee/topic/778/news/54128077/" target="_new">Maanteeamet ei pea veoautode massipiirangu tõstmist võimalikuks</a> (BNS (Majandusuudised))</li>
+												<li><a href="http://www.bns.ee/topic/638/news/54127804/" target="_new">Tulevased maastikuarhitektid ja kohalikud noored kujundavad Ida-Virumaa…</a> (BNS (PR teated))</li>
+												<li><a href="http://novaator.err.ee/v/tehnika/43f7598f-8baf-488c-8f6c-d057edcb3f82/eesti-idufirma-kavandab-transpordi-vallas-revolutsiooni--" target="_new">Eesti idufirma kavandab transpordi vallas revolutsiooni &nbsp;                                                                                Jagam...</a> (novaator.err.ee)</li>
+												<li><a href="http://novaator.err.ee/v/tehnika/43f7598f-8baf-488c-8f6c-d057edcb3f82/eesti-idufirma-kavandab-transpordivallas-revolutsiooni--" target="_new">Eesti idufirma kavandab transpordivallas revolutsiooni &nbsp;                                                                                Jagami...</a> (novaator.err.ee)</li>
+												<li><a href="http://www.aripaev.ee/arvamused/2015/10/22/taavi-simson-paigutame-pagulased-hotellidesse" target="_new">Paigutame pagulased hotellidesse</a> (aripaev.ee)</li>
+												<li><a href="http://www.ohtuleht.ee/700001/riigikogulased-proovisid-omal-nahal-kuidas-on-olla-puudega-inimene" target="_new">Riigikogulased proovisid omal nahal, kuidas on olla puudega inimene</a> (ohtuleht.ee)</li>
+												<li><a href="http://maaleht.delfi.ee/news/lehelood/koik/geoinformaatik-margus-tiru-vanal-moel-tehtud-otsused-hakkavad-tagumikust-hammustama?id=72734833" target="_new">Geoinformaatik Margus Tiru: Vanal moel tehtud otsused hakkavad tagumikust hammustama</a> (maaleht.ee)</li>
+												<li><a href="http://maaleht.delfi.ee/news/lehelood/koik/geoinformaatik-margus-tiru-vanal-moel-tehtud-otsused-hakkavad-tagumikust-hammustama?id=72734833" target="_new">Geoinformaatik Margus Tiru: Vanal moel tehtud otsused hakkavad tagumikust hammustama</a> (Maaleht)</li>
+												<li><a href="http://www.ohtuleht.ee/700001/riigikogulased-proovisid-omal-nahal-kuidas-on-olla-puudega-inimene" target="_new">Riigikogulased proovisid omal nahal, kuidas on olla puudega inimene</a> (Õhtuleht)</li>
+												<li><a href="http://www.ohtuleht.ee/700025/kullamael-on-hea-meel-et-toome-rivaalidele-appi-laks" target="_new">Kullamäel on hea meel, et Toome rivaalidele appi läks</a> (Õhtuleht)</li>
+												<li><a href="http://www.ohtuleht.ee/700031/kas-eesti-korvpallur-teeb-arenemiseks-ikka-piisavalt-individuaalset-tood" target="_new">Kas Eesti korvpallur teeb arenemiseks ikka piisavalt individuaalset tööd?</a> (Õhtuleht)</li>
+												<li><a href="http://tallinncity.postimees.ee/3370529/mereakadeemia-avamerejaht-tormilind-on-13-000-eurose-alghinnaga-oksjonil" target="_new">Mereakadeemia avamerejaht Tormilind on 13 000 eurose alghinnaga oksjonil</a> (tallinncity.ee)</li>
+												<li><a href="http://uudisvoog.postimees.ee/?DATE=20151021&amp;ID=371553" target="_new">Parlamendi liikmed kehastusid puudega inimesteks</a> (Pressiteated (PM))</li>
+												<li><a href="http://novaator.err.ee/v/tehnika/e1726bff-0b38-46fd-9ddc-58518020ae9f/tulevik-on-tana-millised-filmi-tagasi-tulevikku-leiutised-on-tanaseks-reaalsuseks-saanud" target="_new">Tulevik on täna: millised filmi „Tagasi tulevikku“ leiutised on tänaseks reaalsuseks saanud?                                                    ...</a> (novaator.err.ee)</li>
+												<li><a href="http://www.pealinn.ee/newset/ministeerium-muudab-korduvate-liiklurikkujate-karistused-karmimaks-n155104" target="_new">Ministeerium muudab korduvate liiklurikkujate karistused karmimaks</a> (pealinn.ee)</li>
+												<li><a href="http://www.bns.ee/topic/648/news/54123590/" target="_new">Uuel nädalal esitatakse ideid korduvate liiklusrikkujate ohjeldamiseks</a> (BNS (Siseuudised))</li>
+												<li><a href="http://rus.postimees.ee/3370287/tartuskij-universitet-zanjal-4-e-mesto-v-rejtinge-vuzov-razvivajuwihsja-stran-evropy-i-centralnoj-azii" target="_new">Тартуский университет занял 4-е место в рейтинге вузов развивающихся стран Европы и Центральной Азии</a> (rus.postimees.ee)</li>
+												<li><a href="http://rus.err.ee/v/estonia/da73fc0d-b973-4ed6-999e-e636272fc17a/tartuskiy-universitet-zanyal-4-e-mesto-v-reytinge-vuzov-razvivayushchikhsya-stran-evropy-i-tsentralnoy-azii" target="_new">Тартуский университет занял 4-е место в рейтинге вузов развивающихся стран Европы и Центральной Азии</a> (rus.err.ee)</li>
+												<li><a href="http://www.ohtuleht.ee/699950/ukrainlaste-soov-eestisse-elama-asuda-on-huppeliselt-kasvanud" target="_new">Ukrainlaste soov Eestisse elama asuda on hüppeliselt kasvanud</a> (ohtuleht.ee)</li>
+												<li><a href="http://www.bns.ee/topic/638/news/54122731/" target="_new">Parlamendi liikmed kehastusid puudega inimesteks</a> (BNS (PR teated))</li>
+												<li><a href="2015/10/21/5cc52dce-75e1-4555-aa5f-c6200c46a5ce.mp4" target="_new">Uudised 13:00</a> (Vikerraadio)</li>
+												<li><a href="http://novaator.err.ee/v/teaduselu/92f9fe44-6e41-4ca8-b7b6-d29036354441/maailma-teadusvaldkondade-edetabelis-paistavad-silma-tu-humanitaarteadused" target="_new">Maailma teadusvaldkondade edetabelis paistavad silma TÜ humanitaarteadused</a> (novaator.err.ee)</li>
+												<li><a href="http://majandus24.postimees.ee/3369055/jaapanistumine-ahvardab-kogu-arenenud-maailma" target="_new">Jaapanistumine ähvardab kogu arenenud maailma</a> (majandus24.postimees.ee)</li>
+												<li><a href="http://majandus24.postimees.ee/3369055/jaapanistumine-ahvardab-kogu-arenenud-maailma" target="_new">Jaapanistumine ähvardab kogu arenenud maailma</a> (maailm.postimees.ee)</li>
+												<li><a href="http://uudisvoog.postimees.ee/?DATE=20151021&amp;ID=371520" target="_new">Tähtajalise elamisloa sai sel aastal üle 3300 välismaalase</a> (Pressiteated (PM))</li>
+												<li><a href="http://uudisvoog.postimees.ee/?DATE=20151021&amp;ID=371501" target="_new">10. juubelit tähistav IKT sügiskonverents toob kokku õpetajad üle Eesti</a> (Pressiteated (PM))</li>
+												<li><a href="http://www.mke.ee/sobytija/srochnye-vidy-na-zhitelstvo-poluchili-v-etom-godu-v-estonii-bolee-3300-inostrantsev" target="_new">Срочные виды на жительство получили в этом году в Эстонии более 3300 иностранцев</a> (mke.ee)</li>
+												<li><a href="http://www.bns.ee/topic/638/news/54118622/" target="_new">Tehnopol sõlmis koostöölepingu Euroopa suurettevõttega KIC InnoEnergy</a> (BNS (PR teated))</li>
+												<li><a href="http://dv.ee/novosti/2015/10/21/kak-prodat-mechtu" target="_new">Как продать мечту</a> (dv.ee)</li>
+												<li><a href="http://www.bns.ee/topic/638/news/54117743/" target="_new">Tähtajalise elamisloa sai sel aastal üle 3300 välismaalase</a> (BNS (PR teated))</li>
+												<li><a href="http://www.bns.ee/topic/638/news/54117741/" target="_new">10. juubelit tähistav IKT sügiskonverents toob kokku õpetajad üle Eesti</a> (BNS (PR teated))</li>
+												<li><a href="2015/10/21/2a40c4de-8531-4118-bba1-6bbeb4dae3f8.mp4" target="_new">Uudised 08:00</a> (Vikerraadio)</li>
+												<li><a href="2015/10/21/a2d65900-1716-4bc8-9b46-c97b30ffee79.mp4" target="_new">Hommik! 8:00</a> (Raadio2)</li>
+												<li><a href="http://arileht.delfi.ee/news/uudised/intervjuu-jaapani-majandusteadlane-motlemine-ei-tohi-olla-kulmunud?id=72748203" target="_new">INTERVJUU: Jaapani majandusteadlane: mõtlemine ei tohi olla "külmunud"</a> (arileht.delfi.ee)</li>
+												<li><a href="http://www.ohtuleht.ee/699871/tahtajalise-elamisloa-sai-sel-aastal-ule-3300-valismaalase" target="_new">Tähtajalise elamisloa sai sel aastal üle 3300 välismaalase</a> (ohtuleht.ee)</li>
+												<li><a href="http://www.delfi.ee/news/paevauudised/eesti/tahtajalise-elamisloa-on-tanavu-saanud-ule-3300-valismaalase?id=72752017" target="_new">Tähtajalise elamisloa on tänavu saanud üle 3300 välismaalase</a> (delfi.ee)</li>
+												<li><a href="2015/10/21/98f1e283-cde5-46fd-a249-fcc17bbdc1cf.mp4" target="_new">Hommik! 7:30</a> (Raadio2)</li>
+												<li><a href="http://www.postimees.ee/3369469/tahtajalise-elamisloa-on-tanavu-saanud-ule-3300-valismaalase" target="_new">Tähtajalise elamisloa on tänavu saanud üle 3300 välismaalase</a> (postimees.ee)</li>
+												<li><a href="http://ekspress.delfi.ee/news/paevauudised/mis-tombab-lugejate-pilke?id=72740245" target="_new">Mis tõmbab lugejate pilke?</a> (ekspress.ee)</li>
+												<li><a href="http://www.bns.ee/topic/648/news/54114800/" target="_new">10. juubelit tähistav IKT konverents toob kokku õpetajad üle Eesti</a> (BNS (Siseuudised))</li>
+												<li><a href="http://uudised.err.ee/v/eesti/e46605dc-641c-4fc9-abcf-235d5a0cb5cf/tahtajalise-elamisloa-on-tanavu-saanud-ule-3300-valismaalase" target="_new">Tähtajalise elamisloa on tänavu saanud üle 3300 välismaalase</a> (err.ee)</li>
+												<li><a href="http://www.bns.ee/topic/648/news/54114480/" target="_new">Tähtajalise elamisloa sai sel aastal üle 3300 välismaalase</a> (BNS (Siseuudised))</li>
+												<li><a href="http://epl.delfi.ee/news/forte/it-oppejoud-lauri-vosandi-eestis-puudub-poliitiline-tahe-et-soodustada-elujoulise-vabavara-kogukonna-teket?id=72737239" target="_new">IT-õppejõud Lauri Võsandi: Eestis puudub poliitiline tahe, et soodustada elujõulise vabavara kogukonna teket</a> (epl.delfi.ee)</li>
+											</div>
+											</div>
+										</div>
+
+										<div class="tab-pane fade" id="f">
+											<br><div class="row">
+											<div class="col-lg-12 ui-sortable">
+
+												<li><a href="http://novaator.err.ee/v/loodus/9734adae-7ce7-4aa9-99f3-fc6e63211217/galapagose-saarestik-peitis-veel-uhte-kilpkonnaliiki" target="_new">Galapagose saarestik peitis veel ühte kilpkonnaliiki</a> (Loodus)</li>
+												<li><a href="http://novaator.err.ee/v/teaduslugu/5877ac61-fa12-4467-a4fa-bb0d38298571/22-oktoobril-1797-tehti-esimene-langevarjuhupe" target="_new">22. oktoobril 1797 tehti esimene langevarjuhüpe</a> (Teaduslugu)</li>
+												<li><a href="http://novaator.err.ee/v/tehnika/2187a674-e666-4f13-9703-ab17827bc304/eesti-kaitsetoostus-on-tuule-tiibadesse-saanud" target="_new">Eesti kaitsetööstus on tuule tiibadesse saanud</a> (Tehnika)</li>
+												<li><a href="http://novaator.err.ee/v/saated/raadio_2_tehnikakommentaar/83815ca3-ef22-4c17-8d87-77794149d2ea/kristjan-port-aeg-on-puuri-vahetada" target="_new">Kristjan Port: aeg on puuri vahetada</a> (Raadio 2 tehnikakommentaar)</li>
+												<li><a href="http://novaator.err.ee/v/tervis/cbacc9a5-a7e1-4eb5-828e-7fdf3cfa140b/sigaretisuits-teeb-piimahambasse-augu" target="_new">Sigaretisuits teeb piimahambasse augu</a> (Tervis)</li>
+												<li><a href="http://novaator.err.ee/v/tehnika/43f7598f-8baf-488c-8f6c-d057edcb3f82/eesti-idufirma-kavandab-transpordi-vallas-revolutsiooni--" target="_new">Eesti idufirma kavandab transpordi vallas revolutsiooni &nbsp;</a> (Tehnika)</li>
+												<li><a href="http://novaator.err.ee/v/tehnika/e1726bff-0b38-46fd-9ddc-58518020ae9f/tulevik-on-tana-millised-filmi-tagasi-tulevikku-leiutised-on-tanaseks-reaalsuseks-saanud" target="_new">Tulevik on täna: millised filmi „Tagasi tulevikku“ leiutised on tänaseks reaalsuseks saanud?</a> (Tehnika)</li>
+												<li><a href="http://novaator.err.ee/v/yhiskond/910a6479-300a-495c-a304-9a2feb233443/inauguratsiooniloeng-kes-ja-kuidas-peaks-kaitsma-tarbijaid" target="_new">Inauguratsiooniloeng: Kes ja kuidas peaks kaitsma tarbijaid?</a> (Ühiskond)</li>
+												<li><a href="http://novaator.err.ee/v/loodus/27336ddb-2163-4968-8760-a27a2c1680d8/hiina-geeniteadlased-loid-ebatavaliselt-suure-lihasmassiga-hagijaid" target="_new">Hiina geeniteadlased lõid ebatavaliselt suure lihasmassiga hagijaid</a> (Loodus)</li>
+												<li><a href="http://novaator.err.ee/v/teaduselu/3defcbd8-a5c4-448f-bcf8-164a8e60bb90/tartus-koondub-maalikunsti-opetamine-tartu-korgemasse-kunstikooli" target="_new">Tartus koondub maalikunsti õpetamine Tartu kõrgemasse kunstikooli</a> (Teaduselu)</li>
+												<li><a href="http://novaator.err.ee/v/teaduselu/92f9fe44-6e41-4ca8-b7b6-d29036354441/maailma-teadusvaldkondade-edetabelis-paistavad-silma-tu-humanitaarteadused" target="_new">Maailma teadusvaldkondade edetabelis paistavad silma TÜ humanitaarteadused</a> (Teaduselu)</li>
+												<li><a href="http://novaator.err.ee/v/tervis/7e197971-116f-4282-be8a-a169dfaf7b7d/analuus-alkoholireklaami-piiramine-joomist-oluliselt-ei-vahenda-kuid-lukkab-edasi-noorte-esmanapsutamist" target="_new">Analüüs: alkoholireklaami piiramine joomist oluliselt ei vähenda, kuid lükkab edasi noorte esmanapsutamist</a> (Tervis)</li>
+												<li><a href="http://novaator.err.ee/v/saated/raadio_2_tehnikakommentaar/365cfac2-3993-40ef-b1a2-284370d015ed/kristjan-port-interneti-demokraatlikkus-vahetatakse-turvalisuse-illusiooni-vastu" target="_new">Kristjan Port: interneti demokraatlikkus vahetatakse turvalisuse illusiooni vastu</a> (Raadio 2 tehnikakommentaar)</li>
+												<li><a href="http://novaator.err.ee/v/universum/72442de7-166f-45a0-bc66-90d7c1ec0562/komeedid-ja-asteroidid-toovad-massilist-liigihavingut" target="_new">Komeedid ja asteroidid toovad massilist liigihävingut</a> (Universum)</li>
+												<li><a href="http://novaator.err.ee/v/loodus/e83b40da-ad74-44c2-b458-881a8f0714d7/teadusvideo-kuidas-taimel-suu-kinni-panna" target="_new">Teadusvideo: Kuidas taimel suu kinni panna?</a> (Loodus)</li>
+												<li><a href="http://novaator.err.ee/v/universum/4e359472-1dae-4bf3-8282-cfd8a260074d/astrofuusik-tulnukate-megastruktuurist-eriskummaliste-seletusteni-joutakse-viimasena" target="_new">Astrofüüsik "tulnukate megastruktuurist": eriskummaliste seletusteni jõutakse viimasena</a> (Universum)</li>
+												<li><a href="http://novaator.err.ee/v/saated/r2_tehnikaminutid/1d9c87b8-9703-40ef-8f20-c2844a94701f/r2-tehnikaminutid-uus-soidujagamisteenus-wisemile-ja-isesoitvad-autod" target="_new">R2 tehnikaminutid: uus sõidujagamisteenus Wisemile ja isesõitvad autod</a> (R2 Tehnikaminutid)</li>
+												<li><a href="http://novaator.err.ee/v/yhiskond/7935aa60-c850-45bd-be7f-98e0b66739ac/uuring-eesti-elanikud-usaldavad-kergekaeliselt-oma-privaatseid-andmeid-erinevatele-institutsioonidele" target="_new">Uuring: Eesti elanikud usaldavad kergekäeliselt oma privaatseid andmeid erinevatele institutsioonidele</a> (Ühiskond)</li>
+												<li><a href="http://novaator.err.ee/v/universum/60a7c403-1a23-483b-9293-e83242d10c00/oktoobri-lopus-moodub-maa-lahedalt-asteroid--" target="_new">Oktoobri lõpus möödub Maa lähedalt asteroid &nbsp;</a> (Universum)</li>
+												<li><a href="http://novaator.err.ee/v/saated/raadio_2_tehnikakommentaar/d7044591-0879-4355-80b7-e9681abb67d7/kristjan-port-sharp-loodab-turule-tuua-robohoni" target="_new">Kristjan Port: Sharp loodab turule tuua robohoni</a> (Raadio 2 tehnikakommentaar)</li>
+												<li><a href="http://novaator.err.ee/v/loodus/8b434994-4187-4da1-9fac-f8a20ea00b8c/koer-on-parit-sise-aasiast" target="_new">Koer on pärit Sise-Aasiast</a> (Loodus)</li>
+												<li><a href="http://novaator.err.ee/v/yhiskond/81fe3ed6-f4bd-4349-917d-c68685c3397c/sonia-livingstone-ma-ei-usu-et-internetis-ajaviiteks-mangides-omandavad-lapsed-kriitilise-motlemise" target="_new">Sonia Livingstone: Ma ei usu, et internetis ajaviiteks mängides omandavad lapsed kriitilise mõtlemise</a> (Ühiskond)</li>
+												<li><a href="http://novaator.err.ee/v/keskkond/2aeeca34-3590-490b-adee-90089f1d839d/hudroloog-tanavune-madal-veetase-pole-midagi-erakordset" target="_new">Hüdroloog: tänavune madal veetase pole midagi erakordset</a> (Keskkond)</li>
+												<li><a href="http://uudised.err.ee/v/eesti/26496e37-e155-4b47-bb74-d9d6bfda2def/laevauhendus-manilaiuga-on-seiskunud" target="_new">Laevaühendus Manilaiuga on seiskunud</a> (Eesti)</li>
+												<li><a href="http://novaator.err.ee/v/universum/92f1c095-1121-4424-a864-b2128ad0d9e2/pluuto-teaduslik-kirjeldus-heidab-valgust-kuiperi-voo-voludele" target="_new">Pluuto teaduslik kirjeldus heidab valgust Kuiperi vöö võludele</a> (Universum)</li>
+												<li><a href="http://novaator.err.ee/v/7b2df064-210a-403e-8ce0-c7854932534c/dinosauruse-munad-naitavad-tema-kehatemperatuuri" target="_new">Dinosauruse munad näitavad tema kehatemperatuuri</a> (Novaator)</li>
+												<li><a href="http://novaator.err.ee/v/yhiskond/c0d7195a-d8fb-44eb-a7e3-b856029385b9/doktoritoo-ohuennetusoigus-on-eestis-killustatud-ja-ebamaarane" target="_new">Doktoritöö: ohuennetusõigus on Eestis killustatud ja ebamäärane</a> (Ühiskond)</li>
+												<li><a href="http://novaator.err.ee/v/saated/raadio_2_tehnikakommentaar/0c3c0493-d948-4e2c-aa50-20a8779991a3/kristjan-port-moodunud-sajandi-murranguliseim-tehnika-on-ullatavalt-kodune" target="_new">Kristjan Port: möödunud sajandi murranguliseim tehnika on üllatavalt kodune</a> (Raadio 2 tehnikakommentaar)</li>
+												<li><a href="http://novaator.err.ee/v/saated/uudiseid_saatest_labor/443da48f-0bb3-4a56-b2aa-3d485763ad4a/labor-head-harjumused-ja-robotex" target="_new">Labor: head harjumused ja Robotex</a> (Uudiseid saatest Labor)</li>
+												<li><a href="http://novaator.err.ee/v/loodus/beab3fca-4632-40b7-8427-a2279c11b696/mesilastele-maitseb-kofeiiniga-oienektar" target="_new">Mesilastele maitseb kofeiiniga õienektar</a> (Loodus)</li>
+												<li><a href="http://novaator.err.ee/v/yhiskond/f98761c0-d654-488c-b35e-c901b8f13693/kolm-naidet-oskustest-mis-muutuvad-eluliselt-tarvilikuks-infokullases-uhiskonnas" target="_new">Kolm näidet oskustest, mis muutuvad eluliselt tarvilikuks infoküllases ühiskonnas</a> (Ühiskond)</li>
+												<li><a href="http://novaator.err.ee/v/haridus/085fd85c-cc80-42ae-80fb-e524e79a90b9/uhe-minuti-loeng-kutsehariduse-edenemine-vajab-ettevotete-suuremat-panust" target="_new">Ühe minuti loeng: kutsehariduse edenemine vajab ettevõtete suuremat panust</a> (Haridus)</li>
+												<li><a href="http://novaator.err.ee/v/tervis/7756a7df-df9c-4431-98c7-c097169674b3/pogenikega-voib-kaasa-tulla-naiteks-malaariat-ja-antibiootikumravile-allumatuid-haigusi" target="_new">Põgenikega võib kaasa tulla näiteks malaariat ja antibiootikumravile allumatuid haigusi</a> (Tervis)</li>
+												<li><a href="http://novaator.err.ee/v/teaduslugu/9f2e22aa-0c6c-464f-82bf-6bd468014e7c/16-oktoobril-1964-sai-hiinast-tuumariik" target="_new">16. oktoobril 1964 sai Hiinast tuumariik</a> (Teaduslugu)</li>
+												<li><a href="http://novaator.err.ee/v/loodus/208e1d2d-0770-47c3-b107-2f5523cb3bd4/kui-kiiresti-liikus-soomes-lennanud-latikas" target="_new">Kui kiiresti liikus Soomes lennanud latikas</a> (Loodus)</li>
+												<li><a href="http://novaator.err.ee/v/yhiskond/4577ff37-0689-4344-a2e3-8e92e0e8c7a1/teadus-tagasivaates--emeriitdotsent-reet-kasik-eesti-keele-sailimist-ohustab-konelejate-vahenemine" target="_new">Teadus tagasivaates | Emeriitdotsent Reet Kasik: eesti keele säilimist ohustab kõnelejate vähenemine</a> (Ühiskond)</li>
+												<li><a href="http://novaator.err.ee/v/loodus/7ec9bb3a-422b-4c8a-a352-418aab8ab60d/hiite-fotovoistluse-voitja-saab-auhinnaks-1000-eurot" target="_new">Hiite fotovõistluse võitja saab auhinnaks 1000 eurot</a> (Loodus)</li>
+												<li><a href="http://novaator.err.ee/v/yhiskond/46bd4bb7-eb2e-4e3e-adfc-b3ff6f267fa4/doktoritoo-mis-voib-multifilmide-tolkes-kaduma-minna" target="_new">Doktoritöö: mis võib multifilmide tõlkes kaduma minna?</a> (Ühiskond)</li>
+												<li><a href="http://novaator.err.ee/v/keskkond/f3c1c9b6-4a7b-4074-8a66-da7bd9a32ade/meteoroloogiaprofessor-krobedaim-pakasekuu-on-jaanuar" target="_new">Meteoroloogiaprofessor: krõbedaim pakasekuu on jaanuar</a> (Keskkond)</li>
+												<li><a href="http://novaator.err.ee/v/tervis/948274e0-8085-401a-a418-690c44d84aa8/moodsa-aja-eluviis-polegi-inimeste-uneaega-luhendanud" target="_new">Moodsa aja eluviis polegi inimeste uneaega lühendanud</a> (Tervis)</li>
+												<li><a href="http://novaator.err.ee/v/teadlase_100_sekundit/0511a6de-79fa-4ed4-9f3b-7138a967fbe3/100-sekundi-video-kuberturvalisus-ja-julgeolek" target="_new">100 sekundi video: Küberturvalisus ja julgeolek</a> (Teadlase 100 sekundit)</li>
+												<li><a href="http://novaator.err.ee/v/tervis/7eb9a586-2a84-4782-b77f-c4136de61101/antioksudandid-voivad-kiirendada-nahavahi-levikut" target="_new">Antioksüdandid võivad kiirendada nahavähi levikut</a> (Tervis)</li>
+												<li><a href="http://novaator.err.ee/v/tervis/7cd7163b-555e-4b8f-8857-372ffa36036f/potentsiaalne-vahiravim-peidab-end-malaaria-valgus" target="_new">Potentsiaalne vähiravim peidab end malaaria valgus</a> (Tervis)</li>
+												<li><a href="http://novaator.err.ee/v/teadusmaailma_galeriid/11db8862-c940-44bb-b5bd-367011529360/galerii-oietolmuga-kaetud-mesilasesilm-ja-muud-silmale-varjatud-mikromaailma-volud" target="_new">Galerii: õietolmuga kaetud mesilasesilm ja muud silmale varjatud mikromaailma võlud</a> (Teadusmaailma galeriid)</li>
+												<li><a href="http://novaator.err.ee/v/teaduselu/38a73350-a6cc-4772-9d3d-8aa08c08d34f/err-novaatori-parimad-populaarteaduslikud-artiklid-raagivad-naatrium-ioon-patareidest-ja-argikeelest" target="_new">ERR Novaatori parimad populaarteaduslikud artiklid räägivad naatrium-ioon patareidest ja argikeelest</a> (Teaduselu)</li>
+												<li><a href="http://novaator.err.ee/v/tervis/ce7dff0f-a86b-4a39-857a-037331f2079b/ebola-riismeid-voib-spermast-leida-kuid-parast-tervenemist" target="_new">Ebola riismeid võib spermast leida kuid pärast tervenemist</a> (Tervis)</li>
+												<li><a href="http://novaator.err.ee/v/teaduslugu/049656ae-086b-487b-a259-7a656a98b5b8/15-oktoobril-2003-saatis-hiina-kosmosesse-esimese-taikonaudi" target="_new">15. oktoobril 2003 saatis Hiina kosmosesse esimese taikonaudi</a> (Teaduslugu)</li>
+												<li><a href="http://novaator.err.ee/v/yhiskond/43561a97-272e-4d06-8e4e-19c7aa45393a/inimesed-joudsid-hiina-aladele-juba-80-000-aasta-eest-" target="_new">Inimesed jõudsid Hiina aladele juba 80 000 aasta eest
+													&nbsp;</a> (Ühiskond)</li>
+												<li><a href="http://novaator.err.ee/v/saated/raadio_2_tehnikakommentaar/c342686c-5e1c-4e93-9e97-ecbbe3139a14/kristjan-port-robotite-inimlikuks-muutmisega-peab-piiri-pidama" target="_new">Kristjan Port: robotite inimlikuks muutmisega peab piiri pidama</a> (Raadio 2 tehnikakommentaar)</li>
+												<li><a href="http://novaator.err.ee/v/keskkond/197149ee-2bbd-4bee-bd37-71cc9e2fc125/elurikkad-rohumaad-elavad-kehvad-olud-paremini-ule" target="_new">Elurikkad rohumaad elavad kehvad olud paremini üle</a> (Keskkond)</li>
+											</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+					<!--PAGE END
+----------------------------------------------------------------->
+					<!--MODAL CONTENT
+--------------------------------------------------------------->
+					<div id="right-sidebar" class="">
+						<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;">
+							<div class="sidebar-container" style="overflow: hidden; width: auto; height: 100%;">
+
+								<ul class="nav nav-tabs navs-3">
+
+									<li class="active"><a data-toggle="tab" href="#tab-11" aria-expanded="true">
+										Valik 1
+										</a>
+									</li>
+									<li><a data-toggle="tab" href="#tab-22">
+										Valik 2
+										</a>
+									</li>
+									<li class="">
+										<a data-toggle="tab" href="#tab-33" aria-expanded="false">
+											<i class="fa fa-gear"></i>
+										</a>
+									</li>
+								</ul>
+
+								<div class="tab-content">
+
+
+									<div id="tab-11" class="tab-pane active">
+										<div class="sidebar-title">
+											<h3> <i class="fa fa-folder"></i> Minu failid</h3>
+											<small><i class="fa fa-tim"></i> Kaustas on 2 dokumenti</small>
+										</div>
+										<div>
+											<ul class="sidebar-list">
+												<li class="">
+													<a href="#" class="">
+														<div class="pull-left text-center m-r">
+															<i class="fa fa-file-text-o fa-3x"></i>
+														</div>
+														<div class="m-l m-b-xs">Puhkuste graafiku koostamise juhend ja soovitused tuleviku mudeli laiendamiseks.pdf</div>
+														<div class="small text-muted pull-right ">Lisatud 15.02.2015</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="pull-left text-center m-r">
+															<i class="fa fa-file-text-o fa-3x"></i>
+														</div>
+														<div class="m-l m-b-xs">Majandusaruande kolmas lisa ja seletused.pdf</div>
+														<div class="small text-muted pull-right">Lisatud 12.06.2014</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+
+									</div>
+
+									<div id="tab-22" class="tab-pane">
+
+										<div class="sidebar-title">
+											<h3> <i class="fa fa-cube"></i> Viimased uuendused</h3>
+											<small><i class="fa fa-tim"></i> Paigaldatud 14 uuendust. 1 on paigaldamata.</small>
+										</div>
+
+										<ul class="sidebar-list">
+											<li>
+												<a href="#">
+													<div class="small pull-right m-t-xs">5 tundi tagasi</div>
+													<h4>Versiooni uuendus 1.0.0.14</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio accusantium saepe id.
+
+													<div class="small">Paigaldatud: 22%</div>
+													<div class="progress progress-mini">
+														<div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+													</div>
+													<div class="small text-muted m-t-xs">Paigalduse lõpuni 3 minutit</div>
+												</a>
+											</li>
+										</ul>
+
+									</div>
+
+									<div id="tab-33" class="tab-pane">
+
+										<div class="sidebar-title">
+											<h3><i class="fa fa-gears"></i> Sätted</h3>
+											<small><i class="fa fa-tim"></i> Siin saad muuta oma põhisätteid</small>
+										</div>
+
+										<div class="setings-item">
+											<span>
+												Näita teateid
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+													<label class="onoffswitch-label" for="example">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="setings-item">
+											<span>
+												Keela messenger
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" name="collapsemenu" checked="" class="onoffswitch-checkbox" id="example2">
+													<label class="onoffswitch-label" for="example2">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="setings-item">
+											<span>
+												Luba ajaloo salvestus
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+													<label class="onoffswitch-label" for="example3">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="setings-item">
+											<span>
+												Näita tabeleid
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+													<label class="onoffswitch-label" for="example4">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="setings-item">
+											<span>
+												Kasutaja teavitused
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" checked="" name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+													<label class="onoffswitch-label" for="example5">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="setings-item">
+											<span>
+												Globaalne otsing
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" checked="" name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+													<label class="onoffswitch-label" for="example6">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="setings-item">
+											<span>
+												Uuenda igapäev
+											</span>
+											<div class="switch">
+												<div class="onoffswitch">
+													<input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+													<label class="onoffswitch-label" for="example7">
+														<span class="onoffswitch-inner"></span>
+														<span class="onoffswitch-switch"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="sidebar-content">
+											<h4>Sätted</h4>
+											<div class="small">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia doloremque ducimus, iste cum molestiae unde recusandae dolorem necessitatibus, quod? Pariatur officia omnis aperiam doloribus, impedit ipsa laborum provident accusamus quos obcaecati mollitia beatae. Placeat, totam, fugiat. Ad architecto repudiandae, non.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 894px; background: rgb(0, 0, 0);"></div>
+							<div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.4; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
+						</div>
+					</div>
+					<!--MODAL CONTENT END
+--------------------------------------------------------------->
+				</div>
+				<!--PAGE END
+--------------------------------------------------------------->
+				<!--FOOTER
+--------------------------------------------------------------->
+				<div class="footer">
+					<div class="pull-right">
+						TTÜ Siseportaal &copy; 2014 - 2015
+					</div>
+				</div>
+			</div>
+			<!--CONTENT END
+--------------------------------------------------------------->
+			<!-- FULLSCREEN MODE TOGGLE BUTTON
+------------------------------------------------------------------->
+			<button id="fullscreen-btn" class="btn btn-sm btn-grey pull-right hidden-xs" type="button"><i class="fa fa-arrows"></i></button>
+			<!-- FULLSCREEN MODE TOGGLE BUTTON END
+------------------------------------------------------------------->
+			<!-- SCROLL TO TOP BUTTON
+------------------------------------------------------------------->
+			<a href="#" class="scroll-up"><i class="fa fa-2x fa-angle-double-up"></i></a>
+			<!-- SCROLL TO TOP BUTTON END
+------------------------------------------------------------------>
+		</div>
+		<!--SCRIPTS
+--------------------------------------------------------------->
+		<!-- Main scripts -->
+		<script src="js/jquery-2.1.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Plugin javascript -->
+		<script src="js/plugins/moment/moment.min.js"></script>
+		<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+		<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="js/inspinia.js"></script>
+		<script src="js/plugins/pace/pace.min.js"></script>
+		<script src="js/plugins/tabcollapse/bootstrap-tabcollapse.js"
+						></script>
+		<!-- Custom javascript -->
+		<script src="js/content_pages.js"></script>
+	</body>
+
+</html>
