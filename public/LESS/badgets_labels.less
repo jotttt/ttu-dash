@@ -147,7 +147,7 @@
 	font-weight: 700;
 }
 .goal-badge:hover {
-	padding: 2px 5px;
+	padding: 2px ;
 	border: 2px solid @cherry;
 	cursor: pointer;
 	-webkit-box-shadow: 0px 0px 0px 2px #A6A6A6;
@@ -162,7 +162,7 @@
 .goal-badge.active {
 	background: @cherry;
 	border: 2px solid @darker-cherry;
-	padding: 2px 5px;
+	padding: 2px ;
 	-webkit-box-shadow: 0px 0px 0px 2px #A6A6A6;
 	box-shadow:  0px 1px 4px 0px #A6A6A6;
 }
@@ -173,11 +173,31 @@
 	background-color: transparent;
 	border: 2px solid @cherry;
 	border-radius: 2px;
-	padding: 3px;
+	padding: 10px;
 }
 .action-badge:hover, .action-badge:active, .action-badge:focus {
 	-webkit-box-shadow: 0px 0px 0px 2px #A6A6A6;
 	box-shadow:  0px 2px 8px 0px #A6A6A6;
+}
+.action-badge-edit {
+	position: absolute;
+	border-top: 2px solid;
+	border-left: 2px solid;
+	border-top-left-radius: 4px;
+	padding: 6px 12px;
+	bottom: 5px;
+	right: 15px;
+	z-index: 10;
+}
+@media (max-width: 1199px) {
+	.action-badge-edit {
+	bottom: 0px;
+}
+}
+.action-badge-edit:hover {
+	background: @cherry;
+	border-color: inherit;
+	color: white;
 }
 .action-label {
 	background-color: #FFFFFF;
@@ -189,7 +209,7 @@
 	background-color: transparent;
 	border: 2px solid @cherry;
 	border-radius: 2px;
-	padding: 3px;
+	padding: 5px;
 	margin: 0 10px 10px;
 }
 .sub-action-badge:hover, .sub-action-badge:active, .sub-action-badge:focus {
