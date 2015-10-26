@@ -19,7 +19,10 @@ body.full-height-layout #page-wrapper {
 
 #page-wrapper {
 	min-height: auto;
-	border-left: 1px solid @lightest-grey;
+}
+#page-wrapper.closed {
+	margin: -60px 0 0 0px ;
+
 }
 
 body.boxed-layout {
@@ -76,7 +79,149 @@ a:hover, a:focus {
 .text-uppercase {
 	text-transform: uppercase;
 }
+//HIGH CONTRAST CONTENT
+//------------------------------------------------------------------
+.high-contrast-content {
+	background: black;
+	color: yellow;
 
+	#wrapper {
+		background: black;
+		color: yellow;
+	}
+	h1,h2,h3,h4,h5,h6 {
+		background: black;
+		color: yellow;
+	}
+	strong {
+		background: black;
+		color: yellow;
+	}
+	span {
+		background: black;
+		color: yellow;
+	}
+	div {
+		background: black;
+		color: yellow;
+	}
+	div a {
+		background: black;
+		color: yellow;
+	}
+	div a:hover {
+		background: black;
+		color: yellow;
+	}
+	div:hover {
+		background: black;
+		color: yellow;
+	}
+	div .card.active {
+		background: black;
+		color: yellow;
+	}
+	.sub-action-badge {
+		border: 2px solid white;
+	}
+	nav {
+		background: black;
+		color: yellow;
+	}
+	.navbar-static-top .nav > li > a  {
+		background: black;
+		color: yellow;
+	}
+	> .navbar-default .nav > li > a:hover,> .navbar-default .nav > li > a:focus {
+		background: white;
+		color: yellow;
+	}
+	ol {
+		background: black;
+		color: yellow;
+	}
+	ul {
+		background: black;
+		color: yellow;
+	}
+	ul li {
+		background: black;
+		color: yellow;
+	}
+	ul li.active {
+		background: black;
+		color: yellow;
+		border: 2px solid white;
+
+	}
+	ul li a {
+		background: black;
+		color: yellow;
+	}
+	ul li a:visited,ul li a:hover {
+		background: black;
+		color: yellow;
+	}
+	select {
+		background: black;
+		color: yellow;
+	}
+	input {
+		background: black;
+		color: yellow;
+	}
+	button {
+		background: black;
+		color: yellow;
+		border-color: white;
+	}
+	button:hover {
+		background: black;
+		color: yellow;
+		border-color: white;
+	}
+	input::-webkit-input-placeholder {
+		background: yellow;
+		color: black;
+	}
+	input:-moz-placeholder {
+		background: yellow;
+		color: black;
+	}
+	high-contrast-content input::-moz-placeholder {
+		background: yellow;
+		color: black;
+	}
+	input:-ms-input-placeholder {
+		background: yellow;
+		color: black;
+	}
+	#srch-term {
+		background: yellow;
+		color: black;
+	}
+	#srch-term::-webkit-input-placeholder {
+		color: @text-color;
+	}
+
+	#srch-term:-moz-placeholder { /* Firefox 18- */
+		color:  @text-color;
+	}
+
+	#srch-term::-moz-placeholder {  /* Firefox 19+ */
+		color:  @text-color;
+	}
+
+	#srch-term:-ms-input-placeholder {
+		color:  @text-color;
+	}
+	#fullscreen-btn {
+		background: yellow;
+		color: black;
+	}
+}
+//------------------------------------------------------------------
+//HIGH CONTRAST CONTENT END
 .b-r {
 	border-right: 1px solid @border-color;
 }
@@ -183,7 +328,7 @@ video {
 
 .wrapper-content {
 	padding: 20px 10px 40px;
-	min-height: 1000px; //added
+	min-height: auto;
 
 }
 
@@ -732,12 +877,12 @@ table.table-mail tr td {
 }
 .grey-modulation-bg {
 	background: url(../img/vv.svg) top left repeat, url(../img/v2.svg) top left no-repeat;
-    background-attachment: fixed;
-    background-position: top left;
-    -webkit-background-size: auto, cover;
-    -moz-background-size: auto, cover;
-    -o-background-size: auto, cover;
-    background-size: auto, cover;
+	background-attachment: fixed;
+	background-position: top left;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	background-size: auto, cover;
 }
 .panel-group {
 	margin: 0px;
