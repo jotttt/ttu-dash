@@ -113,6 +113,21 @@ h5 {
   padding: 15px 10px;
   min-height: 50px;
 }
+@media screen and (max-width: 768px) {
+  .nav-tabs {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .nav-tabs li {
+    display: block !important;
+    width: 100%;
+    margin: 0px;
+  }
+  .nav-tabs li.active {
+    border-bottom: 1px solid #ddd!important;
+    margin: 0px;
+  }
+}
 .dropdown-large {
   position: static !important;
 }
@@ -734,6 +749,33 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
 .body-small .navbar-fixed-top {
   margin-left: 0px;
 }
+.navbar-static-top {
+  margin: 0px 0px 20px 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.navbar-static-top.closed {
+  margin: -60px 0 0;
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+}
+.navbar-static-side {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.navbar-static-side.closed {
+  margin: 0 -220px 0 0;
+  -webkit-transform: translate(-100%, 0);
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
 body.mini-navbar .navbar-static-side {
   width: 70px;
 }
@@ -766,6 +808,9 @@ body.canvas-menu .nav-header {
 }
 body.mini-navbar #page-wrapper {
   margin: 0 0 0 70px;
+}
+body.mini-navbar #page-wrapper.closed {
+  margin: -60px 0 0;
 }
 body.fixed-sidebar.mini-navbar .footer,
 body.canvas-menu.mini-navbar .footer {
@@ -1597,7 +1642,7 @@ button.dim:active:before {
   font-weight: 700;
 }
 .goal-badge:hover {
-  padding: 2px 5px;
+  padding: 2px ;
   border: 2px solid #870042;
   cursor: pointer;
   -webkit-box-shadow: 0px 0px 0px 2px #A6A6A6;
@@ -1612,7 +1657,7 @@ button.dim:active:before {
 .goal-badge.active {
   background: #870042;
   border: 2px solid #6d0036;
-  padding: 2px 5px;
+  padding: 2px ;
   -webkit-box-shadow: 0px 0px 0px 2px #A6A6A6;
   box-shadow: 0px 1px 4px 0px #A6A6A6;
 }
@@ -1623,13 +1668,33 @@ button.dim:active:before {
   background-color: transparent;
   border: 2px solid #870042;
   border-radius: 2px;
-  padding: 3px;
+  padding: 10px;
 }
 .action-badge:hover,
 .action-badge:active,
 .action-badge:focus {
   -webkit-box-shadow: 0px 0px 0px 2px #A6A6A6;
   box-shadow: 0px 2px 8px 0px #A6A6A6;
+}
+.action-badge-edit {
+  position: absolute;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-top-left-radius: 4px;
+  padding: 6px 12px;
+  bottom: 5px;
+  right: 15px;
+  z-index: 10;
+}
+@media (max-width: 1199px) {
+  .action-badge-edit {
+    bottom: 0px;
+  }
+}
+.action-badge-edit:hover {
+  background: #870042;
+  border-color: inherit;
+  color: white;
 }
 .action-label {
   background-color: #FFFFFF;
@@ -1641,7 +1706,7 @@ button.dim:active:before {
   background-color: transparent;
   border: 2px solid #870042;
   border-radius: 2px;
-  padding: 3px;
+  padding: 5px;
   margin: 0 10px 10px;
 }
 .sub-action-badge:hover,
@@ -1650,73 +1715,6 @@ button.dim:active:before {
   -webkit-box-shadow: 0px 0px 0px 2px #A6A6A6;
   box-shadow: 0px 2px 8px 0px #A6A6A6;
 }
-/* RATING SYSTEM cherry
----------------------------------------------------------------------*/
-/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
-follow these rules. Every browser that supports :checked also supports :not(), so
-it doesn’t make the test unnecessarily selective
-.rating:not(:checked) > input {
-position: absolute;
-top: -9999px;
-clip: rect(0, 0, 0, 0);
-}
-.rating:not(:checked) > label {
-float: right;
-width: 1.1em;
-padding: 0em 0em 0em 0.02em;
-overflow: hidden;
-white-space: nowrap;
-cursor: pointer;
-font-size: 200%;
-line-height: 1.2;
-color: #c9c9c9;
-top: 0px;
-left: 0px;
-}
-.rating:not(:checked) > label:before {
-font-family: FontAwesome;
-content: "\f005 \00a0";
-display: inline-block;
-padding: 0 0px 0 0px;
-vertical-align: middle;
-top: 0px;
-left: 0px;
-}
-.rating > input:checked ~ label {
-color: @cherry;
-text-shadow: 1px 1px #6d0036, 2px 2px #6d0036, 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
-top: 0px;
-left: 0px;
-}
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
-color: @cherry;
-text-shadow: 1px 1px #6d0036, 2px 2px #6d0036, 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
-}
-.rating > input:checked + label:hover,
-.rating > input:checked + label:hover ~ label,
-.rating > input:checked ~ label:hover,
-.rating > input:checked ~ label:hover ~ label,
-.rating > label:hover ~ input:checked ~ label {
-color: @cherry;
-text-shadow: 1px 1px #6d0036, 2px 2px #6d0036, 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.5);
-}
-.rating > label:active{
-position: relative;
-top: 2px;
-left: 2px;
-}
-
-textarea.styled {
-width: 100%;
-height: 120px;
-border: 3px solid @lightest-grey;
-padding: 5px;
-font-size: 14px;
-
-}
-/* RATING SYSTEM gold
-------------------------------------------------------------------*/
 /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
 follow these rules. Every browser that supports :checked also supports :not(), so
 it doesn’t make the test unnecessarily selective */
@@ -1783,8 +1781,8 @@ textarea.styled {
   font-size: 1.3em;
 }
 /* MY PROFILE
----------------------------------------------------------------------*/
-#my-profile-1 {
+------------------------------------------------------------------*/
+#my-profile {
   background: white;
   color: #4c4c4e;
   position: static;
@@ -1798,24 +1796,51 @@ textarea.styled {
   -webkit-box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1);
   border-top: 1px solid #c9c9c9;
+  transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
 }
-#my-profile-2 {
-  background: #870042;
+#my-profile.minimized {
+  height: 30px;
+  width: auto;
+  padding: 5px;
+  margin: -41px 0px 10px 0px;
   color: white;
-  position: static;
-  height: 320px;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  float: left;
-  display: block;
-  margin: -41px 0 25px 0px;
-  -webkit-box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1);
+  background: #870042;
   border-top: 1px solid #6d0036;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.1);
+}
+#minimized-profile a {
+  color: #440022;
+}
+.scroll-up {
+  background-color: transparent;
+  bottom: 2em;
+  color: #4c4c4e;
+  display: none;
+  opacity: 0.6;
+  padding: 1em;
+  position: fixed;
+  right: 1.5em;
+  text-decoration: none;
+  border-radius: 3px;
+  z-index: 1000;
+}
+.scroll-up:hover {
+  color: #4c4c4e;
+  opacity: 1;
+  transition: 1s;
+}
+.scroll-up:active,
+.scroll-up:focus {
+  opacity: 0.6;
+  color: #4c4c4e;
 }
 /* TOGLE SWICH
----------------------------------------------------------------------*/
+------------------------------------------------------------------*/
 .onoffswitch {
   position: relative;
   width: 64px;
@@ -2061,6 +2086,26 @@ textarea.styled {
 .ui-calendar .fc-event-time,
 .ui-calendar .fc-event-title {
   color: #fff;
+}
+/* Full screen view */
+#fullscreen-btn {
+  color: #818182;
+  opacity: 0.6;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 3000;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+#fullscreen-btn:hover {
+  color: #818182;
+  opacity: 1;
+}
+#fullscreen-btn.active {
+  color: #818182;
+  opacity: 1;
 }
 /* Chat */
 .chat-activity-list .chat-element {
@@ -3596,14 +3641,13 @@ a.forum-item-title:hover {
   padding: 0px 0 0px 0;
   margin: 0px 0px 0 0;
   right: 0;
-  position: fixed;
-  background: #fff;
+  position: absolute;
   overflow: visible;
   border: 1px solid #e8e8e9;
   border-radius: 5px;
 }
 #right-sidebar-filter ul li a {
-  color: #4c4c4e;
+  color: inherit;
 }
 #right-sidebar-filter ul li a:hover,
 #right-sidebar-filter ul li a:active,
@@ -3723,7 +3767,9 @@ body.full-height-layout #page-wrapper {
 }
 #page-wrapper {
   min-height: auto;
-  border-left: 1px solid #e8e8e9;
+}
+#page-wrapper.closed {
+  margin: -60px 0 0 0px;
 }
 body.boxed-layout {
   background: url('patterns/shattered.png');
@@ -3767,6 +3813,149 @@ a:focus {
 }
 .text-uppercase {
   text-transform: uppercase;
+}
+.high-contrast-content {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content #wrapper {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content h1,
+.high-contrast-content h2,
+.high-contrast-content h3,
+.high-contrast-content h4,
+.high-contrast-content h5,
+.high-contrast-content h6 {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content strong {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content span {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content div {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content div a {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content div a:hover {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content div:hover {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content div .card.active {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content .sub-action-badge {
+  border: 2px solid white;
+}
+.high-contrast-content nav {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content .navbar-static-top .nav > li > a {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content > .navbar-default .nav > li > a:hover,
+.high-contrast-content > .navbar-default .nav > li > a:focus {
+  background: white;
+  color: yellow;
+}
+.high-contrast-content ol {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content ul {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content ul li {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content ul li.active {
+  background: black;
+  color: yellow;
+  border: 2px solid white;
+}
+.high-contrast-content ul li a {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content ul li a:visited,
+.high-contrast-content ul li a:hover {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content select {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content input {
+  background: black;
+  color: yellow;
+}
+.high-contrast-content button {
+  background: black;
+  color: yellow;
+  border-color: white;
+}
+.high-contrast-content button:hover {
+  background: black;
+  color: yellow;
+  border-color: white;
+}
+.high-contrast-content input::-webkit-input-placeholder {
+  background: yellow;
+  color: black;
+}
+.high-contrast-content input:-moz-placeholder {
+  background: yellow;
+  color: black;
+}
+.high-contrast-content high-contrast-content input::-moz-placeholder {
+  background: yellow;
+  color: black;
+}
+.high-contrast-content input:-ms-input-placeholder {
+  background: yellow;
+  color: black;
+}
+.high-contrast-content #srch-term {
+  background: yellow;
+  color: black;
+}
+.high-contrast-content #srch-term::-webkit-input-placeholder {
+  color: #4c4c4e;
+}
+.high-contrast-content #srch-term:-moz-placeholder {
+  /* Firefox 18- */
+  color: #4c4c4e;
+}
+.high-contrast-content #srch-term::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #4c4c4e;
+}
+.high-contrast-content #srch-term:-ms-input-placeholder {
+  color: #4c4c4e;
+}
+.high-contrast-content #fullscreen-btn {
+  background: yellow;
+  color: black;
 }
 .b-r {
   border-right: 1px solid #e8e8e9;
@@ -3852,7 +4041,7 @@ video {
 }
 .wrapper-content {
   padding: 20px 10px 40px;
-  min-height: 1000px;
+  min-height: auto;
 }
 #page-wrapper {
   padding: 0 15px;
@@ -7436,7 +7625,6 @@ body.skin-3 {
     padding: 0 0 0 0px;
     margin: 0px 0px 0;
     width: 200px;
-    display: ;
   }
   .navbar-static-side {
     z-index: 2001;
